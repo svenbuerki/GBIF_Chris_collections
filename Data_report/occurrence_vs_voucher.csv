@@ -1,0 +1,7 @@
+"Aspect","Occurrence","Voucher"
+"Definition","A digital record of an organism’s presence at a specific time and place.","A preserved specimen (or digital surrogate) used as evidence for an occurrence or study."
+"DwC Representation","A core class (dwc:Occurrence) with associated terms like occurrenceID.","Not a class; represented via Occurrence terms (e.g., basisOfRecord = PreservedSpecimen)."
+"Nature","Abstract data record; can be based on observation, specimen, or other evidence.","Physical object (or digital surrogate) deposited in a collection."
+"Purpose","Documents the event of encountering an organism (e.g., where, when, what).","Provides verifiable evidence to support the occurrence (e.g., for taxonomic validation)."
+"Examples","A GBIF record of Lepidium barnebyanum in occurrence.txt.","The herbarium sheet SRP034726.jpg linked to that GBIF record."
+"Persistence","Exists as data; may not have a physical counterpart (e.g., field observation).","Must be preserved and accessible (e.g., in a herbarium) for future reference."

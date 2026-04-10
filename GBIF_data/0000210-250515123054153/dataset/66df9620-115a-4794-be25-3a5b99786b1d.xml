@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://rs.gbif.org/schema/eml-gbif-profile/1.3/eml.xsd"
+packageId="66df9620-115a-4794-be25-3a5b99786b1d"  system="http://gbif.org" scope="system"
+xml:lang="en">
+    <dataset>
+        <alternateIdentifier>10.15468/4d8rth</alternateIdentifier>
+        <alternateIdentifier>https://ipt.floridamuseum.ufl.edu/ipt/resource?r=birds</alternateIdentifier>
+        <alternateIdentifier>66df9620-115a-4794-be25-3a5b99786b1d</alternateIdentifier>
+        <alternateIdentifier>http://ipt.flmnh.ufl.edu:8080/ipt/resource?r=birds</alternateIdentifier>
+        <title>UF Florida Museum of Natural History Ornithology</title>
+        <creator>
+            <individualName>
+                <givenName>David</givenName>
+                <surName>Steadman</surName>
+            </individualName>
+            <organizationName>Florida Museum of Natural History</organizationName>
+            <positionName>Curator of Ornithology</positionName>
+            <address>
+                <deliveryPoint>Dickinson Hall, 1659 Museum Road</deliveryPoint>
+                <city>Gainesville</city>
+                <administrativeArea>FL</administrativeArea>
+                <postalCode>32611</postalCode>
+                <country>UNITED_STATES</country>
+            </address>
+            <phone>352-273-1971</phone>
+            <electronicMailAddress>dws@flmnh.ufl.edu</electronicMailAddress>
+            <onlineUrl>https://www.floridamuseum.ufl.edu/birds/</onlineUrl>
+        </creator>
+        <metadataProvider>
+            <individualName>
+                <givenName>Warren</givenName>
+                <surName>Brown</surName>
+            </individualName>
+            <organizationName>Florida Museum of Natural History</organizationName>
+            <positionName>IT Director</positionName>
+            <address>
+                <deliveryPoint>Dickinson Hall, 1659 Museum Road</deliveryPoint>
+                <city>Gainesville</city>
+                <administrativeArea>FL</administrativeArea>
+                <postalCode>32611</postalCode>
+                <country>UNITED_STATES</country>
+            </address>
+            <phone>352-273-1915</phone>
+            <electronicMailAddress>netadmin@flmnh.ufl.edu</electronicMailAddress>
+            <onlineUrl>http://www.flmnh.ufl.edu/omt/</onlineUrl>
+        </metadataProvider>
+        <associatedParty>
+            <individualName>
+                <givenName>OMT</givenName>
+                <surName>FLMNH</surName>
+            </individualName>
+            <electronicMailAddress>netadmin@flmnh.ufl.edu</electronicMailAddress>
+            <role>USER</role>
+        </associatedParty>
+        <pubDate>
+                2025-05-12
+        </pubDate>
+        <language>ENGLISH</language>
+        <abstract>
+            <para>UF Florida Museum of Natural History Birds</para>
+        </abstract>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml</keywordThesaurus>
+        </keywordSet>
+        <intellectualRights>
+            <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by-nc/4.0/legalcode"><citetitle>Creative Commons Attribution Non Commercial (CC-BY-NC) 4.0 License</citetitle></ulink>.</para>
+        </intellectualRights>
+        <licensed>
+            <licenseName>Creative Commons Attribution Non Commercial 4.0 International</licenseName>
+            <url>https://spdx.org/licenses/CC-BY-NC-4.0.html</url>
+            <identifier>CC-BY-NC-4.0</identifier>
+        </licensed>
+        <distribution scope="document">
+            <online>
+                <url function="download">https://ipt.floridamuseum.ufl.edu/ipt/archive.do?r=birds</url>
+            </online>
+        </distribution>
+        <maintenance>
+            <description>
+                <para></para>
+            </description>
+            <maintenanceUpdateFrequency>unkown</maintenanceUpdateFrequency>
+        </maintenance>
+        <contact>
+            <individualName>
+                <givenName>David</givenName>
+                <surName>Steadman</surName>
+            </individualName>
+            <organizationName>Florida Museum of Natural History</organizationName>
+            <positionName>Curator of Ornithology</positionName>
+            <address>
+                <deliveryPoint>Dickinson Hall, 1659 Museum Road</deliveryPoint>
+                <city>Gainesville</city>
+                <administrativeArea>FL</administrativeArea>
+                <postalCode>32611</postalCode>
+                <country>UNITED_STATES</country>
+            </address>
+            <phone>352-273-1971</phone>
+            <electronicMailAddress>dws@flmnh.ufl.edu</electronicMailAddress>
+            <onlineUrl>https://www.floridamuseum.ufl.edu/birds/</onlineUrl>
+        </contact>
+
+    </dataset>
+
+    <additionalMetadata>
+        <metadata>
+            <gbif>
+                <dateStamp>2025-05-15T14:55:22Z</dateStamp>
+                <citation>Steadman D, Brown W (2025). UF Florida Museum of Natural History Ornithology. Version 1.325. Florida Museum of Natural History. Occurrence dataset https://doi.org/10.15468/4d8rth accessed via GBIF.org on 2025-05-15.</citation>
+            </gbif>
+        </metadata>
+    </additionalMetadata>
+    </eml:eml>

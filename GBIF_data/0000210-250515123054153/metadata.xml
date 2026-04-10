@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://rs.gbif.org/schema/eml-gbif-profile/1.3/eml.xsd"
+packageId="e5d7a3ae-22d1-452d-a90e-fe237457123e"  system="http://gbif.org" scope="system"
+xml:lang="en">
+    <dataset>
+        <title>GBIF Occurrence Download 0000210-250515123054153</title>
+        <creator>
+            <individualName>
+                <surName>GBIF Download Service</surName>
+            </individualName>
+            <electronicMailAddress>support@gbif.org</electronicMailAddress>
+        </creator>
+        <metadataProvider>
+            <individualName>
+                <surName>GBIF Download Service</surName>
+            </individualName>
+            <electronicMailAddress>support@gbif.org</electronicMailAddress>
+        </metadataProvider>
+        <pubDate>
+                2025-05-15
+        </pubDate>
+        <language>ENGLISH</language>
+        <abstract>
+            A dataset containing all occurrences available in GBIF matching the query:
+{
+  "RecordedBy" : [
+    "is one of (DAVIDSON, CHRISTOPHER, C. DAVIDSON, Davidson C., Davidson C, CHRISTOPHER DAVIDSON)"
+  ]
+}
+The dataset includes records from the following constituent datasets. The full metadata for each constituent is also included in this archive:
+1 records from Washington State University Marion Ownbey Herbarium - Bryophytes
+7 records from College of Idaho Herbarium
+1 records from University of British Columbia Herbarium (UBC) - Vascular Plant Collection
+4 records from Revision of the Nearctic species of the Lasioglossum (Dialictus) gemmatum species complex (Hymenoptera: Halictidae)
+40 records from University of Louisiana at Monroe Herbarium, R. Dale Thomas Collection
+1 records from USDA United States National Fungus Collections
+5 records from LACM Entomology Collection
+1 records from Vanderbilt University Herbarium
+4 records from Academy of Natural Sciences of Drexel University
+89 records from University of Michigan Herbarium
+1 records from CHSC - Ahart Herbarium, CSU Chico - Vascular Plants
+1 records from A Distribution and Taxonomic Reference Dataset of Geranium (Geraniaceae) in the New World
+1 records from Field Museum of Natural History (Botany) Pteridophyte Collection
+40 records from Digitalización y Sistematización de las Colecciones Biológicas Nacionales del Instituto de Biología, UNAM (Plantas vasculares)
+254 records from Magnoliophyta del Herbario BAB (Instituto de Recursos Biológicos CIRN-INTA)
+5 records from MO herbarium -  Missouri Botanical Garden - Amostras Brasileiras Repatriadas - Herbário Virtual REFLORA
+2 records from El Género Phaseolus (Leguminosae, Papilionoideae, Phaseoleae) para México
+1 records from Catálogo electrónico de especímenes depositados en el Herbario de la Universidad de Texas en Austin, Fase IV (Tipos)
+5 records from International Barcode of Life project (iBOL)
+1 records from Andrena cyanura Cockerell, a valid North American species
+1 records from W herbarium - Naturhistorisches Museum Wien - Amostras Brasileiras Repatriadas - Herbário Virtual REFLORA
+4 records from Wisconsin State Herbarium, Vascular Plants
+1 records from CEN - Herbário da Embrapa Recursos Genéticos e Biotecnologia
+1 records from UF Florida Museum of Natural History Ornithology
+8892 records from Tropicos MO Specimen Data
+1 records from Arizona State University Lichen Herbarium
+1 records from CEPEC - Herbário do Centro de Pesquisas do Cacau
+55 records from Computarización del Herbario ENCB, IPN. Fase IV. Base de datos de la familia Pinaceae y de distintas familias de la clase Magnoliopsida depositadas en el Herbario de la Escuela Nacional de Ciencias Biológicas, IPN
+105 records from North Carolina State University Vascular Plant Herbarium
+133 records from SBBG - Clifton Smith Herbarium, Santa Barbara Botanic Garden
+2 records from Estudio taxonómico y base de datos del género Muhlenbergia de México
+7 records from RB - Rio de Janeiro Botanical Garden Herbarium Collection
+1 records from Árboles mexicanos potencialmente valiosos para la restauración ecológica y la reforestación
+4 records from Computarización del Herbario ENCB. Fase II. Base de datos de los ejemplares de la familia Burseraceae y Nyctaginaceae y base de datos digitalizada de los ejemplares tipo de plantas vasculares del Herbario de la Escuela Nacional de Ciencias Biológicas, IPN
+1 records from Naturalis Biodiversity Center (NL) - Crustacea
+1 records from CAS Herpetology (HERP)
+9 records from Washington State University Herbarium
+1010 records from Snake River Plain Herbarium (Boise State University, Idaho, USA)
+529 records from Whitman College Herbarium Vascular Plants
+1 records from University of Mississippi, Thomas M. Pullen Herbarium
+163 records from Field Museum of Natural History (Botany) Seed Plant Collection
+10 records from K herbarium - Royal Botanic Gardens, Kew - Amostras Brasileiras Repatriadas - Herbário Virtual REFLORA
+7 records from Miami University Turrell Herbarium - Vascular Plants
+128 records from Naturalis Biodiversity Center (NL) - Botany
+321 records from NY herbarium - The New York Botanical Garden - Amostras Brasileiras Repatriadas - Herbário Virtual REFLORA
+35 records from The vascular plants collection (P) at the Herbarium of the Muséum national d'Histoire Naturelle (MNHN - Paris)
+7 records from G. S. Torrey Herbarium at the University of Connecticut (CONN)
+106 records from HSC - Humboldt State University Vascular Plant Herbarium
+1 records from Lund University Biological Museum - Botanical collection (LD)
+1 records from Intermountain Herbarium (Vasc. &amp; Algae)
+4 records from DAV - University of California, Davis Center for Plant Diversity - Vascular Plants
+124 records from Brigham Young University, S. L. Welsh Herbarium
+3 records from Herbario Nacional Colombiano (COL)
+71 records from CAS Botany (BOT)
+223 records from A global database for the distributions of crop wild relatives
+2 records from Inventario florístico en Baja California Sur: Región del Cabo e Islas adyacentes
+57 records from University of New Mexico Herbarium
+6 records from The ‘ red-tailed’ Lasioglossum (Dialictus) (Hymenoptera: Halictidae) of the western Nearctic
+307 records from NMNH Extant Specimen Records (USNM, US)
+1 records from CEN herbarium -  Embrapa Recursos Genéticos e Biotecnologia - Herbário Virtual REFLORA
+3 records from Brigham Young University Arthropod Museum
+31 records from Idaho State University, Ray J. Davis Herbarium Vascular Plants
+10 records from Harvard University Herbaria: All Records
+6 records from Vascular Plant Collection - University of Washington Herbarium (WTU)
+9 records from Washington State University Marion Ownbey Herbarium
+97 records from Puntos de presencia en Baja California (Botany)
+4 records from MEXU/Plantas Vasculares
+91 records from The University and Jepson Herbaria -- Lichen
+5 records from Herbarium specimens of Université de Montpellier 2, Institut de Botanique (MPU))
+81 records from University of Idaho, Stillinger Herbarium Vascular Plants
+42 records from UCR - University of California, Riverside Herbarium - Vascular Plants
+38 records from Wisconsin State Herbarium, Lichens
+9436 records from Tropicos Specimens Non-MO
+189 records from The University and Jepson Herbaria -- Vascular Plants
+2733 records from RSA - California Botanic Garden Herbarium
+2 records from INSDC Sequences
+1 records from University of Tennessee Fungal Herbarium
+1 records from CSLA - Cal State LA Herbarium
+1 records from The genus Begonia (Begoniaceae) in Peru
+1 records from University of Tartu Natural History Museum and Botanical Garden Zooloogical Collections
+182 records from University of South Florida Herbarium (USF)
+227 records from SD - SD Herbarium, San Diego Natural History Museum
+18 records from Riqueza y distribución de especies vegetales en la Península de Baja California
+6 records from Oregon State University Vascular Plant Collection
+709 records from The New York Botanical Garden Herbarium (NY)
+8 records from WFVZ Bird Collections
+3 records from Desert Botanical Garden Herbarium
+9 records from Arizona State University Vascular Plant Herbarium
+1 records from University of Tennessee Vascular Herbarium
+4 records from Mejoramiento de los modelos de distribución de especies de plantas amenazadas de México (Orchidaceae, Pinaceae, Cupressaceae, Taxaceae, Podocarpaceae) a través de información de sensores remotos y medidas espaciales de incertidumbre en los modelos-conUFZ*
+
+        </abstract>
+        <contact>
+            <individualName>
+                <surName>GBIF Download Service</surName>
+            </individualName>
+            <electronicMailAddress>support@gbif.org</electronicMailAddress>
+        </contact>
+
+    </dataset>
+
+    <additionalMetadata>
+        <metadata>
+            <gbif>
+                <dateStamp>2025-05-15T14:55:28Z</dateStamp>
+                <citation identifier="0000210-250515123054153">GBIF Occurrence Download 0000210-250515123054153</citation>
+                <physical>
+                    <objectName>Darwin Core Archive</objectName>
+                    <characterEncoding>UTF-8</characterEncoding>
+                    <dataFormat>
+                        <externallyDefinedFormat>
+                            <formatName>Darwin Core Archive</formatName>
+                        </externallyDefinedFormat>
+                    </dataFormat>
+                    <distribution>
+                        <online>
+                            <url function="download">https://api.gbif.org/v1/occurrence/download/request/0000210-250515123054153.zip</url>
+                        </online>
+                    </distribution>
+                </physical>
+            </gbif>
+        </metadata>
+    </additionalMetadata>
+    </eml:eml>

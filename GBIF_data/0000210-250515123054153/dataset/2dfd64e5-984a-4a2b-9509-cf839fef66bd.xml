@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://rs.gbif.org/schema/eml-gbif-profile/1.3/eml.xsd"
+packageId="2dfd64e5-984a-4a2b-9509-cf839fef66bd"  system="http://gbif.org" scope="system"
+xml:lang="en">
+    <dataset>
+        <alternateIdentifier>10.5886/x6kwje</alternateIdentifier>
+        <alternateIdentifier>8576</alternateIdentifier>
+        <alternateIdentifier>https://data.canadensys.net/ipt/resource?r=andrena-cyanura-sheffield</alternateIdentifier>
+        <title>Andrena cyanura Cockerell, a valid North American species</title>
+        <creator>
+            <individualName>
+                <givenName>Cory</givenName>
+                <surName>Sheffield</surName>
+            </individualName>
+            <organizationName>Royal Saskatchewan Museum</organizationName>
+            <positionName>Curator of Invertebrate Zoology</positionName>
+            <address>
+                <deliveryPoint>2340 Albert Street</deliveryPoint>
+                <city>Regina</city>
+                <administrativeArea>Saskatchewan</administrativeArea>
+                <postalCode>S4P 2V7</postalCode>
+                <country>CANADA</country>
+            </address>
+            <phone>(306) 787-2850</phone>
+            <electronicMailAddress>Cory.Sheffield@gov.sk.ca</electronicMailAddress>
+            <onlineUrl>https://royalsaskmuseum.ca/rsm/research/biology/cory-sheffield</onlineUrl>
+            <userId directory="http://orcid.org/">0000-0003-0603-7333</userId>
+        </creator>
+        <metadataProvider>
+            <individualName>
+                <givenName>Cory</givenName>
+                <surName>Sheffield</surName>
+            </individualName>
+            <organizationName>Royal Saskatchewan Museum</organizationName>
+            <positionName>Curator of Invertebrate Zoology</positionName>
+            <address>
+                <deliveryPoint>2340 Albert Street</deliveryPoint>
+                <city>Regina</city>
+                <administrativeArea>Saskatchewan</administrativeArea>
+                <postalCode>S4P 2V7</postalCode>
+                <country>CANADA</country>
+            </address>
+            <phone>(306) 787-2850</phone>
+            <electronicMailAddress>Cory.Sheffield@gov.sk.ca</electronicMailAddress>
+            <onlineUrl>https://royalsaskmuseum.ca/rsm/research/biology/cory-sheffield</onlineUrl>
+            <userId directory="http://orcid.org/">0000-0003-0603-7333</userId>
+        </metadataProvider>
+        <associatedParty>
+            <individualName>
+                <givenName>Carole</givenName>
+                <surName>Sinou</surName>
+            </individualName>
+            <electronicMailAddress>carole.sinou@gmail.com</electronicMailAddress>
+            <role>USER</role>
+        </associatedParty>
+        <pubDate>
+                2021-01-29
+        </pubDate>
+        <language>ENGLISH</language>
+        <abstract>
+            Checklist and occurrence dataset linked to the paper: Sheffield CS (2020). Andrena (Melandrena) cyanura Cockerell (Hymenoptera: Apoidea, Andrenidae), a valid North American species
+        </abstract>
+        <keywordSet>
+            <keyword>Checklist</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <intellectualRights>
+            <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by/4.0/legalcode"><citetitle>Creative Commons Attribution (CC-BY) 4.0 License</citetitle></ulink>.</para>
+        </intellectualRights>
+        <licensed>
+            <licenseName>Creative Commons Attribution 4.0 International</licenseName>
+            <url>https://spdx.org/licenses/CC-BY-4.0.html</url>
+            <identifier>CC-BY-4.0</identifier>
+        </licensed>
+        <distribution scope="document">
+            <online>
+                <url function="download">https://data.canadensys.net/ipt/archive.do?r=andrena-cyanura-sheffield</url>
+            </online>
+        </distribution>
+        <coverage>
+            <geographicCoverage>
+                <geographicDescription>This dataset covers specimens from Canada and the United States.</geographicDescription>
+                <boundingCoordinates>
+                    <westBoundingCoordinate>-178.594</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-60.469</eastBoundingCoordinate>
+                    <northBoundingCoordinate>76.841</northBoundingCoordinate>
+                    <southBoundingCoordinate>21.943</southBoundingCoordinate>
+                </boundingCoordinates>
+            </geographicCoverage>
+        </coverage>
+        <maintenance>
+            <description>
+                <para></para>
+            </description>
+            <maintenanceUpdateFrequency>notPlanned</maintenanceUpdateFrequency>
+        </maintenance>
+        <contact>
+            <individualName>
+                <givenName>Cory</givenName>
+                <surName>Sheffield</surName>
+            </individualName>
+            <organizationName>Royal Saskatchewan Museum</organizationName>
+            <positionName>Curator of Invertebrate Zoology</positionName>
+            <address>
+                <deliveryPoint>2340 Albert Street</deliveryPoint>
+                <city>Regina</city>
+                <administrativeArea>Saskatchewan</administrativeArea>
+                <postalCode>S4P 2V7</postalCode>
+                <country>CANADA</country>
+            </address>
+            <phone>(306) 787-2850</phone>
+            <electronicMailAddress>Cory.Sheffield@gov.sk.ca</electronicMailAddress>
+            <onlineUrl>https://royalsaskmuseum.ca/rsm/research/biology/cory-sheffield</onlineUrl>
+            <userId directory="http://orcid.org/">0000-0003-0603-7333</userId>
+        </contact>
+
+            <project >
+                <title>Andrena (Melandrena) cyanura Cockerell (Hymenoptera: Apoidea, Andrenidae), a valid North American species</title>
+                <personnel>
+                    <individualName>
+                    <givenName>Cory</givenName>
+                    <surName>Sheffield</surName>
+                    </individualName>
+            <userId directory="http://orcid.org/">0000-0003-0603-7333</userId>
+                    <role>AUTHOR</role>
+                </personnel>
+                <abstract>
+                    <para>Provides data on specimens of Andrena cyanura and Andrena transnigra from Canada and the United States.</para>
+                </abstract>
+                <funding>
+                    <para></para>
+                </funding>
+            </project>
+    </dataset>
+
+    <additionalMetadata>
+        <metadata>
+            <gbif>
+                <dateStamp>2025-05-15T14:55:22Z</dateStamp>
+                <citation identifier="https://doi.org/10.5886/x6kwje">Sheffield C (2021). Andrena cyanura Cockerell, a valid North American species. Royal Saskatchewan Museum. Checklist dataset https://doi.org/10.5886/x6kwje accessed via GBIF.org on 2025-05-15.</citation>
+                <bibliography>
+                <citation>Sheffield, C.S. (2021) Andrena (Melandrena) cyanura Cockerell (Hymenoptera: Apoidea, Andrenidae), a valid North American species. Journal of the Entomological Society of British Columbia 117: 49-59. https://journal.entsocbc.ca/index.php/journal/article/view/2515/2659</citation>
+                </bibliography>
+                <livingTimePeriod>1904-2020</livingTimePeriod>
+            </gbif>
+        </metadata>
+    </additionalMetadata>
+    </eml:eml>

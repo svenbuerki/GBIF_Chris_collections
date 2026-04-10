@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+@font-face {
+font-family: octicons-link;
+src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAZwABAAAAAACFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAAAGaAAAAAgAAAAIAAAAAUdTVUIAAAZcAAAACgAAAAoAAQAAT1MvMgAAAyQAAABJAAAAYFYEU3RjbWFwAAADcAAAAEUAAACAAJThvmN2dCAAAATkAAAABAAAAAQAAAAAZnBnbQAAA7gAAACyAAABCUM+8IhnYXNwAAAGTAAAABAAAAAQABoAI2dseWYAAAFsAAABPAAAAZwcEq9taGVhZAAAAsgAAAA0AAAANgh4a91oaGVhAAADCAAAABoAAAAkCA8DRGhtdHgAAAL8AAAADAAAAAwGAACfbG9jYQAAAsAAAAAIAAAACABiATBtYXhwAAACqAAAABgAAAAgAA8ASm5hbWUAAAToAAABQgAAAlXu73sOcG9zdAAABiwAAAAeAAAAME3QpOBwcmVwAAAEbAAAAHYAAAB/aFGpk3jaTY6xa8JAGMW/O62BDi0tJLYQincXEypYIiGJjSgHniQ6umTsUEyLm5BV6NDBP8Tpts6F0v+k/0an2i+itHDw3v2+9+DBKTzsJNnWJNTgHEy4BgG3EMI9DCEDOGEXzDADU5hBKMIgNPZqoD3SilVaXZCER3/I7AtxEJLtzzuZfI+VVkprxTlXShWKb3TBecG11rwoNlmmn1P2WYcJczl32etSpKnziC7lQyWe1smVPy/Lt7Kc+0vWY/gAgIIEqAN9we0pwKXreiMasxvabDQMM4riO+qxM2ogwDGOZTXxwxDiycQIcoYFBLj5K3EIaSctAq2kTYiw+ymhce7vwM9jSqO8JyVd5RH9gyTt2+J/yUmYlIR0s04n6+7Vm1ozezUeLEaUjhaDSuXHwVRgvLJn1tQ7xiuVv/ocTRF42mNgZGBgYGbwZOBiAAFGJBIMAAizAFoAAABiAGIAznjaY2BkYGAA4in8zwXi+W2+MjCzMIDApSwvXzC97Z4Ig8N/BxYGZgcgl52BCSQKAA3jCV8CAABfAAAAAAQAAEB42mNgZGBg4f3vACQZQABIMjKgAmYAKEgBXgAAeNpjYGY6wTiBgZWBg2kmUxoDA4MPhGZMYzBi1AHygVLYQUCaawqDA4PChxhmh/8ODDEsvAwHgMKMIDnGL0x7gJQCAwMAJd4MFwAAAHjaY2BgYGaA4DAGRgYQkAHyGMF8NgYrIM3JIAGVYYDT+AEjAwuDFpBmA9KMDEwMCh9i/v8H8sH0/4dQc1iAmAkALaUKLgAAAHjaTY9LDsIgEIbtgqHUPpDi3gPoBVyRTmTddOmqTXThEXqrob2gQ1FjwpDvfwCBdmdXC5AVKFu3e5MfNFJ29KTQT48Ob9/lqYwOGZxeUelN2U2R6+cArgtCJpauW7UQBqnFkUsjAY/kOU1cP+DAgvxwn1chZDwUbd6CFimGXwzwF6tPbFIcjEl+vvmM/byA48e6tWrKArm4ZJlCbdsrxksL1AwWn/yBSJKpYbq8AXaaTb8AAHja28jAwOC00ZrBeQNDQOWO//sdBBgYGRiYWYAEELEwMTE4uzo5Zzo5b2BxdnFOcALxNjA6b2ByTswC8jYwg0VlNuoCTWAMqNzMzsoK1rEhNqByEyerg5PMJlYuVueETKcd/89uBpnpvIEVomeHLoMsAAe1Id4AAAAAAAB42oWQT07CQBTGv0JBhagk7HQzKxca2sJCE1hDt4QF+9JOS0nbaaYDCQfwCJ7Au3AHj+LO13FMmm6cl7785vven0kBjHCBhfpYuNa5Ph1c0e2Xu3jEvWG7UdPDLZ4N92nOm+EBXuAbHmIMSRMs+4aUEd4Nd3CHD8NdvOLTsA2GL8M9PODbcL+hD7C1xoaHeLJSEao0FEW14ckxC+TU8TxvsY6X0eLPmRhry2WVioLpkrbp84LLQPGI7c6sOiUzpWIWS5GzlSgUzzLBSikOPFTOXqly7rqx0Z1Q5BAIoZBSFihQYQOOBEdkCOgXTOHA07HAGjGWiIjaPZNW13/+lm6S9FT7rLHFJ6fQbkATOG1j2OFMucKJJsxIVfQORl+9Jyda6Sl1dUYhSCm1dyClfoeDve4qMYdLEbfqHf3O/AdDumsjAAB42mNgYoAAZQYjBmyAGYQZmdhL8zLdDEydARfoAqIAAAABAAMABwAKABMAB///AA8AAQAAAAAAAAAAAAAAAAABAAAAAA==) format('woff');
+}
+body {
+-webkit-text-size-adjust: 100%;
+text-size-adjust: 100%;
+color: #333;
+font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+font-size: 16px;
+line-height: 1.6;
+word-wrap: break-word;
+}
+a {
+background-color: transparent;
+}
+a:active,
+a:hover {
+outline: 0;
+}
+strong {
+font-weight: bold;
+}
+h1 {
+font-size: 2em;
+margin: 0.67em 0;
+}
+img {
+border: 0;
+}
+hr {
+box-sizing: content-box;
+height: 0;
+}
+pre {
+overflow: auto;
+}
+code,
+kbd,
+pre {
+font-family: monospace, monospace;
+font-size: 1em;
+}
+input {
+color: inherit;
+font: inherit;
+margin: 0;
+}
+html input[disabled] {
+cursor: default;
+}
+input {
+line-height: normal;
+}
+input[type="checkbox"] {
+box-sizing: border-box;
+padding: 0;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+td,
+th {
+padding: 0;
+}
+* {
+box-sizing: border-box;
+}
+input {
+font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+a {
+color: #4078c0;
+text-decoration: none;
+}
+a:hover,
+a:active {
+text-decoration: underline;
+}
+hr {
+height: 0;
+margin: 15px 0;
+overflow: hidden;
+background: transparent;
+border: 0;
+border-bottom: 1px solid #ddd;
+}
+hr:before {
+display: table;
+content: "";
+}
+hr:after {
+display: table;
+clear: both;
+content: "";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin-top: 15px;
+margin-bottom: 15px;
+line-height: 1.1;
+}
+h1 {
+font-size: 30px;
+}
+h2 {
+font-size: 21px;
+}
+h3 {
+font-size: 16px;
+}
+h4 {
+font-size: 14px;
+}
+h5 {
+font-size: 12px;
+}
+h6 {
+font-size: 11px;
+}
+blockquote {
+margin: 0;
+}
+ul,
+ol {
+padding: 0;
+margin-top: 0;
+margin-bottom: 0;
+}
+ol ol,
+ul ol {
+list-style-type: lower-roman;
+}
+ul ul ol,
+ul ol ol,
+ol ul ol,
+ol ol ol {
+list-style-type: lower-alpha;
+}
+dd {
+margin-left: 0;
+}
+code {
+font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+font-size: 12px;
+}
+pre {
+margin-top: 0;
+margin-bottom: 0;
+font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+.select::-ms-expand {
+opacity: 0;
+}
+.octicon {
+font: normal normal normal 16px/1 octicons-link;
+display: inline-block;
+text-decoration: none;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.octicon-link:before {
+content: '\f05c';
+}
+.markdown-body:before {
+display: table;
+content: "";
+}
+.markdown-body:after {
+display: table;
+clear: both;
+content: "";
+}
+.markdown-body>*:first-child {
+margin-top: 0 !important;
+}
+.markdown-body>*:last-child {
+margin-bottom: 0 !important;
+}
+a:not([href]) {
+color: inherit;
+text-decoration: none;
+}
+.anchor {
+display: inline-block;
+padding-right: 2px;
+margin-left: -18px;
+}
+.anchor:focus {
+outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin-top: 1em;
+margin-bottom: 16px;
+font-weight: bold;
+line-height: 1.4;
+}
+h1 .octicon-link,
+h2 .octicon-link,
+h3 .octicon-link,
+h4 .octicon-link,
+h5 .octicon-link,
+h6 .octicon-link {
+color: #000;
+vertical-align: middle;
+visibility: hidden;
+}
+h1:hover .anchor,
+h2:hover .anchor,
+h3:hover .anchor,
+h4:hover .anchor,
+h5:hover .anchor,
+h6:hover .anchor {
+text-decoration: none;
+}
+h1:hover .anchor .octicon-link,
+h2:hover .anchor .octicon-link,
+h3:hover .anchor .octicon-link,
+h4:hover .anchor .octicon-link,
+h5:hover .anchor .octicon-link,
+h6:hover .anchor .octicon-link {
+visibility: visible;
+}
+h1 {
+padding-bottom: 0.3em;
+font-size: 2.25em;
+line-height: 1.2;
+border-bottom: 1px solid #eee;
+}
+h1 .anchor {
+line-height: 1;
+}
+h2 {
+padding-bottom: 0.3em;
+font-size: 1.75em;
+line-height: 1.225;
+border-bottom: 1px solid #eee;
+}
+h2 .anchor {
+line-height: 1;
+}
+h3 {
+font-size: 1.5em;
+line-height: 1.43;
+}
+h3 .anchor {
+line-height: 1.2;
+}
+h4 {
+font-size: 1.25em;
+}
+h4 .anchor {
+line-height: 1.2;
+}
+h5 {
+font-size: 1em;
+}
+h5 .anchor {
+line-height: 1.1;
+}
+h6 {
+font-size: 1em;
+color: #777;
+}
+h6 .anchor {
+line-height: 1.1;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table,
+pre {
+margin-top: 0;
+margin-bottom: 16px;
+}
+hr {
+height: 4px;
+padding: 0;
+margin: 16px 0;
+background-color: #e7e7e7;
+border: 0 none;
+}
+ul,
+ol {
+padding-left: 2em;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+margin-top: 0;
+margin-bottom: 0;
+}
+li>p {
+margin-top: 16px;
+}
+dl {
+padding: 0;
+}
+dl dt {
+padding: 0;
+margin-top: 16px;
+font-size: 1em;
+font-style: italic;
+font-weight: bold;
+}
+dl dd {
+padding: 0 16px;
+margin-bottom: 16px;
+}
+blockquote {
+padding: 0 15px;
+color: #777;
+border-left: 4px solid #ddd;
+}
+blockquote>:first-child {
+margin-top: 0;
+}
+blockquote>:last-child {
+margin-bottom: 0;
+}
+table {
+display: block;
+width: 100%;
+overflow: auto;
+word-break: normal;
+word-break: keep-all;
+}
+table th {
+font-weight: bold;
+}
+table th,
+table td {
+padding: 6px 13px;
+border: 1px solid #ddd;
+}
+table tr {
+background-color: #fff;
+border-top: 1px solid #ccc;
+}
+table tr:nth-child(2n) {
+background-color: #f8f8f8;
+}
+img {
+max-width: 100%;
+box-sizing: content-box;
+background-color: #fff;
+}
+code {
+padding: 0;
+padding-top: 0.2em;
+padding-bottom: 0.2em;
+margin: 0;
+font-size: 85%;
+background-color: rgba(0,0,0,0.04);
+border-radius: 3px;
+}
+code:before,
+code:after {
+letter-spacing: -0.2em;
+content: "\00a0";
+}
+pre>code {
+padding: 0;
+margin: 0;
+font-size: 100%;
+word-break: normal;
+white-space: pre;
+background: transparent;
+border: 0;
+}
+.highlight {
+margin-bottom: 16px;
+}
+.highlight pre,
+pre {
+padding: 16px;
+overflow: auto;
+font-size: 85%;
+line-height: 1.45;
+background-color: #f7f7f7;
+border-radius: 3px;
+}
+.highlight pre {
+margin-bottom: 0;
+word-break: normal;
+}
+pre {
+word-wrap: normal;
+}
+pre code {
+display: inline;
+max-width: initial;
+padding: 0;
+margin: 0;
+overflow: initial;
+line-height: inherit;
+word-wrap: normal;
+background-color: transparent;
+border: 0;
+}
+pre code:before,
+pre code:after {
+content: normal;
+}
+kbd {
+display: inline-block;
+padding: 3px 5px;
+font-size: 11px;
+line-height: 10px;
+color: #555;
+vertical-align: middle;
+background-color: #fcfcfc;
+border: solid 1px #ccc;
+border-bottom-color: #bbb;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #bbb;
+}
+.pl-c {
+color: #969896;
+}
+.pl-c1,
+.pl-s .pl-v {
+color: #0086b3;
+}
+.pl-e,
+.pl-en {
+color: #795da3;
+}
+.pl-s .pl-s1,
+.pl-smi {
+color: #333;
+}
+.pl-ent {
+color: #63a35c;
+}
+.pl-k {
+color: #a71d5d;
+}
+.pl-pds,
+.pl-s,
+.pl-s .pl-pse .pl-s1,
+.pl-sr,
+.pl-sr .pl-cce,
+.pl-sr .pl-sra,
+.pl-sr .pl-sre {
+color: #183691;
+}
+.pl-v {
+color: #ed6a43;
+}
+.pl-id {
+color: #b52a1d;
+}
+.pl-ii {
+background-color: #b52a1d;
+color: #f8f8f8;
+}
+.pl-sr .pl-cce {
+color: #63a35c;
+font-weight: bold;
+}
+.pl-ml {
+color: #693a17;
+}
+.pl-mh,
+.pl-mh .pl-en,
+.pl-ms {
+color: #1d3e81;
+font-weight: bold;
+}
+.pl-mq {
+color: #008080;
+}
+.pl-mi {
+color: #333;
+font-style: italic;
+}
+.pl-mb {
+color: #333;
+font-weight: bold;
+}
+.pl-md {
+background-color: #ffecec;
+color: #bd2c00;
+}
+.pl-mi1 {
+background-color: #eaffea;
+color: #55a532;
+}
+.pl-mdr {
+color: #795da3;
+font-weight: bold;
+}
+.pl-mo {
+color: #1d3e81;
+}
+kbd {
+display: inline-block;
+padding: 3px 5px;
+font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+line-height: 10px;
+color: #555;
+vertical-align: middle;
+background-color: #fcfcfc;
+border: solid 1px #ccc;
+border-bottom-color: #bbb;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #bbb;
+}
+.task-list-item {
+list-style-type: none;
+}
+.task-list-item+.task-list-item {
+margin-top: 3px;
+}
+.task-list-item input {
+margin: 0 0.35em 0.25em -1.6em;
+vertical-align: middle;
+}
+:checked+.radio-label {
+z-index: 1;
+position: relative;
+border-color: #4078c0;
+}
+.sourceLine {
+display: inline-block;
+}
+code .kw { color: #000000; }
+code .dt { color: #ed6a43; }
+code .dv { color: #009999; }
+code .bn { color: #009999; }
+code .fl { color: #009999; }
+code .ch { color: #009999; }
+code .st { color: #183691; }
+code .co { color: #969896; }
+code .ot { color: #0086b3; }
+code .al { color: #a61717; }
+code .fu { color: #63a35c; }
+code .er { color: #a61717; background-color: #e3d2d2; }
+code .wa { color: #000000; }
+code .cn { color: #008080; }
+code .sc { color: #008080; }
+code .vs { color: #183691; }
+code .ss { color: #183691; }
+code .im { color: #000000; }
+code .va {color: #008080; }
+code .cf { color: #000000; }
+code .op { color: #000000; }
+code .bu { color: #000000; }
+code .ex { color: #000000; }
+code .pp { color: #999999; }
+code .at { color: #008080; }
+code .do { color: #969896; }
+code .an { color: #008080; }
+code .cv { color: #008080; }
+code .in { color: #008080; }
+</style>
+<style>
+body {
+box-sizing: border-box;
+min-width: 200px;
+max-width: 980px;
+margin: 0 auto;
+padding: 45px;
+padding-top: 0px;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="matching-srp-specimens-with-flora-of-the-world">Matching SRP
+specimens with Flora of the World</h1>
+<p>Sven Buerki - Boise State University 2026-04-09</p>
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#step-1--load-and-inspect-source-data">Step 1 — Load and
+inspect source data</a></li>
+<li><a href="#step-2--prepare-srp-matching-keys-and-image-urls">Step 2 —
+Prepare SRP matching keys and image URLs</a></li>
+<li><a href="#step-3--four-step-matching-strategy">Step 3 — Four-step
+matching strategy</a></li>
+<li><a href="#step-4--results">Step 4 — Results</a></li>
+<li><a href="#step-5--export">Step 5 — Export</a></li>
+<li><a href="#image-url-example">Image URL example</a></li>
+</ul>
+<h2 id="overview">Overview</h2>
+<p>This report documents the matching of SRP (Snake River Plain
+Herbarium, Boise State University) specimens from the <a href="https://www.pnwherbaria.org/">Consortium of Pacific Northwest
+Herbaria</a> against occurrence records in the Flora of the World (FotW)
+database.</p>
+<p><strong>Data sources:</strong></p>
+<ul>
+<li><code>Consortium_PacificNorthWest_herbaria/CPNWH_20250520-112502.csv</code>
+— PNW Herbaria export of Christopher Davidson collections</li>
+<li><code>FotW_DB/occurrences.csv</code> — FotW occurrence database</li>
+</ul>
+<p><strong>Goal:</strong> Identify which SRP specimens are in FotW, link
+them to their FotW occurrence ID, and build direct image URLs for each
+specimen.</p>
+<hr />
+<h2 id="step-1--load-and-inspect-source-data">Step 1 — Load and inspect
+source data</h2>
+<h3 id="fotw-occurrences">FotW occurrences</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>FotW_data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;FotW_DB/occurrences.csv&quot;</span>, <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="co"># Extract numeric-only record number and date-only from eventDate</span></span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a>FotW_data<span class="sc">$</span>recordNumberFormatted <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">&quot;[^0-9]&quot;</span>, <span class="st">&quot;&quot;</span>, FotW_data<span class="sc">$</span>recordNumber)</span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a>FotW_data<span class="sc">$</span>eventDateFormatted    <span class="ot">&lt;-</span> <span class="fu">sapply</span>(</span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a>  <span class="fu">strsplit</span>(FotW_data<span class="sc">$</span>eventDate, <span class="st">&quot; &quot;</span>), <span class="st">`</span><span class="at">[[</span><span class="st">`</span>, <span class="dv">1</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a><span class="co"># Build composite matching key: &quot;recordNumber_date&quot;</span></span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a>FotW_data<span class="sc">$</span>match_key <span class="ot">&lt;-</span> <span class="fu">paste</span>(</span>
+<span id="cb1-10"><a href="#cb1-10" tabindex="-1"></a>  FotW_data<span class="sc">$</span>recordNumberFormatted,</span>
+<span id="cb1-11"><a href="#cb1-11" tabindex="-1"></a>  FotW_data<span class="sc">$</span>eventDateFormatted,</span>
+<span id="cb1-12"><a href="#cb1-12" tabindex="-1"></a>  <span class="at">sep =</span> <span class="st">&quot;_&quot;</span>)</span>
+<span id="cb1-13"><a href="#cb1-13" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;FotW records:               &quot;</span>, <span class="fu">nrow</span>(FotW_data), <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
+<pre><code>## FotW records:                52264</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;FotW unique matchable keys: &quot;</span>, <span class="fu">length</span>(<span class="fu">unique</span>(FotW_data<span class="sc">$</span>match_key[</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a>  FotW_data<span class="sc">$</span>recordNumberFormatted <span class="sc">!=</span> <span class="st">&quot;&quot;</span> <span class="sc">&amp;</span> FotW_data<span class="sc">$</span>eventDateFormatted <span class="sc">!=</span> <span class="st">&quot;&quot;</span>])), <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
+<pre><code>## FotW unique matchable keys:  11958</code></pre>
+<h3 id="cpnwh--srp-specimens-tagged-as-flora-of-the-world">CPNWH — SRP
+specimens tagged as Flora of the World</h3>
+<p>The <code>Dataset</code> field in the CPNWH export flags records that
+belong to the FotW project. We filter to <code>Herbarium == &quot;SRP&quot;</code>
+and <code>Dataset == &quot;Flora of the World&quot;</code>.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="co"># readr::read_csv handles embedded commas and complex quoting robustly</span></span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a>cpnwh <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(</span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a>  <span class="st">&quot;Consortium_PacificNorthWest_herbaria/CPNWH_20250520-112502.csv&quot;</span>,</span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a>  <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a>cpnwh <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(cpnwh)</span>
+<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a><span class="co"># Overview of herbaria in the file</span></span>
+<span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a><span class="fu">kable</span>(<span class="fu">as.data.frame</span>(<span class="fu">table</span>(cpnwh<span class="sc">$</span>Herbarium)),</span>
+<span id="cb5-9"><a href="#cb5-9" tabindex="-1"></a>      <span class="at">col.names =</span> <span class="fu">c</span>(<span class="st">&quot;Herbarium&quot;</span>, <span class="st">&quot;N records&quot;</span>),</span>
+<span id="cb5-10"><a href="#cb5-10" tabindex="-1"></a>      <span class="at">caption =</span> <span class="st">&quot;Records per herbarium in the CPNWH export.&quot;</span>)</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th align="left">Herbarium</th>
+<th align="right">N records</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">CIC</td>
+<td align="right">43</td>
+</tr>
+<tr>
+<td align="left">EWU</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="left">ID</td>
+<td align="right">287</td>
+</tr>
+<tr>
+<td align="left">IDE</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="left">IDS</td>
+<td align="right">101</td>
+</tr>
+<tr>
+<td align="left">LEA</td>
+<td align="right">36</td>
+</tr>
+<tr>
+<td align="left">MONT</td>
+<td align="right">7</td>
+</tr>
+<tr>
+<td align="left">MONTU</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td align="left">MORA</td>
+<td align="right">8</td>
+</tr>
+<tr>
+<td align="left">NY</td>
+<td align="right">4</td>
+</tr>
+<tr>
+<td align="left">OSC</td>
+<td align="right">292</td>
+</tr>
+<tr>
+<td align="left">SRP</td>
+<td align="right">3163</td>
+</tr>
+<tr>
+<td align="left">UBC</td>
+<td align="right">3787</td>
+</tr>
+<tr>
+<td align="left">V</td>
+<td align="right">31</td>
+</tr>
+<tr>
+<td align="left">WCW</td>
+<td align="right">531</td>
+</tr>
+<tr>
+<td align="left">WS</td>
+<td align="right">52</td>
+</tr>
+<tr>
+<td align="left">WTU</td>
+<td align="right">123</td>
+</tr>
+</tbody>
+</table>
+<p>Records per herbarium in the CPNWH export.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>srp_fotw <span class="ot">&lt;-</span> cpnwh[cpnwh<span class="sc">$</span>Herbarium <span class="sc">==</span> <span class="st">&quot;SRP&quot;</span> <span class="sc">&amp;</span></span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a>                  cpnwh<span class="sc">$</span>Dataset   <span class="sc">==</span> <span class="st">&quot;Flora of the World&quot;</span>, ]</span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;SRP records in CPNWH:               &quot;</span>, <span class="fu">sum</span>(cpnwh<span class="sc">$</span>Herbarium <span class="sc">==</span> <span class="st">&quot;SRP&quot;</span>), <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
+<pre><code>## SRP records in CPNWH:                3163</code></pre>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;SRP records tagged as FotW:         &quot;</span>, <span class="fu">nrow</span>(srp_fotw), <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
+<pre><code>## SRP records tagged as FotW:          3160</code></pre>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;SRP FotW records with images (Y):   &quot;</span>,</span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a>    <span class="fu">sum</span>(srp_fotw<span class="sc">$</span><span class="st">`</span><span class="at">Imaged?</span><span class="st">`</span> <span class="sc">==</span> <span class="st">&quot;Y&quot;</span>), <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
+<pre><code>## SRP FotW records with images (Y):    NA</code></pre>
+<hr />
+<h2 id="step-2--prepare-srp-matching-keys-and-image-urls">Step 2 —
+Prepare SRP matching keys and image URLs</h2>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="co"># Zero-pad day and month to 2 digits, build ISO date</span></span>
+<span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a>srp_fotw<span class="sc">$</span>day   <span class="ot">&lt;-</span> <span class="fu">formatC</span>(<span class="fu">as.integer</span>(srp_fotw<span class="sc">$</span><span class="st">`</span><span class="at">Day Collected</span><span class="st">`</span>),</span>
+<span id="cb12-3"><a href="#cb12-3" tabindex="-1"></a>                           <span class="at">width =</span> <span class="dv">2</span>, <span class="at">flag =</span> <span class="st">&quot;0&quot;</span>)</span>
+<span id="cb12-4"><a href="#cb12-4" tabindex="-1"></a>srp_fotw<span class="sc">$</span>month <span class="ot">&lt;-</span> <span class="fu">formatC</span>(<span class="fu">as.integer</span>(srp_fotw<span class="sc">$</span><span class="st">`</span><span class="at">Month Collected</span><span class="st">`</span>),</span>
+<span id="cb12-5"><a href="#cb12-5" tabindex="-1"></a>                           <span class="at">width =</span> <span class="dv">2</span>, <span class="at">flag =</span> <span class="st">&quot;0&quot;</span>)</span>
+<span id="cb12-6"><a href="#cb12-6" tabindex="-1"></a>srp_fotw<span class="sc">$</span>year  <span class="ot">&lt;-</span> srp_fotw<span class="sc">$</span><span class="st">`</span><span class="at">Year Collected</span><span class="st">`</span></span>
+<span id="cb12-7"><a href="#cb12-7" tabindex="-1"></a></span>
+<span id="cb12-8"><a href="#cb12-8" tabindex="-1"></a>srp_fotw<span class="sc">$</span>eventDate_SRP <span class="ot">&lt;-</span> <span class="fu">paste</span>(srp_fotw<span class="sc">$</span>year, srp_fotw<span class="sc">$</span>month,</span>
+<span id="cb12-9"><a href="#cb12-9" tabindex="-1"></a>                                srp_fotw<span class="sc">$</span>day, <span class="at">sep =</span> <span class="st">&quot;-&quot;</span>)</span>
+<span id="cb12-10"><a href="#cb12-10" tabindex="-1"></a></span>
+<span id="cb12-11"><a href="#cb12-11" tabindex="-1"></a><span class="co"># Composite key: collector number + date</span></span>
+<span id="cb12-12"><a href="#cb12-12" tabindex="-1"></a>srp_fotw<span class="sc">$</span>match_key_SRP <span class="ot">&lt;-</span> <span class="fu">paste</span>(srp_fotw<span class="sc">$</span><span class="st">`</span><span class="at">Collector Number</span><span class="st">`</span>,</span>
+<span id="cb12-13"><a href="#cb12-13" tabindex="-1"></a>                                srp_fotw<span class="sc">$</span>eventDate_SRP, <span class="at">sep =</span> <span class="st">&quot;_&quot;</span>)</span>
+<span id="cb12-14"><a href="#cb12-14" tabindex="-1"></a></span>
+<span id="cb12-15"><a href="#cb12-15" tabindex="-1"></a><span class="co"># Build PNW Herbaria image URL (accession zero-padded to 6 digits)</span></span>
+<span id="cb12-16"><a href="#cb12-16" tabindex="-1"></a>srp_fotw<span class="sc">$</span>SRP_imageURL <span class="ot">&lt;-</span> <span class="fu">paste0</span>(</span>
+<span id="cb12-17"><a href="#cb12-17" tabindex="-1"></a>  <span class="st">&quot;https://www.pnwherbaria.org/images/jpeg.php?Image=SRP&quot;</span>,</span>
+<span id="cb12-18"><a href="#cb12-18" tabindex="-1"></a>  <span class="fu">formatC</span>(<span class="fu">as.integer</span>(srp_fotw<span class="sc">$</span>Accession), <span class="at">width =</span> <span class="dv">6</span>, <span class="at">flag =</span> <span class="st">&quot;0&quot;</span>),</span>
+<span id="cb12-19"><a href="#cb12-19" tabindex="-1"></a>  <span class="st">&quot;.jpg&quot;</span>)</span></code></pre></div>
+<hr />
+<h2 id="step-3--four-step-matching-strategy">Step 3 — Four-step matching
+strategy</h2>
+<p>Records are matched on a composite key: <strong>numeric collector
+number + collection date</strong> (e.g., <code>14134_2021-06-01</code>).
+Because dates sometimes differ slightly between databases (data entry or
+timezone offsets), we apply four steps in order of decreasing
+confidence:</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Strategy</th>
+<th>Rationale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Exact key (number + date)</td>
+<td>Highest confidence</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Record number unique in FotW</td>
+<td>Only one possible FotW date for that number</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Fuzzy date match (≤3 days)</td>
+<td>Small entry or timezone discrepancy</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Closest date fallback</td>
+<td>Best available match when gap &gt;3 days</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="co"># ── Pre-compute FotW lookup structures ───────────────────────────────</span></span>
+<span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a><span class="co"># Exact key lookup</span></span>
+<span id="cb13-3"><a href="#cb13-3" tabindex="-1"></a>fotw_exact <span class="ot">&lt;-</span> <span class="fu">split</span>(FotW_data, FotW_data<span class="sc">$</span>match_key)</span>
+<span id="cb13-4"><a href="#cb13-4" tabindex="-1"></a></span>
+<span id="cb13-5"><a href="#cb13-5" tabindex="-1"></a><span class="co"># Record-number-only lookup</span></span>
+<span id="cb13-6"><a href="#cb13-6" tabindex="-1"></a>fotw_by_num <span class="ot">&lt;-</span> <span class="fu">split</span>(FotW_data, FotW_data<span class="sc">$</span>recordNumberFormatted)</span>
+<span id="cb13-7"><a href="#cb13-7" tabindex="-1"></a></span>
+<span id="cb13-8"><a href="#cb13-8" tabindex="-1"></a><span class="co"># ── Apply four-step matching ──────────────────────────────────────────</span></span>
+<span id="cb13-9"><a href="#cb13-9" tabindex="-1"></a>matched_list   <span class="ot">&lt;-</span> <span class="fu">vector</span>(<span class="st">&quot;list&quot;</span>, <span class="fu">nrow</span>(srp_fotw))</span>
+<span id="cb13-10"><a href="#cb13-10" tabindex="-1"></a>unmatched_list <span class="ot">&lt;-</span> <span class="fu">vector</span>(<span class="st">&quot;list&quot;</span>, <span class="fu">nrow</span>(srp_fotw))</span>
+<span id="cb13-11"><a href="#cb13-11" tabindex="-1"></a></span>
+<span id="cb13-12"><a href="#cb13-12" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_len</span>(<span class="fu">nrow</span>(srp_fotw))) {</span>
+<span id="cb13-13"><a href="#cb13-13" tabindex="-1"></a>  row        <span class="ot">&lt;-</span> srp_fotw[i, ]</span>
+<span id="cb13-14"><a href="#cb13-14" tabindex="-1"></a>  cn         <span class="ot">&lt;-</span> <span class="fu">trimws</span>(row<span class="sc">$</span><span class="st">`</span><span class="at">Collector Number</span><span class="st">`</span>)</span>
+<span id="cb13-15"><a href="#cb13-15" tabindex="-1"></a>  date_srp   <span class="ot">&lt;-</span> row<span class="sc">$</span>eventDate_SRP</span>
+<span id="cb13-16"><a href="#cb13-16" tabindex="-1"></a>  exact_key  <span class="ot">&lt;-</span> row<span class="sc">$</span>match_key_SRP</span>
+<span id="cb13-17"><a href="#cb13-17" tabindex="-1"></a>  fotw_match <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
+<span id="cb13-18"><a href="#cb13-18" tabindex="-1"></a>  method     <span class="ot">&lt;-</span> <span class="st">&quot;unmatched&quot;</span></span>
+<span id="cb13-19"><a href="#cb13-19" tabindex="-1"></a></span>
+<span id="cb13-20"><a href="#cb13-20" tabindex="-1"></a>  <span class="co"># Step 1 — exact key</span></span>
+<span id="cb13-21"><a href="#cb13-21" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.null</span>(fotw_exact[[exact_key]])) {</span>
+<span id="cb13-22"><a href="#cb13-22" tabindex="-1"></a>    fotw_match <span class="ot">&lt;-</span> fotw_exact[[exact_key]]</span>
+<span id="cb13-23"><a href="#cb13-23" tabindex="-1"></a>    method     <span class="ot">&lt;-</span> <span class="st">&quot;exact&quot;</span></span>
+<span id="cb13-24"><a href="#cb13-24" tabindex="-1"></a></span>
+<span id="cb13-25"><a href="#cb13-25" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (<span class="fu">nchar</span>(cn) <span class="sc">&gt;</span> <span class="dv">0</span> <span class="sc">&amp;&amp;</span> <span class="sc">!</span><span class="fu">is.null</span>(fotw_by_num[[cn]])) {</span>
+<span id="cb13-26"><a href="#cb13-26" tabindex="-1"></a>    candidates  <span class="ot">&lt;-</span> fotw_by_num[[cn]]</span>
+<span id="cb13-27"><a href="#cb13-27" tabindex="-1"></a>    fotw_dates  <span class="ot">&lt;-</span> <span class="fu">unique</span>(candidates<span class="sc">$</span>eventDateFormatted)</span>
+<span id="cb13-28"><a href="#cb13-28" tabindex="-1"></a></span>
+<span id="cb13-29"><a href="#cb13-29" tabindex="-1"></a>    <span class="co"># Step 2 — unique record number</span></span>
+<span id="cb13-30"><a href="#cb13-30" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">length</span>(fotw_dates) <span class="sc">==</span> <span class="dv">1</span>) {</span>
+<span id="cb13-31"><a href="#cb13-31" tabindex="-1"></a>      fotw_match <span class="ot">&lt;-</span> candidates</span>
+<span id="cb13-32"><a href="#cb13-32" tabindex="-1"></a>      method     <span class="ot">&lt;-</span> <span class="st">&quot;num_only_unique_date&quot;</span></span>
+<span id="cb13-33"><a href="#cb13-33" tabindex="-1"></a></span>
+<span id="cb13-34"><a href="#cb13-34" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span> (<span class="fu">nchar</span>(date_srp) <span class="sc">==</span> <span class="dv">10</span>) {</span>
+<span id="cb13-35"><a href="#cb13-35" tabindex="-1"></a>      srp_dt    <span class="ot">&lt;-</span> <span class="fu">as.Date</span>(date_srp)</span>
+<span id="cb13-36"><a href="#cb13-36" tabindex="-1"></a>      cand_dts  <span class="ot">&lt;-</span> <span class="fu">as.Date</span>(candidates<span class="sc">$</span>eventDateFormatted)</span>
+<span id="cb13-37"><a href="#cb13-37" tabindex="-1"></a>      day_diffs <span class="ot">&lt;-</span> <span class="fu">abs</span>(<span class="fu">as.integer</span>(cand_dts <span class="sc">-</span> srp_dt))</span>
+<span id="cb13-38"><a href="#cb13-38" tabindex="-1"></a></span>
+<span id="cb13-39"><a href="#cb13-39" tabindex="-1"></a>      <span class="co"># Step 3 — fuzzy date ≤3 days</span></span>
+<span id="cb13-40"><a href="#cb13-40" tabindex="-1"></a>      close <span class="ot">&lt;-</span> candidates[day_diffs <span class="sc">&lt;=</span> <span class="dv">3</span>, ]</span>
+<span id="cb13-41"><a href="#cb13-41" tabindex="-1"></a>      <span class="cf">if</span> (<span class="fu">nrow</span>(close) <span class="sc">&gt;</span> <span class="dv">0</span>) {</span>
+<span id="cb13-42"><a href="#cb13-42" tabindex="-1"></a>        fotw_match <span class="ot">&lt;-</span> close</span>
+<span id="cb13-43"><a href="#cb13-43" tabindex="-1"></a>        method     <span class="ot">&lt;-</span> <span class="st">&quot;fuzzy_date_&lt;=3d&quot;</span></span>
+<span id="cb13-44"><a href="#cb13-44" tabindex="-1"></a>      } <span class="cf">else</span> {</span>
+<span id="cb13-45"><a href="#cb13-45" tabindex="-1"></a>        <span class="co"># Step 4 — closest date</span></span>
+<span id="cb13-46"><a href="#cb13-46" tabindex="-1"></a>        fotw_match <span class="ot">&lt;-</span> candidates[<span class="fu">which.min</span>(day_diffs), ]</span>
+<span id="cb13-47"><a href="#cb13-47" tabindex="-1"></a>        method     <span class="ot">&lt;-</span> <span class="st">&quot;closest_date&quot;</span></span>
+<span id="cb13-48"><a href="#cb13-48" tabindex="-1"></a>      }</span>
+<span id="cb13-49"><a href="#cb13-49" tabindex="-1"></a>    }</span>
+<span id="cb13-50"><a href="#cb13-50" tabindex="-1"></a>  }</span>
+<span id="cb13-51"><a href="#cb13-51" tabindex="-1"></a></span>
+<span id="cb13-52"><a href="#cb13-52" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.null</span>(fotw_match) <span class="sc">&amp;&amp;</span> <span class="fu">nrow</span>(fotw_match) <span class="sc">&gt;</span> <span class="dv">0</span>) {</span>
+<span id="cb13-53"><a href="#cb13-53" tabindex="-1"></a>    <span class="co"># One output row per FotW match</span></span>
+<span id="cb13-54"><a href="#cb13-54" tabindex="-1"></a>    <span class="cf">for</span> (j <span class="cf">in</span> <span class="fu">seq_len</span>(<span class="fu">nrow</span>(fotw_match))) {</span>
+<span id="cb13-55"><a href="#cb13-55" tabindex="-1"></a>      fm <span class="ot">&lt;-</span> fotw_match[j, ]</span>
+<span id="cb13-56"><a href="#cb13-56" tabindex="-1"></a>      matched_list[[i]] <span class="ot">&lt;-</span> <span class="fu">rbind</span>(matched_list[[i]], <span class="fu">data.frame</span>(</span>
+<span id="cb13-57"><a href="#cb13-57" tabindex="-1"></a>        <span class="at">SRP_occurrenceID    =</span> row<span class="sc">$</span>OccurrenceID,</span>
+<span id="cb13-58"><a href="#cb13-58" tabindex="-1"></a>        <span class="at">SRP_accession       =</span> row<span class="sc">$</span>Accession,</span>
+<span id="cb13-59"><a href="#cb13-59" tabindex="-1"></a>        <span class="at">SRP_imageURL        =</span> row<span class="sc">$</span>SRP_imageURL,</span>
+<span id="cb13-60"><a href="#cb13-60" tabindex="-1"></a>        <span class="at">matchMethod         =</span> method,</span>
+<span id="cb13-61"><a href="#cb13-61" tabindex="-1"></a>        <span class="at">scientificName_SRP  =</span> row<span class="sc">$</span><span class="st">`</span><span class="at">Accepted Name</span><span class="st">`</span>,</span>
+<span id="cb13-62"><a href="#cb13-62" tabindex="-1"></a>        <span class="at">family              =</span> row<span class="sc">$</span>Family,</span>
+<span id="cb13-63"><a href="#cb13-63" tabindex="-1"></a>        <span class="at">collectorNumber     =</span> cn,</span>
+<span id="cb13-64"><a href="#cb13-64" tabindex="-1"></a>        <span class="at">eventDate_SRP       =</span> date_srp,</span>
+<span id="cb13-65"><a href="#cb13-65" tabindex="-1"></a>        <span class="at">collector           =</span> row<span class="sc">$</span>Collector,</span>
+<span id="cb13-66"><a href="#cb13-66" tabindex="-1"></a>        <span class="at">otherCollectors     =</span> row<span class="sc">$</span><span class="st">`</span><span class="at">Other Collectors</span><span class="st">`</span>,</span>
+<span id="cb13-67"><a href="#cb13-67" tabindex="-1"></a>        <span class="at">country             =</span> row<span class="sc">$</span>Country,</span>
+<span id="cb13-68"><a href="#cb13-68" tabindex="-1"></a>        <span class="at">stateProvince       =</span> row<span class="sc">$</span><span class="st">`</span><span class="at">State or Province</span><span class="st">`</span>,</span>
+<span id="cb13-69"><a href="#cb13-69" tabindex="-1"></a>        <span class="at">county              =</span> row<span class="sc">$</span>County,</span>
+<span id="cb13-70"><a href="#cb13-70" tabindex="-1"></a>        <span class="at">locality            =</span> row<span class="sc">$</span>Locality,</span>
+<span id="cb13-71"><a href="#cb13-71" tabindex="-1"></a>        <span class="at">decimalLatitude     =</span> row<span class="sc">$</span><span class="st">`</span><span class="at">Decimal Latitude</span><span class="st">`</span>,</span>
+<span id="cb13-72"><a href="#cb13-72" tabindex="-1"></a>        <span class="at">decimalLongitude    =</span> row<span class="sc">$</span><span class="st">`</span><span class="at">Decimal Longitude</span><span class="st">`</span>,</span>
+<span id="cb13-73"><a href="#cb13-73" tabindex="-1"></a>        <span class="at">phenology           =</span> row<span class="sc">$</span>Phenology,</span>
+<span id="cb13-74"><a href="#cb13-74" tabindex="-1"></a>        <span class="at">FotW_occurrenceID   =</span> fm<span class="sc">$</span>occurrenceID,</span>
+<span id="cb13-75"><a href="#cb13-75" tabindex="-1"></a>        <span class="at">scientificName_FotW =</span> <span class="fu">paste</span>(fm<span class="sc">$</span>genus, fm<span class="sc">$</span>specificEpithet),</span>
+<span id="cb13-76"><a href="#cb13-76" tabindex="-1"></a>        <span class="at">FotW_eventDate      =</span> fm<span class="sc">$</span>eventDateFormatted,</span>
+<span id="cb13-77"><a href="#cb13-77" tabindex="-1"></a>        <span class="at">FotW_recordNumber   =</span> fm<span class="sc">$</span>recordNumber,</span>
+<span id="cb13-78"><a href="#cb13-78" tabindex="-1"></a>        <span class="at">FotW_recordedBy     =</span> fm<span class="sc">$</span>recordedBy,</span>
+<span id="cb13-79"><a href="#cb13-79" tabindex="-1"></a>        <span class="at">stringsAsFactors    =</span> <span class="cn">FALSE</span></span>
+<span id="cb13-80"><a href="#cb13-80" tabindex="-1"></a>      ))</span>
+<span id="cb13-81"><a href="#cb13-81" tabindex="-1"></a>    }</span>
+<span id="cb13-82"><a href="#cb13-82" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb13-83"><a href="#cb13-83" tabindex="-1"></a>    unmatched_list[[i]] <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb13-84"><a href="#cb13-84" tabindex="-1"></a>      <span class="at">SRP_occurrenceID   =</span> row<span class="sc">$</span>OccurrenceID,</span>
+<span id="cb13-85"><a href="#cb13-85" tabindex="-1"></a>      <span class="at">SRP_accession      =</span> row<span class="sc">$</span>Accession,</span>
+<span id="cb13-86"><a href="#cb13-86" tabindex="-1"></a>      <span class="at">SRP_imageURL       =</span> row<span class="sc">$</span>SRP_imageURL,</span>
+<span id="cb13-87"><a href="#cb13-87" tabindex="-1"></a>      <span class="at">scientificName_SRP =</span> row<span class="sc">$</span><span class="st">`</span><span class="at">Accepted Name</span><span class="st">`</span>,</span>
+<span id="cb13-88"><a href="#cb13-88" tabindex="-1"></a>      <span class="at">family             =</span> row<span class="sc">$</span>Family,</span>
+<span id="cb13-89"><a href="#cb13-89" tabindex="-1"></a>      <span class="at">collectorNumber    =</span> cn,</span>
+<span id="cb13-90"><a href="#cb13-90" tabindex="-1"></a>      <span class="at">eventDate_SRP      =</span> date_srp,</span>
+<span id="cb13-91"><a href="#cb13-91" tabindex="-1"></a>      <span class="at">collector          =</span> row<span class="sc">$</span>Collector,</span>
+<span id="cb13-92"><a href="#cb13-92" tabindex="-1"></a>      <span class="at">otherCollectors    =</span> row<span class="sc">$</span><span class="st">`</span><span class="at">Other Collectors</span><span class="st">`</span>,</span>
+<span id="cb13-93"><a href="#cb13-93" tabindex="-1"></a>      <span class="at">country            =</span> row<span class="sc">$</span>Country,</span>
+<span id="cb13-94"><a href="#cb13-94" tabindex="-1"></a>      <span class="at">stateProvince      =</span> row<span class="sc">$</span><span class="st">`</span><span class="at">State or Province</span><span class="st">`</span>,</span>
+<span id="cb13-95"><a href="#cb13-95" tabindex="-1"></a>      <span class="at">county             =</span> row<span class="sc">$</span>County,</span>
+<span id="cb13-96"><a href="#cb13-96" tabindex="-1"></a>      <span class="at">locality           =</span> row<span class="sc">$</span>Locality,</span>
+<span id="cb13-97"><a href="#cb13-97" tabindex="-1"></a>      <span class="at">decimalLatitude    =</span> row<span class="sc">$</span><span class="st">`</span><span class="at">Decimal Latitude</span><span class="st">`</span>,</span>
+<span id="cb13-98"><a href="#cb13-98" tabindex="-1"></a>      <span class="at">decimalLongitude   =</span> row<span class="sc">$</span><span class="st">`</span><span class="at">Decimal Longitude</span><span class="st">`</span>,</span>
+<span id="cb13-99"><a href="#cb13-99" tabindex="-1"></a>      <span class="at">phenology          =</span> row<span class="sc">$</span>Phenology,</span>
+<span id="cb13-100"><a href="#cb13-100" tabindex="-1"></a>      <span class="at">note               =</span> <span class="st">&quot;collector_number_not_in_FotW_DB&quot;</span>,</span>
+<span id="cb13-101"><a href="#cb13-101" tabindex="-1"></a>      <span class="at">stringsAsFactors   =</span> <span class="cn">FALSE</span></span>
+<span id="cb13-102"><a href="#cb13-102" tabindex="-1"></a>    )</span>
+<span id="cb13-103"><a href="#cb13-103" tabindex="-1"></a>  }</span>
+<span id="cb13-104"><a href="#cb13-104" tabindex="-1"></a>}</span>
+<span id="cb13-105"><a href="#cb13-105" tabindex="-1"></a></span>
+<span id="cb13-106"><a href="#cb13-106" tabindex="-1"></a>matched   <span class="ot">&lt;-</span> <span class="fu">do.call</span>(rbind, matched_list)</span>
+<span id="cb13-107"><a href="#cb13-107" tabindex="-1"></a>unmatched <span class="ot">&lt;-</span> <span class="fu">do.call</span>(rbind, unmatched_list)</span>
+<span id="cb13-108"><a href="#cb13-108" tabindex="-1"></a></span>
+<span id="cb13-109"><a href="#cb13-109" tabindex="-1"></a><span class="co"># Remove duplicate rows (same SRP + FotW pair)</span></span>
+<span id="cb13-110"><a href="#cb13-110" tabindex="-1"></a>matched <span class="ot">&lt;-</span> matched[<span class="sc">!</span><span class="fu">duplicated</span>(</span>
+<span id="cb13-111"><a href="#cb13-111" tabindex="-1"></a>  <span class="fu">paste</span>(matched<span class="sc">$</span>SRP_occurrenceID, matched<span class="sc">$</span>FotW_occurrenceID)), ]</span></code></pre></div>
+<hr />
+<h2 id="step-4--results">Step 4 — Results</h2>
+<h3 id="summary">Summary</h3>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a>n_srp_fotw   <span class="ot">&lt;-</span> <span class="fu">nrow</span>(srp_fotw)</span>
+<span id="cb14-2"><a href="#cb14-2" tabindex="-1"></a>n_matched    <span class="ot">&lt;-</span> <span class="fu">length</span>(<span class="fu">unique</span>(matched<span class="sc">$</span>SRP_occurrenceID))</span>
+<span id="cb14-3"><a href="#cb14-3" tabindex="-1"></a>n_unmatched  <span class="ot">&lt;-</span> <span class="fu">nrow</span>(unmatched)</span>
+<span id="cb14-4"><a href="#cb14-4" tabindex="-1"></a>n_output     <span class="ot">&lt;-</span> <span class="fu">nrow</span>(matched)</span>
+<span id="cb14-5"><a href="#cb14-5" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" tabindex="-1"></a>method_tbl <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">table</span>(matched<span class="sc">$</span>matchMethod))</span>
+<span id="cb14-7"><a href="#cb14-7" tabindex="-1"></a><span class="fu">colnames</span>(method_tbl) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Match method&quot;</span>, <span class="st">&quot;N output rows&quot;</span>)</span>
+<span id="cb14-8"><a href="#cb14-8" tabindex="-1"></a></span>
+<span id="cb14-9"><a href="#cb14-9" tabindex="-1"></a>summary_tbl <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb14-10"><a href="#cb14-10" tabindex="-1"></a>  <span class="at">Metric =</span> <span class="fu">c</span>(</span>
+<span id="cb14-11"><a href="#cb14-11" tabindex="-1"></a>    <span class="st">&quot;SRP specimens tagged as FotW (all imaged)&quot;</span>,</span>
+<span id="cb14-12"><a href="#cb14-12" tabindex="-1"></a>    <span class="st">&quot;Matched to a FotW record&quot;</span>,</span>
+<span id="cb14-13"><a href="#cb14-13" tabindex="-1"></a>    <span class="st">&quot;Not matched (collector number absent from FotW DB)&quot;</span>,</span>
+<span id="cb14-14"><a href="#cb14-14" tabindex="-1"></a>    <span class="st">&quot;Output rows (including multi-FotW links)&quot;</span>),</span>
+<span id="cb14-15"><a href="#cb14-15" tabindex="-1"></a>  <span class="at">Value =</span> <span class="fu">c</span>(n_srp_fotw, n_matched, n_unmatched, n_output))</span>
+<span id="cb14-16"><a href="#cb14-16" tabindex="-1"></a></span>
+<span id="cb14-17"><a href="#cb14-17" tabindex="-1"></a><span class="fu">kable</span>(summary_tbl, <span class="at">col.names =</span> <span class="fu">c</span>(<span class="st">&quot;Metric&quot;</span>, <span class="st">&quot;Value&quot;</span>), <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th align="left">Metric</th>
+<th align="right">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">SRP specimens tagged as FotW (all imaged)</td>
+<td align="right">3160</td>
+</tr>
+<tr>
+<td align="left">Matched to a FotW record</td>
+<td align="right">1779</td>
+</tr>
+<tr>
+<td align="left">Not matched (collector number absent from FotW DB)</td>
+<td align="right">1377</td>
+</tr>
+<tr>
+<td align="left">Output rows (including multi-FotW links)</td>
+<td align="right">1806</td>
+</tr>
+</tbody>
+</table>
+<h3 id="match-method-breakdown">Match method breakdown</h3>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="fu">kable</span>(method_tbl, <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th align="left">Match method</th>
+<th align="right">N output rows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">closest_date</td>
+<td align="right">24</td>
+</tr>
+<tr>
+<td align="left">exact</td>
+<td align="right">633</td>
+</tr>
+<tr>
+<td align="left">fuzzy_date_&lt;=3d</td>
+<td align="right">86</td>
+</tr>
+<tr>
+<td align="left">num_only_unique_date</td>
+<td align="right">1063</td>
+</tr>
+</tbody>
+</table>
+<h3 id="matched-specimens-by-family">Matched specimens by family</h3>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a>fam_tbl <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(</span>
+<span id="cb16-2"><a href="#cb16-2" tabindex="-1"></a>  <span class="fu">sort</span>(<span class="fu">table</span>(matched<span class="sc">$</span>family), <span class="at">decreasing =</span> <span class="cn">TRUE</span>)[<span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>])</span>
+<span id="cb16-3"><a href="#cb16-3" tabindex="-1"></a><span class="fu">colnames</span>(fam_tbl) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Family&quot;</span>, <span class="st">&quot;N matched&quot;</span>)</span>
+<span id="cb16-4"><a href="#cb16-4" tabindex="-1"></a><span class="fu">kable</span>(fam_tbl, <span class="at">row.names =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb16-5"><a href="#cb16-5" tabindex="-1"></a>      <span class="at">caption =</span> <span class="st">&quot;Top 20 families in matched SRP–FotW specimens.&quot;</span>)</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th align="left">Family</th>
+<th align="right">N matched</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Asteraceae</td>
+<td align="right">132</td>
+</tr>
+<tr>
+<td align="left">Fabaceae</td>
+<td align="right">77</td>
+</tr>
+<tr>
+<td align="left">Plantaginaceae</td>
+<td align="right">74</td>
+</tr>
+<tr>
+<td align="left">Brassicaceae</td>
+<td align="right">72</td>
+</tr>
+<tr>
+<td align="left">Rosaceae</td>
+<td align="right">58</td>
+</tr>
+<tr>
+<td align="left">Ranunculaceae</td>
+<td align="right">56</td>
+</tr>
+<tr>
+<td align="left">Polemoniaceae</td>
+<td align="right">54</td>
+</tr>
+<tr>
+<td align="left">Orobanchaceae</td>
+<td align="right">48</td>
+</tr>
+<tr>
+<td align="left">Piperaceae</td>
+<td align="right">47</td>
+</tr>
+<tr>
+<td align="left">Polygonaceae</td>
+<td align="right">47</td>
+</tr>
+<tr>
+<td align="left">Apiaceae</td>
+<td align="right">43</td>
+</tr>
+<tr>
+<td align="left">Boraginaceae</td>
+<td align="right">39</td>
+</tr>
+<tr>
+<td align="left">Ericaceae</td>
+<td align="right">36</td>
+</tr>
+<tr>
+<td align="left">Caryophyllaceae</td>
+<td align="right">34</td>
+</tr>
+<tr>
+<td align="left">Lamiaceae</td>
+<td align="right">34</td>
+</tr>
+<tr>
+<td align="left">Onagraceae</td>
+<td align="right">29</td>
+</tr>
+<tr>
+<td align="left">Hydrophyllaceae</td>
+<td align="right">28</td>
+</tr>
+<tr>
+<td align="left">Orchidaceae</td>
+<td align="right">28</td>
+</tr>
+<tr>
+<td align="left">Saxifragaceae</td>
+<td align="right">26</td>
+</tr>
+<tr>
+<td align="left">Cyperaceae</td>
+<td align="right">23</td>
+</tr>
+</tbody>
+</table>
+<p>Top 20 families in matched SRP–FotW specimens.</p>
+<h3 id="matched-specimens-by-stateprovince">Matched specimens by
+state/province</h3>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a>state_tbl <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(</span>
+<span id="cb17-2"><a href="#cb17-2" tabindex="-1"></a>  <span class="fu">sort</span>(<span class="fu">table</span>(matched<span class="sc">$</span>stateProvince), <span class="at">decreasing =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb17-3"><a href="#cb17-3" tabindex="-1"></a><span class="fu">colnames</span>(state_tbl) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;State / Province&quot;</span>, <span class="st">&quot;N matched&quot;</span>)</span>
+<span id="cb17-4"><a href="#cb17-4" tabindex="-1"></a><span class="fu">kable</span>(state_tbl, <span class="at">row.names =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb17-5"><a href="#cb17-5" tabindex="-1"></a>      <span class="at">caption =</span> <span class="st">&quot;Matched specimens by state or province.&quot;</span>)</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th align="left">State / Province</th>
+<th align="right">N matched</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Idaho</td>
+<td align="right">710</td>
+</tr>
+<tr>
+<td align="left">California</td>
+<td align="right">235</td>
+</tr>
+<tr>
+<td align="left">Western Australia</td>
+<td align="right">91</td>
+</tr>
+<tr>
+<td align="left">Oregon</td>
+<td align="right">86</td>
+</tr>
+<tr>
+<td align="left">Sabah</td>
+<td align="right">85</td>
+</tr>
+<tr>
+<td align="left">Arizona</td>
+<td align="right">74</td>
+</tr>
+<tr>
+<td align="left">Western Cape</td>
+<td align="right">65</td>
+</tr>
+<tr>
+<td align="left">Valais</td>
+<td align="right">54</td>
+</tr>
+<tr>
+<td align="left">Southwest Province</td>
+<td align="right">43</td>
+</tr>
+<tr>
+<td align="left">Estuaire</td>
+<td align="right">41</td>
+</tr>
+<tr>
+<td align="left">Queensland</td>
+<td align="right">36</td>
+</tr>
+<tr>
+<td align="left">La Selva</td>
+<td align="right">25</td>
+</tr>
+<tr>
+<td align="left">Texas</td>
+<td align="right">25</td>
+</tr>
+<tr>
+<td align="left">Moyen-Ogooue</td>
+<td align="right">23</td>
+</tr>
+<tr>
+<td align="left">Notranjska / Inner Carniola</td>
+<td align="right">23</td>
+</tr>
+<tr>
+<td align="left">Sichuan</td>
+<td align="right">22</td>
+</tr>
+<tr>
+<td align="left">Gorenjska</td>
+<td align="right">19</td>
+</tr>
+<tr>
+<td align="left">Ajara Autonomous Republic</td>
+<td align="right">16</td>
+</tr>
+<tr>
+<td align="left">Vaud</td>
+<td align="right">15</td>
+</tr>
+<tr>
+<td align="left">Štajerska / Styria</td>
+<td align="right">11</td>
+</tr>
+<tr>
+<td align="left">Bern</td>
+<td align="right">10</td>
+</tr>
+<tr>
+<td align="left">Nevada</td>
+<td align="right">10</td>
+</tr>
+<tr>
+<td align="left">Kakheti Region (Historical Prov. Kiziki)</td>
+<td align="right">7</td>
+</tr>
+<tr>
+<td align="left">Mtskheta-Mtianeti Region</td>
+<td align="right">7</td>
+</tr>
+<tr>
+<td align="left">North Carolina</td>
+<td align="right">5</td>
+</tr>
+<tr>
+<td align="left">Yunnan</td>
+<td align="right">5</td>
+</tr>
+<tr>
+<td align="left">Kunene</td>
+<td align="right">4</td>
+</tr>
+<tr>
+<td align="left">Ajar Autonomous Republic</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td align="left">Guria Region</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td align="left">Samtskhe-Javakheti Region</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td align="left">Hawaii</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td align="left">Huánuco</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td align="left">Jugovzhodna Slovenija</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td align="left">Missouri</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td align="left">Northern Cape</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td align="left">Podravska</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td align="left">Primorska / Slovenian Littoral</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td align="left">Washington</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td align="left">Ajara Autonomoius Republic</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="left">Ajara Autonomous Region</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="left">Ajara Autonomous Rerpublic</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="left">Andalucia</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="left">Chaiyaphum</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="left">Kakheti Region</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="left">Kakheti Region (Historical Prov. Kiziki)</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="left">Kakheti Region (Historical Prov. Kiziki</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="left">Kakheti Region (historical Prov. Kiziki)</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="left">Kakheti Region (Kiziki)</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="left">Khomas</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="left">KuneneRegion</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="left">Mtshkheta-Mtianeti Region</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="left">Mtskheta-Mtianeti Reion</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="left">Ngounie</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="left">Samtske-Javakheti Region</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="left">Shaanxi</td>
+<td align="right">1</td>
+</tr>
+</tbody>
+</table>
+<p>Matched specimens by state or province.</p>
+<h3 id="unmatched-specimens--top-families">Unmatched specimens — top
+families</h3>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a>unfam_tbl <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(</span>
+<span id="cb18-2"><a href="#cb18-2" tabindex="-1"></a>  <span class="fu">sort</span>(<span class="fu">table</span>(unmatched<span class="sc">$</span>family), <span class="at">decreasing =</span> <span class="cn">TRUE</span>)[<span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>])</span>
+<span id="cb18-3"><a href="#cb18-3" tabindex="-1"></a><span class="fu">colnames</span>(unfam_tbl) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Family&quot;</span>, <span class="st">&quot;N unmatched&quot;</span>)</span>
+<span id="cb18-4"><a href="#cb18-4" tabindex="-1"></a><span class="fu">kable</span>(unfam_tbl, <span class="at">row.names =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb18-5"><a href="#cb18-5" tabindex="-1"></a>      <span class="at">caption =</span> <span class="st">&quot;Top 20 families among unmatched SRP specimens (not yet in FotW DB).&quot;</span>)</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th align="left">Family</th>
+<th align="right">N unmatched</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Asteraceae</td>
+<td align="right">51</td>
+</tr>
+<tr>
+<td align="left">Brassicaceae</td>
+<td align="right">22</td>
+</tr>
+<tr>
+<td align="left">Piperaceae</td>
+<td align="right">20</td>
+</tr>
+<tr>
+<td align="left">Plantaginaceae</td>
+<td align="right">19</td>
+</tr>
+<tr>
+<td align="left">Fabaceae</td>
+<td align="right">17</td>
+</tr>
+<tr>
+<td align="left">Rosaceae</td>
+<td align="right">16</td>
+</tr>
+<tr>
+<td align="left">Ranunculaceae</td>
+<td align="right">15</td>
+</tr>
+<tr>
+<td align="left">Polemoniaceae</td>
+<td align="right">13</td>
+</tr>
+<tr>
+<td align="left">Hydrophyllaceae</td>
+<td align="right">12</td>
+</tr>
+<tr>
+<td align="left">Cyperaceae</td>
+<td align="right">11</td>
+</tr>
+<tr>
+<td align="left">Boraginaceae</td>
+<td align="right">10</td>
+</tr>
+<tr>
+<td align="left">Lamiaceae</td>
+<td align="right">10</td>
+</tr>
+<tr>
+<td align="left">Onagraceae</td>
+<td align="right">10</td>
+</tr>
+<tr>
+<td align="left">Orobanchaceae</td>
+<td align="right">10</td>
+</tr>
+<tr>
+<td align="left">Polygonaceae</td>
+<td align="right">10</td>
+</tr>
+<tr>
+<td align="left">Apiaceae</td>
+<td align="right">9</td>
+</tr>
+<tr>
+<td align="left">Ericaceae</td>
+<td align="right">8</td>
+</tr>
+<tr>
+<td align="left">Saxifragaceae</td>
+<td align="right">8</td>
+</tr>
+<tr>
+<td align="left">Asparagaceae</td>
+<td align="right">7</td>
+</tr>
+<tr>
+<td align="left">Campanulaceae</td>
+<td align="right">7</td>
+</tr>
+</tbody>
+</table>
+<p>Top 20 families among unmatched SRP specimens (not yet in FotW
+DB).</p>
+<hr />
+<h2 id="step-5--export">Step 5 — Export</h2>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" tabindex="-1"></a><span class="fu">write.csv</span>(matched,</span>
+<span id="cb19-2"><a href="#cb19-2" tabindex="-1"></a>          <span class="st">&quot;SRP_FotW_matched_collections.csv&quot;</span>,</span>
+<span id="cb19-3"><a href="#cb19-3" tabindex="-1"></a>          <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb19-4"><a href="#cb19-4" tabindex="-1"></a></span>
+<span id="cb19-5"><a href="#cb19-5" tabindex="-1"></a><span class="fu">write.csv</span>(unmatched,</span>
+<span id="cb19-6"><a href="#cb19-6" tabindex="-1"></a>          <span class="st">&quot;SRP_FotW_unmatched.csv&quot;</span>,</span>
+<span id="cb19-7"><a href="#cb19-7" tabindex="-1"></a>          <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb19-8"><a href="#cb19-8" tabindex="-1"></a></span>
+<span id="cb19-9"><a href="#cb19-9" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;Exported:</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
+<pre><code>## Exported:</code></pre>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;  SRP_FotW_matched_collections.csv  —&quot;</span>, <span class="fu">nrow</span>(matched), <span class="st">&quot;rows</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
+<pre><code>##   SRP_FotW_matched_collections.csv  — 1806 rows</code></pre>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;  SRP_FotW_unmatched.csv            —&quot;</span>, <span class="fu">nrow</span>(unmatched), <span class="st">&quot;rows</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
+<pre><code>##   SRP_FotW_unmatched.csv            — 1377 rows</code></pre>
+<hr />
+<h2 id="image-url-example">Image URL example</h2>
+<p>Specimen images are retrieved from the PNW Herbaria portal using the
+SRP accession number zero-padded to 6 digits:</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" tabindex="-1"></a><span class="co"># Pattern</span></span>
+<span id="cb25-2"><a href="#cb25-2" tabindex="-1"></a><span class="fu">paste0</span>(<span class="st">&quot;https://www.pnwherbaria.org/images/jpeg.php?Image=SRP&quot;</span>,</span>
+<span id="cb25-3"><a href="#cb25-3" tabindex="-1"></a>       <span class="fu">formatC</span>(ACCESSION, <span class="at">width =</span> <span class="dv">6</span>, <span class="at">flag =</span> <span class="st">&quot;0&quot;</span>), <span class="st">&quot;.jpg&quot;</span>)</span>
+<span id="cb25-4"><a href="#cb25-4" tabindex="-1"></a></span>
+<span id="cb25-5"><a href="#cb25-5" tabindex="-1"></a><span class="co"># Example — accession 34726</span></span>
+<span id="cb25-6"><a href="#cb25-6" tabindex="-1"></a><span class="co"># https://www.pnwherbaria.org/images/jpeg.php?Image=SRP034726.jpg</span></span></code></pre></div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+Extension,Associated_Term,Definition,Recommended_Standards,URL
+"Multimedia","identifier","A unique identifier for the multimedia resource (e.g., a URL or file ID for SRP034726.jpg).","String; Globally unique (e.g., URI); ISO 8601 preferred for dates.","https://dwc.tdwg.org/terms/#dwc:identifier"
+"Multimedia","type","The nature of the media (e.g., 'StillImage' for a photo of a Lepidium barnebyanum specimen).","String; Controlled vocabulary (e.g., 'StillImage', 'MovingImage', 'Sound').","https://dwc.tdwg.org/terms/#dwc:type"
+"Multimedia","format","The file format of the media (e.g., 'image/jpeg' for SRP034726.jpg).","String; Use MIME types (e.g., 'image/jpeg', 'audio/mpeg').","https://dwc.tdwg.org/terms/#dwc:format"
+"Multimedia","accessURI","A URL or path to access the media resource (e.g., a link to download SRP034726.jpg).","String; Valid URI; Must be accessible.","https://dwc.tdwg.org/terms/#dwc:accessURI"
+"Multimedia","created","The date the media was created (e.g., when the Lepidium barnebyanum photo was taken).","String or DateTime; ISO 8601 format (e.g., '2025-05-23T12:24:00').","https://dwc.tdwg.org/terms/#dwc:created"
+"Multimedia","creator","The individual or entity that created the media (e.g., the photographer).","String; Full names or identifiers (e.g., ORCID); Multiple names with '|'.","https://dwc.tdwg.org/terms/#dwc:creator"
+"Multimedia","title","A human-readable title for the media (e.g., 'Lepidium barnebyanum specimen SRP034726').","String; Descriptive and concise.","https://dwc.tdwg.org/terms/#dwc:title"
+"Multimedia","description","A description of the media content (e.g., 'Herbarium sheet of Lepidium barnebyanum').","String; Free text, structured notes encouraged.","https://dwc.tdwg.org/terms/#dwc:description"
+"Multimedia","license","The license under which the media is made available (e.g., 'CC BY 4.0').","String; Use standard license identifiers (e.g., 'CC0 1.0', 'CC BY 4.0').","https://dwc.tdwg.org/terms/#dwc:license"
+"Multimedia","rightsHolder","The person or organization holding rights to the media.","String; Full name or institutional name.","https://dwc.tdwg.org/terms/#dwc:rightsHolder"

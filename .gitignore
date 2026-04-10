@@ -1,0 +1,30 @@
+# ── Large GBIF raw data files (re-downloadable from GBIF) ─────────────
+# Download: https://www.gbif.org/occurrence/download/0000210-250515123054153
+GBIF_data/*.zip
+GBIF_data/*/occurrence.txt
+GBIF_data/*/verbatim.txt
+
+# ── Internal / proprietary databases ──────────────────────────────────
+# FotW occurrence database (internal — request from FotW team)
+FotW_DB/occurrences.csv
+
+# PNW Herbaria export (re-downloadable from https://www.pnwherbaria.org/)
+Consortium_PacificNorthWest_herbaria/*.csv
+
+# ── R cache directories ────────────────────────────────────────────────
+cache/
+cache_summary/
+cache_srp/
+
+# ── R / RStudio generated files ───────────────────────────────────────
+.Rhistory
+.RData
+.Rproj.user/
+packages.bib
+
+# ── macOS system files ─────────────────────────────────────────────────
+.DS_Store
+**/.DS_Store
+
+# ── Claude Code local settings ────────────────────────────────────────
+.claude/

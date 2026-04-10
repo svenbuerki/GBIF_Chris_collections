@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://rs.gbif.org/schema/eml-gbif-profile/1.3/eml.xsd"
+packageId="14bda39a-de67-4504-b1e3-883d7ed118d6"  system="http://gbif.org" scope="system"
+xml:lang="es">
+    <dataset>
+        <alternateIdentifier>10.15468/bsj52c</alternateIdentifier>
+        <alternateIdentifier>14bda39a-de67-4504-b1e3-883d7ed118d6</alternateIdentifier>
+        <alternateIdentifier>https://ipt.mincyt.gob.ar/resource?r=magno</alternateIdentifier>
+        <title>Magnoliophyta del Herbario BAB (Instituto de Recursos Biológicos CIRN-INTA)</title>
+        <creator>
+            <individualName>
+                <givenName>María Alexandra</givenName>
+                <surName>Monsalvo</surName>
+            </individualName>
+            <organizationName>Instituto Nacional de Tecnología Agropecuaria-Instituto de Recursos Biológicos</organizationName>
+            <positionName>Curadora</positionName>
+            <address>
+                <deliveryPoint>Las Cabañas y Los Reseros</deliveryPoint>
+                <city>Hurlingham</city>
+                <administrativeArea>Buenos Aires</administrativeArea>
+                <postalCode>1686</postalCode>
+                <country>ARGENTINA</country>
+            </address>
+            <phone>005411-4621-0840/1819</phone>
+            <electronicMailAddress>monsalvo.maria@inta.gob.ar</electronicMailAddress>
+        </creator>
+        <creator>
+            <individualName>
+                <givenName>Andrea</givenName>
+                <surName>Voda</surName>
+            </individualName>
+            <organizationName>Instituto Nacional de Tecnología Agropecuaria-Instituto de Recursos Biológicos</organizationName>
+            <positionName>Digitalización de Colecciones</positionName>
+            <address>
+                <deliveryPoint>Las Cabañas y Los Reseros</deliveryPoint>
+                <city>Hurlingham</city>
+                <administrativeArea>Buenos Aires</administrativeArea>
+                <postalCode>1686</postalCode>
+                <country>ARGENTINA</country>
+            </address>
+            <phone>005411-4621-0840/1819</phone>
+            <electronicMailAddress>voda.andrea@inta.gob.ar</electronicMailAddress>
+        </creator>
+        <creator>
+            <individualName>
+                <givenName>Ariel</givenName>
+                <surName>Barrozo</surName>
+            </individualName>
+            <organizationName>Instituto Nacional de Tecnología Agropecuaria-Instituto de Recursos Biológicos</organizationName>
+            <positionName>Técnico Superior en Informática</positionName>
+            <address>
+                <deliveryPoint>Las Cabañas y Los Reseros</deliveryPoint>
+                <city>Hurlingham</city>
+                <administrativeArea>Buenos Aires</administrativeArea>
+                <postalCode>1686</postalCode>
+                <country>ARGENTINA</country>
+            </address>
+            <phone>005411-4621-0840/1819</phone>
+            <electronicMailAddress>barrozo.ariel@inta.gob.ar</electronicMailAddress>
+        </creator>
+        <metadataProvider>
+            <individualName>
+                <givenName>María Alexandra</givenName>
+                <surName>Monsalvo</surName>
+            </individualName>
+            <organizationName>Instituto Nacional de Tecnología Agropecuaria-Instituto de Recursos Biológicos</organizationName>
+            <positionName>Curadora</positionName>
+            <address>
+                <deliveryPoint>Las Cabañas y Los Reseros</deliveryPoint>
+                <city>Hurlingham</city>
+                <administrativeArea>Buenos Aires</administrativeArea>
+                <postalCode>1686</postalCode>
+                <country>ARGENTINA</country>
+            </address>
+            <phone>005411-4621-0840/1819</phone>
+            <electronicMailAddress>monsalvo.maria@inta.gob.ar</electronicMailAddress>
+        </metadataProvider>
+        <associatedParty>
+            <individualName>
+                <givenName>Maria Andrea</givenName>
+                <surName>Voda</surName>
+            </individualName>
+            <electronicMailAddress>voda.andrea@inta.gob.ar</electronicMailAddress>
+            <role>USER</role>
+        </associatedParty>
+        <pubDate>
+                2023-04-09
+        </pubDate>
+        <language>SPANISH</language>
+        <abstract>
+            Se lista los ejemplares de Magnoliophyta depositados en el herbario BAB.
+        </abstract>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Specimen</keyword>
+            <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml</keywordThesaurus>
+        </keywordSet>
+        <intellectualRights>
+            <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by-nc/4.0/legalcode"><citetitle>Creative Commons Attribution Non Commercial (CC-BY-NC) 4.0 License</citetitle></ulink>.</para>
+        </intellectualRights>
+        <licensed>
+            <licenseName>Creative Commons Attribution Non Commercial 4.0 International</licenseName>
+            <url>https://spdx.org/licenses/CC-BY-NC-4.0.html</url>
+            <identifier>CC-BY-NC-4.0</identifier>
+        </licensed>
+        <distribution scope="document">
+            <online>
+                <url function="download">https://ipt.mincyt.gob.ar/archive.do?r=magno</url>
+            </online>
+        </distribution>
+        <coverage>
+            <geographicCoverage>
+                <geographicDescription>Mayormente Argentina y países limítrofes</geographicDescription>
+                <boundingCoordinates>
+                    <westBoundingCoordinate>-174.375</westBoundingCoordinate>
+                    <eastBoundingCoordinate>28.125</eastBoundingCoordinate>
+                    <northBoundingCoordinate>84.406</northBoundingCoordinate>
+                    <southBoundingCoordinate>-77.466</southBoundingCoordinate>
+                </boundingCoordinates>
+            </geographicCoverage>
+            <taxonomicCoverage>
+                <taxonomicClassification>
+                    <taxonRankName>Phylum</taxonRankName>
+                    <taxonRankValue>Magnoliophyta</taxonRankValue>
+                </taxonomicClassification>
+            </taxonomicCoverage>
+        </coverage>
+        <maintenance>
+            <description>
+                <para></para>
+            </description>
+            <maintenanceUpdateFrequency>asNeeded</maintenanceUpdateFrequency>
+        </maintenance>
+        <contact>
+            <individualName>
+                <givenName>María Alexandra</givenName>
+                <surName>Monsalvo</surName>
+            </individualName>
+            <organizationName>Instituto Nacional de Tecnología Agropecuaria-Instituto de Recursos Biológicos</organizationName>
+            <positionName>Curadora</positionName>
+            <address>
+                <deliveryPoint>Las Cabañas y Los Reseros</deliveryPoint>
+                <city>Hurlingham</city>
+                <administrativeArea>Buenos Aires</administrativeArea>
+                <postalCode>1686</postalCode>
+                <country>ARGENTINA</country>
+            </address>
+            <phone>005411-4621-0840/1819</phone>
+            <electronicMailAddress>monsalvo.maria@inta.gob.ar</electronicMailAddress>
+        </contact>
+
+            <project >
+                <title>Digitalización Herbario BAB Instituto de Recursos Biológicos, CIRN-INTA</title>
+                <personnel>
+                    <individualName>
+                    <givenName>Renée Hersilia</givenName>
+                    <surName>Fortunato</surName>
+                    </individualName>
+                    <role>PRINCIPAL_INVESTIGATOR</role>
+                </personnel>
+                <personnel>
+                    <individualName>
+                    <givenName>María Andrea</givenName>
+                    <surName>Voda</surName>
+                    </individualName>
+                    <role>PUBLISHER</role>
+                </personnel>
+                <abstract>
+                    <para>Digitalizar todos los ejemplares del Herbario</para>
+                </abstract>
+                <funding>
+                    <para>Fuentes de financiación: Sistema Nacional de Datos Biológicos, Ciencia, Tecnología e Innovación Productiva Ministerio de Educación, Cultura, Ciencia,Tecnología.</para>
+                </funding>
+                <studyAreaDescription>
+                    <descriptor name="generic" citableClassificationSystem="false">
+                        <descriptorValue>Descripción del Área de Estudio: En su mayoría Argentina, Brasil, Paraguay</descriptorValue>
+                    </descriptor>
+                </studyAreaDescription>
+            </project>
+    </dataset>
+
+    <additionalMetadata>
+        <metadata>
+            <gbif>
+                <dateStamp>2025-05-15T14:55:21Z</dateStamp>
+                <citation>Monsalvo M A, Voda A, Barrozo A (2023). Magnoliophyta del Herbario BAB (Instituto de Recursos Biológicos CIRN-INTA). Version 1.1. Herbario BAB, Instituto de Recursos Biológicos-INTA. Occurrence dataset https://doi.org/10.15468/bsj52c accessed via GBIF.org on 2025-05-15.</citation>
+                <collection>
+                    
+                    
+                    <collectionName>Colección Herbario BAB</collectionName>
+                </collection>
+                <specimenPreservationMethod>DEEP_FROZEN</specimenPreservationMethod>
+            </gbif>
+        </metadata>
+    </additionalMetadata>
+    </eml:eml>

@@ -1,0 +1,285 @@
+---
+title: "FotW collections on GBIF — Summary"
+author: "Sven Buerki - Boise State University"
+date: "`r Sys.Date()`"
+output:
+  github_document:
+    toc: true
+    toc_depth: 2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, cache = TRUE, cache.path = "cache_summary/")
+library(dplyr)
+library(knitr)
+library(kableExtra)
+```
+
+```{r load_data}
+# GBIF occurrences
+occurrence_data <- read.table(
+  "GBIF_data/0000210-250515123054153/occurrence.txt",
+  sep = "\t", header = TRUE, quote = "", comment.char = "", stringsAsFactors = FALSE)
+occurrence_data$eventDate        <- as.Date(occurrence_data$eventDate, format = "%Y-%m-%d")
+occurrence_data$decimalLatitude  <- as.numeric(occurrence_data$decimalLatitude)
+occurrence_data$decimalLongitude <- as.numeric(occurrence_data$decimalLongitude)
+occurrence_data[occurrence_data == ""] <- NA
+
+occurrence_data_plants <- subset(occurrence_data, kingdom == "Plantae")
+
+# Dataset metadata
+dataset_info <- read.csv("GBIF_data/datasets_download_usage_0000210-250515123054153.tsv", sep = "\t")
+
+# Multimedia
+multimedia_data <- read.table(
+  "GBIF_data/0000210-250515123054153/multimedia.txt",
+  sep = "\t", header = TRUE, quote = "", comment.char = "", stringsAsFactors = FALSE)
+images_plants <- subset(multimedia_data, gbifID %in% occurrence_data_plants$gbifID)
+images_plants$rightsHolder[images_plants$rightsHolder == ""] <- "No_rightsHolder"
+images_plants$license[images_plants$license == ""]           <- "No_license"
+
+# FotW occurrences
+FotW_data <- read.csv("FotW_DB/occurrences.csv", stringsAsFactors = FALSE)
+FotW_data$evenDateFormatted    <- sapply(strsplit(FotW_data$eventDate, " "), `[[`, 1)
+FotW_data$recordNumberFormatted <- gsub("[^0-9]", "", FotW_data$recordNumber)
+```
+
+---
+
+## Q1 — How many occurrences are on GBIF?
+
+After filtering to kingdom **Plantae**, Christopher Davidson's GBIF download contains
+**`r nrow(occurrence_data_plants)` occurrences**.
+
+Each occurrence is directly accessible at `https://www.gbif.org/occurrence/<gbifID>`.
+
+---
+
+## Q2 — Which institutions supply data to GBIF?
+
+```{r q2}
+institutions <- as.data.frame(table(occurrence_data_plants$datasetKey))
+colnames(institutions) <- c("DatasetKey", "N_occurrences")
+institutions <- institutions[order(as.numeric(institutions$N_occurrences), decreasing = TRUE), ]
+institutions$Dataset_Title <- dataset_info$dataset_title[
+  match(institutions$DatasetKey, dataset_info$dataset_key)]
+
+kable(institutions[, c("Dataset_Title", "N_occurrences")],
+      col.names = c("Dataset / Institution", "N occurrences"),
+      row.names = FALSE)
+```
+
+> The vast majority of occurrences come from **TROPICOS** and **RSA - California Botanic Garden Herbarium**
+> (`r sum(institutions$N_occurrences[1:3])` combined).
+> TROPICOS also acts as a data aggregator: `r institutions$N_occurrences[which(institutions$Dataset_Title == "Tropicos Specimens Non-MO")]` occurrences are listed there but not physically deposited at MO.
+
+---
+
+## Q3 — Where are physical specimens deposited?
+
+```{r q3}
+occurrence_data_plants$institutionCode[is.na(occurrence_data_plants$institutionCode)] <- "No_institution"
+
+top20 <- sort(table(occurrence_data_plants$institutionCode), decreasing = TRUE)[1:20]
+top20_df <- as.data.frame(top20)
+colnames(top20_df) <- c("Institution", "N_occurrences")
+
+kable(top20_df, row.names = FALSE,
+      caption = "Top 20 institutions holding physical specimens.")
+```
+
+> **MO, RSA, NY and SRP** are the main institutions housing FotW specimens.
+
+---
+
+## Q4 — Are digital images available online?
+
+Of `r nrow(occurrence_data_plants)` GBIF plant occurrences,
+**`r nrow(images_plants)` (`r paste0(round(100 * nrow(images_plants) / nrow(occurrence_data_plants), 1), "%")`) have digital images** linked on GBIF.
+
+```{r q4_license}
+lic <- as.data.frame(sort(table(images_plants$license), decreasing = TRUE))
+colnames(lic) <- c("License", "Count")
+kable(lic, row.names = FALSE, caption = "Licenses for images.")
+```
+
+```{r q4_rights}
+rh <- as.data.frame(sort(table(images_plants$rightsHolder), decreasing = TRUE))
+colnames(rh) <- c("Rights holder", "Count")
+kable(head(rh, 15), row.names = FALSE, caption = "Top 15 rights holders for images.")
+```
+
+> Note: **SRP (Boise State)** does not currently provide image URLs to GBIF;
+> images for SRP specimens are available via the
+> [PNW Herbaria portal](https://www.pnwherbaria.org/) (see Q8).
+
+---
+
+## Q5 — How many unique collections are represented?
+
+```{r q5}
+collection_id <- paste(occurrence_data_plants$recordedBy,
+                       occurrence_data_plants$recordNumber,
+                       occurrence_data_plants$eventDate, sep = "_")
+unique_col <- as.data.frame(table(collection_id))
+```
+
+| Metric | Value |
+|---|---|
+| Unique collections | `r nrow(unique_col)` |
+| Occurrences missing record number | `r sum(is.na(occurrence_data_plants$recordNumber))` |
+
+> Multiple GBIF occurrences per collection indicate **duplicate specimens** distributed across herbaria.
+
+---
+
+## Q6 — How many taxa and from where?
+
+```{r q6}
+n_taxa    <- length(unique(occurrence_data_plants$scientificName))
+n_families <- length(unique(occurrence_data_plants$family[!is.na(occurrence_data_plants$family)]))
+n_genera  <- length(unique(occurrence_data_plants$genus[!is.na(occurrence_data_plants$genus)]))
+n_species <- length(unique(occurrence_data_plants$species[!is.na(occurrence_data_plants$species)]))
+
+continent_ct <- as.data.frame(sort(table(occurrence_data_plants$continent), decreasing = TRUE))
+colnames(continent_ct) <- c("Continent", "N_occurrences")
+
+country_ct <- as.data.frame(sort(table(occurrence_data_plants$countryCode), decreasing = TRUE))
+colnames(country_ct) <- c("Country code", "N_occurrences")
+```
+
+**Taxonomy:**
+
+| Level | Count |
+|---|---|
+| Scientific names (all ranks) | `r n_taxa` |
+| Families | `r n_families` |
+| Genera | `r n_genera` |
+| Species | `r n_species` |
+
+**Geography:**
+
+```{r q6_continent}
+kable(continent_ct, row.names = FALSE, caption = "Occurrences by continent.")
+```
+
+```{r q6_country}
+kable(head(country_ct, 20), row.names = FALSE,
+      caption = "Top 20 countries by occurrence count.")
+```
+
+---
+
+## Q7 — Other occurrence information (phenology, conservation)
+
+```{r q7}
+pheno <- as.data.frame(sort(table(occurrence_data_plants$reproductiveCondition), decreasing = TRUE))
+colnames(pheno) <- c("Reproductive condition", "Count")
+pheno <- pheno[pheno$`Reproductive condition` != "", ]
+
+iucn <- as.data.frame(sort(table(occurrence_data_plants$iucnRedListCategory), decreasing = TRUE))
+colnames(iucn) <- c("IUCN category", "Count")
+iucn <- iucn[iucn$`IUCN category` != "", ]
+```
+
+**Phenology** (`reproductiveCondition` field):
+
+```{r q7_pheno}
+if (nrow(pheno) > 0) {
+  kable(pheno, row.names = FALSE)
+} else {
+  cat("No reproductive condition data available in this dataset.")
+}
+```
+
+**IUCN Red List status** (`iucnRedListCategory` field):
+
+```{r q7_iucn}
+if (nrow(iucn) > 0) {
+  kable(iucn, row.names = FALSE)
+} else {
+  cat("No IUCN Red List data available in this dataset.")
+}
+```
+
+---
+
+## Q8 — Linking FotW images with SRP specimens
+
+SRP specimen images are not on GBIF but are accessible via the
+[Consortium of Pacific Northwest Herbaria](https://www.pnwherbaria.org/).
+The local file `Consortium_PacificNorthWest_herbaria/CPNWH_20250520-112502.csv`
+lists all Davidson SRP collections with their accession numbers and an `Imaged?` flag.
+
+Image URL pattern (accession must be zero-padded to 6 digits):
+
+```
+https://www.pnwherbaria.org/images/jpeg.php?Image=SRP<ACCESSION>.jpg
+# Example: https://www.pnwherbaria.org/images/jpeg.php?Image=SRP034726.jpg
+```
+
+---
+
+## Q9 — Overlap between FotW and GBIF
+
+Records are matched on a composite key: **numeric record number + collection date**
+(e.g., `12687_2014-10-04`).
+
+```{r q9_match}
+rn_fotw   <- paste(FotW_data$recordNumberFormatted, FotW_data$evenDateFormatted, sep = "_")
+rn_gbif   <- paste(occurrence_data_plants$recordNumber, occurrence_data_plants$eventDate, sep = "_")
+
+gbif_matched <- occurrence_data_plants[rn_gbif %in% rn_fotw, ]
+gbif_matched$match_key <- rn_gbif[rn_gbif %in% rn_fotw]
+
+FotW_data$match_key <- rn_fotw
+fotw_dedup <- FotW_data[!duplicated(FotW_data$match_key),
+                        c("match_key", "occurrenceID")]
+colnames(fotw_dedup)[2] <- "FotW_occurrenceID"
+
+gbif_matched <- merge(gbif_matched, fotw_dedup, by = "match_key", all.x = TRUE)
+gbif_matched$gbifURL <- paste0("https://www.gbif.org/occurrence/", gbif_matched$gbifID)
+```
+
+**`r nrow(gbif_matched)` GBIF occurrences** correspond to **`r length(unique(gbif_matched$FotW_occurrenceID))` unique FotW records**.
+
+```{r q9_inst}
+inst_match <- as.data.frame(sort(table(gbif_matched$institutionCode), decreasing = TRUE))
+colnames(inst_match) <- c("Institution", "N_occurrences")
+kable(inst_match, row.names = FALSE,
+      caption = "Institutions holding specimens present in both GBIF and FotW.")
+```
+
+```{r q9_country}
+cc_to_name <- c(EC="Ecuador", US="United States", NC="New Caledonia", FJ="Fiji",
+                PE="Peru", CH="Switzerland", MG="Madagascar", BO="Bolivia",
+                PY="Paraguay", GA="Gabon", BZ="Belize", ZA="South Africa",
+                VN="Vietnam", CN="China", SI="Slovenia")
+
+country_match <- as.data.frame(sort(table(gbif_matched$countryCode), decreasing = TRUE))
+colnames(country_match) <- c("Country_code", "N_occurrences")
+country_match$Country <- cc_to_name[as.character(country_match$Country_code)]
+country_match <- country_match[, c("Country", "Country_code", "N_occurrences")]
+
+kable(country_match, row.names = FALSE,
+      caption = "Countries of collection for occurrences present in both GBIF and FotW.")
+```
+
+### Full list of matched collections
+
+```{r q9_table}
+display <- gbif_matched[, c("gbifURL", "FotW_occurrenceID", "scientificName",
+                             "family", "recordNumber", "eventDate", "recordedBy",
+                             "institutionCode", "catalogNumber",
+                             "countryCode", "stateProvince", "locality")]
+display <- display[order(display$family, display$scientificName), ]
+colnames(display) <- c("GBIF URL", "FotW ID", "Scientific name", "Family",
+                        "Record no.", "Date", "Recorded by",
+                        "Institution", "Catalog no.",
+                        "Country", "State/Province", "Locality")
+kable(display, row.names = FALSE)
+```
+
+```{r q9_export, include=FALSE}
+write.csv(gbif_matched, "GBIF_FotW_matched_collections.csv", row.names = FALSE)
+```

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://rs.gbif.org/schema/eml-gbif-profile/1.3/eml.xsd"
+packageId="790ddaee-885f-4915-ab0c-e54e9e17521a"  system="http://gbif.org" scope="system"
+xml:lang="en">
+    <dataset>
+        <alternateIdentifier>10.15468/w3heee</alternateIdentifier>
+        <alternateIdentifier>790ddaee-885f-4915-ab0c-e54e9e17521a</alternateIdentifier>
+        <alternateIdentifier>https://bnhmipt.berkeley.edu/resource?r=ucjeps_lichen</alternateIdentifier>
+        <title>The University and Jepson Herbaria -- Lichen</title>
+        <creator>
+            <individualName>
+                <givenName>Jason</givenName>
+                <surName>Alexander</surName>
+            </individualName>
+            <organizationName>UCJeps</organizationName>
+            <positionName>IT Specialist</positionName>
+            <electronicMailAddress>jason_alexander@berkeley.edu</electronicMailAddress>
+        </creator>
+        <metadataProvider>
+            <individualName>
+                <givenName>Joyce</givenName>
+                <surName>Gross</surName>
+            </individualName>
+            <organizationName>BNHM</organizationName>
+            <positionName>Programmer</positionName>
+            <electronicMailAddress>joyceg@berkeley.edu</electronicMailAddress>
+        </metadataProvider>
+        <associatedParty>
+            <individualName>
+                <givenName>Joyce</givenName>
+                <surName>Gross</surName>
+            </individualName>
+            <electronicMailAddress>joyceg@berkeley.edu</electronicMailAddress>
+            <role>USER</role>
+        </associatedParty>
+        <associatedParty>
+            <individualName>
+                <givenName>Klara</givenName>
+                <surName>Scharnagl</surName>
+            </individualName>
+            <organizationName>UC/JEPS</organizationName>
+            <positionName>Curator of Lichens</positionName>
+            <electronicMailAddress>lichen_curator@berkeley.edu</electronicMailAddress>
+            <userId directory="https://orcid.org/">0000-0002-0002-1683</userId>
+            <role>CURATOR</role>
+        </associatedParty>
+        <pubDate>
+                2024-06-29
+        </pubDate>
+        <language>ENGLISH</language>
+        <abstract>
+            The lichen collection at UC includes overr 59,000 specimens.  All are imaged and over 81% have been databased.
+        </abstract>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Specimen</keyword>
+            <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+        </keywordSet>
+        <intellectualRights>
+            <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by-nc/4.0/legalcode"><citetitle>Creative Commons Attribution Non Commercial (CC-BY-NC) 4.0 License</citetitle></ulink>.</para>
+        </intellectualRights>
+        <licensed>
+            <licenseName>Creative Commons Attribution Non Commercial 4.0 International</licenseName>
+            <url>https://spdx.org/licenses/CC-BY-NC-4.0.html</url>
+            <identifier>CC-BY-NC-4.0</identifier>
+        </licensed>
+        <distribution scope="document">
+            <online>
+                <url function="information">https://webapps.cspace.berkeley.edu/ucjeps/publicsearch/publicsearch/</url>
+            </online>
+        </distribution>
+        <distribution scope="document">
+            <online>
+                <url function="download">https://bnhmipt.berkeley.edu/archive.do?r=ucjeps_lichen</url>
+            </online>
+        </distribution>
+        <maintenance>
+            <description>
+                <para></para>
+            </description>
+            <maintenanceUpdateFrequency>asNeeded</maintenanceUpdateFrequency>
+        </maintenance>
+        <contact>
+            <individualName>
+                <givenName>Jason</givenName>
+                <surName>Alexander</surName>
+            </individualName>
+            <organizationName>UC/JEPS</organizationName>
+            <positionName>Bioinformatics Manager</positionName>
+            <electronicMailAddress>jason_alexander@berkeley.edu</electronicMailAddress>
+        </contact>
+
+    </dataset>
+
+    <additionalMetadata>
+        <metadata>
+            <gbif>
+                <dateStamp>2025-05-15T14:55:26Z</dateStamp>
+                <citation>Alexander J, Gross J (2024). The University and Jepson Herbaria -- Lichen. Version 1.7. Berkeley Natural History Museums. Occurrence dataset https://doi.org/10.15468/w3heee accessed via GBIF.org on 2025-05-15.</citation>
+                <physical>
+                    <objectName>UC collection on the Consortium of Lichen Herbaria</objectName>
+                    <characterEncoding>UTF8</characterEncoding>
+                    <dataFormat>
+                        <externallyDefinedFormat>
+                            <formatName>online data portal</formatName>
+                        </externallyDefinedFormat>
+                    </dataFormat>
+                    <distribution>
+                        <online>
+                            <url function="download">https://lichenportal.org/portal/collections/misc/collprofiles.php?collid=36</url>
+                        </online>
+                    </distribution>
+                </physical>
+                <resourceLogoUrl>https://ucjeps.berkeley.edu/common/images/uclogo_250.png</resourceLogoUrl>
+            </gbif>
+        </metadata>
+    </additionalMetadata>
+    </eml:eml>

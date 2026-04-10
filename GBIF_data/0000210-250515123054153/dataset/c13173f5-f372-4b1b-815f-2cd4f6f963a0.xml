@@ -1,0 +1,1894 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://rs.gbif.org/schema/eml-gbif-profile/1.3/eml.xsd"
+packageId="c13173f5-f372-4b1b-815f-2cd4f6f963a0"  system="http://gbif.org" scope="system"
+xml:lang="es">
+    <dataset>
+        <alternateIdentifier>10.15468/r2wj29</alternateIdentifier>
+        <alternateIdentifier>https://www.snib.mx/iptconabio/resource?r=SNIB-JM078</alternateIdentifier>
+        <alternateIdentifier>http://ipttest.conabio.gob.mx/iptconabiotest/resource?r=SNIB-JM078</alternateIdentifier>
+        <alternateIdentifier>c13173f5-f372-4b1b-815f-2cd4f6f963a0</alternateIdentifier>
+        <alternateIdentifier>http://www.snib.mx/iptconabio/resource?r=SNIB-JM078</alternateIdentifier>
+        <title>Mejoramiento de los modelos de distribución de especies de plantas amenazadas de México (Orchidaceae, Pinaceae, Cupressaceae, Taxaceae, Podocarpaceae) a través de información de sensores remotos y medidas espaciales de incertidumbre en los modelos-conUFZ*</title>
+        <creator>
+            <individualName>
+                <givenName>David</givenName>
+                <surName>Gernandt</surName>
+            </individualName>
+            <organizationName>Universidad Nacional Autónoma de MéxicoInstituto de Biología</organizationName>
+            <positionName>Responsable</positionName>
+            <address>
+                <city>de México</city>
+                <administrativeArea>Distrito Federal</administrativeArea>
+                <postalCode>04510</postalCode>
+                <country>MEXICO</country>
+            </address>
+            <phone>5622 9065,</phone>
+            <electronicMailAddress>dgernandt@ib.unam.mx</electronicMailAddress>
+        </creator>
+        <metadataProvider>
+            <individualName>
+                <givenName>CONABIO</givenName>
+                <surName>Comisión nacional para el conocimiento y uso de la biodiversidad</surName>
+            </individualName>
+            <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
+            <positionName>Dirección General de Sistemas</positionName>
+            <address>
+                <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
+                <city>MÉXICO</city>
+                <administrativeArea>Tlalpan</administrativeArea>
+                <postalCode>14010</postalCode>
+                <country>MEXICO</country>
+            </address>
+            <phone>50045000</phone>
+            <electronicMailAddress>patricia.ramos@conabio.gob.mx</electronicMailAddress>
+            <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
+        </metadataProvider>
+        <pubDate>
+                2025-04-01
+        </pubDate>
+        <language>SPANISH</language>
+        <abstract>
+            <para>El proyecto tiene como objetivo desarrollar y refinar los modelos de distribución (SDM) de 227 especies de  plantas incluidas en la Norma Oficial Mexicana NOM-059-SEMARNAT-2010, pertenecientes a las familias Orchidaceae (188 especies), Pinaceae (30 especies), Cupressaceae (7 especies), Taxaceae (1 especie), and Podocarpaceae (1 especie), con la perspectiva de apoyar su manejo y conservación. El refinamiento de los SDM de estas especies amenazadas comprende dos grandes aspectos, (1) la inclusión de datos de percepción remota, además de los datos climáticos que se utilizan comúnmente, y (2)  la evaluación espacial de la incertidumbre de los modelos. Para cada especie se generarán diferentes productos de las áreas de distribución (continuos, categóricos) a 1 km² de resolución utilizando diferentes algoritmos (e.g. Maxent, GLM, RandomForest). Las variables predictoras derivadas de datos de percepción remota que se utilizarán son series de tiempo del sensor Terra-MODIS (Indice de vegetación mejorado, EVI por sus siglas en inglés -Enhanced Vegetation Index-, temperatura de la superficie terrestre, LST -Land Surface Temperature- y la reflectancia de la superficie, las cuales han probado ser útiles para la clasificación de la vegetación. El proyecto también contempla evaluar la importancia del clima y de las variables de percepción remota en la distribución de las especies, así como la extracción de perfiles fenológicos para cada especie. Se producirán mapas de distribución generados con variables obtenidas mediante percepción remota ya que, sin bien como resultado de la modelación climática un sitio resulta ser adecuado para una especie, puede darse el caso de que la especie no esté presente. Estos mapas, en conjunto, permitirán identificar posibles &amp;#39;hotspots&amp;#39; de deterioro de hábitat debido a causas antropogénicas a nivel país. El uso de datos de percepción remota actuales para la modelación de la distribución de especies allana el camino para la construcción de un sistema nacional de monitoreo de la biodiversidad. El proyecto está planteado como una colaboración entre el Helmholtz Centre for Environmental Research - UFZ y el Instituto de Biología de la Universidad Nacional Autónoma de México (UNAM).
+
+Percepción remota, incertidumbre de los modelos , Máxima Entropía, GLM, RandomForest, modelo jerárquico, NOM-059-SEMARNAT-2010, plantas amenazadas , monitoreo de la biodiversidad</para><para>Reino: 1
+Filo: 1
+Clase: 2
+Orden: 4
+Familia: 4
+Género: 73
+Subgénero: 2
+Especie: 163
+Epitetoinfraespecifico: 11
+</para>
+        </abstract>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Plantas</keyword>
+            <keywordThesaurus>N/A</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml</keywordThesaurus>
+        </keywordSet>
+        <intellectualRights>
+            <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by/4.0/legalcode"><citetitle>Creative Commons Attribution (CC-BY) 4.0 License</citetitle></ulink>.</para>
+        </intellectualRights>
+        <licensed>
+            <licenseName>Creative Commons Attribution 4.0 International</licenseName>
+            <url>https://spdx.org/licenses/CC-BY-4.0.html</url>
+            <identifier>CC-BY-4.0</identifier>
+        </licensed>
+        <distribution scope="document">
+            <online>
+                <url function="information">http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=JM&amp;Numero=78</url>
+            </online>
+        </distribution>
+        <distribution scope="document">
+            <online>
+                <url function="download">https://www.snib.mx/iptconabio/archive.do?r=SNIB-JM078</url>
+            </online>
+        </distribution>
+        <coverage>
+            <geographicCoverage>
+                <geographicDescription>País: 
+País: ALEMANIA (, BAVARIA, BERLIN)
+País: ARGENTINA (RIO NEGRO)
+País: AUSTRALIA (NUEVA GALES DEL SUR)
+País: AUSTRIA (, SALZBURGO)
+País: BELICE (, CAYO, COROZAL, ORANGE WALK, STANN CREEK, TOLEDO)
+País: CANADA (ALBERTA, BRITISH COLUMBIA, NOVA SCOTIA)
+País: CHILE (LOS RIOS)
+País: DINAMARCA (REGION CAPITAL, SELANDIA)
+País: EL SALVADOR (AHUACHAPAN, CUSCATLAN, SAN VICENTE)
+País: ESPAÑA (, ANDA LUCIA, ASTURIAS, BURGOS, COMUNIDAD VALENCIANA, CORUÑA, EXTREMADURA, GERONA, MADRID, ORENSE, PONTEVEDRA, SEGOBIA)
+País: ESTADOS UNIDOS DE AMERICA (ARIZONA, CALIFORNIA, COLORADO, CONNECTICUT, IDAHO, ILLINOIS, KANSAS, MASSACHUSETTS, MISSOURI, MONTANA, NEVADA, NEW MEXICO, NEW YORK, OREGON, TEXAS, UTAH, WASHINGTON, WYOMING)
+País: FINLANDIA (, OULU, TAVASTIA PROPIA)
+País: GUATEMALA (, ALTA VERAPAZ, EL PROGRESO, GUATEMALA, HUEHUETENANGO, JALAPA, PETEN, QUICHE, SAN MARCOS, SOLOLA, TOTONICAPAN)
+País: HOLANDA (LIMBURG)
+País: HONDURAS (ATLANTIDA, COMAYAGUA, CORTES, EL PARAISO, GRACIAS A DIOS, OLANCHO, SANTA BARBARA, YORO)
+País: INGLATERRA (, LONDRES)
+País: IRLANDA (, CORK, DUBLIN, LAOIS, TIPPERARY, WATERFORD, WEXFORD)
+País: ITALIA (COMAYAGUA)
+País: MEXICO (, BAJA CALIFORNIA, BAJA CALIFORNIA SUR, CAMPECHE, CHIAPAS, CHIHUAHUA, COAHUILA DE ZARAGOZA, COLIMA, DISTRITO FEDERAL, DURANGO, GUANAJUATO, GUERRERO, HIDALGO, JALISCO, MEXICO, MICHOACAN DE OCAMPO, MORELOS, NAYARIT, NUEVO LEON, OAXACA, PUEBLA, QUERETARO DE ARTEAGA, QUINTANA ROO, SAN LUIS POTOSI, SINALOA, SONORA, TABASCO, TAMAULIPAS, VERACRUZ DE IGNACIO DE LA LLAVE, YUCATAN)
+País: NICARAGUA (ATLANTICO NORTE, ATLANTICO SUR, JINOTEGA, MANAGUA, MATAGALPA)
+País: NORUEGA (AKERSHUS, AUST-AGDER, BUSKERUD, OSLO FYLKE, SOR-TRONDELANG, TELEMARK, VEST-AGDER FYLKE)
+País: NUEVA ZELANDA (CANTERBURY, MANAWATU, MARLBOROUGH)
+País: PANAMA (CHIRIQUI)
+País: POLONIA (, BYTOM, KATOWICE, PRUDNIK, WROCLAW)
+País: REINO UNIDO
+País: REPUBLICA CHECA
+País: RUSIA (SAN PETERSBURGO)
+País: SUECIA (BLEKINGE, ESTOCOLMO, KALMARSUND, SKANE, SMALAND, SÖDERMANLAND, VARMLAND, VOSTERBOTTEN)</geographicDescription>
+                <boundingCoordinates>
+                    <westBoundingCoordinate>-118.33746</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-84.5</eastBoundingCoordinate>
+                    <northBoundingCoordinate>32.99592</northBoundingCoordinate>
+                    <southBoundingCoordinate>12.91</southBoundingCoordinate>
+                </boundingCoordinates>
+            </geographicCoverage>
+            <temporalCoverage>
+                <rangeOfDates>
+                    <beginDate>
+                        <calendarDate>                1800-01-01
+</calendarDate>
+                    </beginDate>
+                    <endDate>
+                        <calendarDate>                2013-07-11
+</calendarDate>
+                    </endDate>
+                </rangeOfDates>
+            </temporalCoverage>
+            <taxonomicCoverage>
+                <generalTaxonomicCoverage>Reino: Plantae
+Filo: Tracheophyta
+Clase: Pinopsida, Magnoliopsida
+Orden: Pinales, Asparagales, Cupressales, Araucariales
+Familia: Pinaceae, Orchidaceae, Cupressaceae, Podocarpaceae</generalTaxonomicCoverage>
+                <taxonomicClassification>
+                    <taxonRankName>Kingdom</taxonRankName>
+                    <taxonRankValue>Plantae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Phylum</taxonRankName>
+                    <taxonRankValue>Tracheophyta</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Pinopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Pinales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Asparagales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Cupressales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Araucariales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Pinaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Orchidaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Cupressaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Podocarpaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Pseudotsuga</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Vanilla</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Juniperus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Callitropsis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Clowesia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Pinus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Abies</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Epidendrum</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Mormodes</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Sigmatostalix</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Oncidium</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Cupressus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Barkeria</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Calocedrus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Hagsatera</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Laelia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Rhynchostele</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Cypripedium</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Schiedeella</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Stanhopea</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Prosthechea</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Specklinia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Cyrtochiloides</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Acianthera</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Podocarpus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Cuitlauzina</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Aspidogyne</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Rossioglossum</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Pelexia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Rodriguezia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Trichopilia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Physogyne</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Lepanthes</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Chysis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Kefersteinia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Galeottiella</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Erycina</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Trichocentrum</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Encyclia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Malaxis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Cycnoches</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Restrepia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Lycaste</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Sobralia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Corallorhiza</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Lepanthopsis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Anathallis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Phragmipedium</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Gongora</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Pachyphyllum</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Maxillaria</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Stellilabium</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Nemaconia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Pleurothallis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Stelis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Galeandra</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Ponera</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Oestlundia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Galeoglossum</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Bletia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Sarcoglottis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Govenia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Ponthieva</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Eurystyles</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Papperitzia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Acineta</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Scelochilus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Dryadella</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Teuscheria</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Macradenia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Dracula</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Habenaria</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Spiranthes</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Subgenus</taxonRankName>
+                    <taxonRankValue>Strobus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Subgenus</taxonRankName>
+                    <taxonRankValue>Pinus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Vanilla planifolia</taxonRankValue>
+                    <commonName>bainii (Zapoteco), canela de cuya, cashisha (Totonaco), caxi-xanath (Totonaco), juju, kuoley gm (Chinanteco), piis&apos;oxaanti (Tepehua), siisbik (Maya), sisbik (Maya), sisbik-k&apos;aax (Maya), sumi xa&apos;nat (Totonaco), sumi&apos;xa&apos;nat (Totonaco), sunti&apos;xa&apos;nat (Totonaco), tlilxóchitl (Náhuatl), vainilla, vainilla colibrí, vainilla escarchada, vainilla mansa, xuucy (Mixe), zizbic (Maya)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Juniperus californica</taxonRankValue>
+                    <commonName>cedro, enebro, enebro de california</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Callitropsis forbesii</taxonRankValue>
+                    <commonName>ciprés, ciprés Guadalupe, ciprés brillante, ciprés de Tecate, ciprés negro</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Clowesia glaucoglossa</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pinus (Strobus) quadrifolia</taxonRankValue>
+                    <commonName>pino, pino piñonero, piñonero, piñón, piñón bueno, piñón de California</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Abies guatemalensis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Epidendrum alabastrialatum</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Abies concolor</taxonRankValue>
+                    <commonName>abeto, oyamel, oyamel de California, pinabete</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Sigmatostalix mexicana</taxonRankValue>
+                    <commonName>sigmatostalix mexicano</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pinus (Pinus) jeffreyi</taxonRankValue>
+                    <commonName>pino, pino jeffrey, pino negro, pino ponderosa</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pinus (Pinus) muricata</taxonRankValue>
+                    <commonName>pino, pino peninsular</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pinus (Strobus) monophylla</taxonRankValue>
+                    <commonName>pino, piñón, piñón simple</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Oncidium endocharis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Oncidium tigrinum</taxonRankValue>
+                    <commonName>flor de muertos, parácata (Tarasco )</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Cupressus montana</taxonRankValue>
+                    <commonName>ciprés, ciprés rugoso</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Barkeria skinneri</taxonRankValue>
+                    <commonName>candelaria</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Calocedrus decurrens</taxonRankValue>
+                    <commonName>cedro, cedro colorado, cedro de incienso, pinabete, pino colorado, zopilote</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Epidendrum isthmi</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pinus (Pinus) coulteri</taxonRankValue>
+                    <commonName>pino, pino de brea, pino de piña, pino de piña grande, pino piña</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Hagsatera brachycolumna</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Rhynchostele cervantesii</taxonRankValue>
+                    <commonName>lirio, mariposa, tigrillo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Cypripedium irapeanum</taxonRankValue>
+                    <commonName>flor de calavera, flor del pelícano, pichahuastle (Náhuatl), pichehuastle (Náhuatl), pipixihuatli (Náhuatl), pisahuastle (Náhuatl)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Epidendrum cnemidophorum</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pinus (Pinus) attenuata</taxonRankValue>
+                    <commonName>pino</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Schiedeella nagelii</taxonRankValue>
+                    <commonName>spiranthes de Nagel</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Oncidium incurvum</taxonRankValue>
+                    <commonName>angelitos</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Mormodes sanguineoclaustra</taxonRankValue>
+                    <commonName>mormodes sanguíneo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Cypripedium dickinsonianum</taxonRankValue>
+                    <commonName>zapatilla de Dickinson</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Stanhopea tigrina</taxonRankValue>
+                    <commonName>cabeza de culebra, cabeza de víbora, calaverita, coatzontecomaxochitl (Náhuatl), flor del torito, li-djisag-mang (Chinanteco), tecuán morado, tigre, torito morado, toritos</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Laelia speciosa</taxonRankValue>
+                    <commonName>chichiltepetzacuxóchitl (Náhuatl), deuntzá (Otomí), flor de corpus, itzamacua (Tarasco), juritzquiri-tzitzica (Tarasco), lirio</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Prosthechea vitellina</taxonRankValue>
+                    <commonName>manuelitos, toalxóchitl (Náhuatl), uts pîj (Mixe)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Specklinia lateritia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Cyrtochiloides ochmatochila</taxonRankValue>
+                    <commonName>oncidium de abanico</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Acianthera eximia</taxonRankValue>
+                    <commonName>pleurothallis eximia</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Podocarpus reichei</taxonRankValue>
+                    <commonName>cedro blanco, jarilla, lengua de pájaro, olivo, palmilla, palmillo, palmito, peinecillo, sabino</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Epidendrum skutchii</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Abies vejarii</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Cuitlauzina candida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Aspidogyne stictophylla</taxonRankValue>
+                    <commonName>brythrodes rojizo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Barkeria dorotheae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Rhynchostele rossii</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Stanhopea oculata</taxonRankValue>
+                    <commonName>toritos, yo-betz (Zapoteco)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Rossioglossum insleayi</taxonRankValue>
+                    <commonName>cola de pavo, terciopelo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Prosthechea citrina</taxonRankValue>
+                    <commonName>aróracua (Tarasco), azucena amarilla, costicoatexóchitl (Náhuatl), costictexóchitl (Náhuatl), orquídea hojas de cebolla, tatzingueni (Purépecha)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Rhynchostele galeottiana</taxonRankValue>
+                    <commonName>odontoglossum de Galeotti</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pinus californiarum</taxonRankValue>
+                    <commonName>pino, piñón, piñón simple</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Laelia superbiens</taxonRankValue>
+                    <commonName>candelaria de la vara larga, flor de la candelaria, laelia de San José, lirios, palo de águila, tanal</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Epidendrum chloe</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Oncidium leucochilum</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pelexia congesta</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Oncidium pollardii</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Oncidium suttonii</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Cupressus lindleyi</taxonRankValue>
+                    <commonName>cedro, cedro blanco, cedro rojo, ciprés, pino, sabino, sësa&apos;na (Mazahua), táscate-sabino</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Rodriguezia dressleriana</taxonRankValue>
+                    <commonName>rodriguezia de Dressler</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Laelia gouldiana</taxonRankValue>
+                    <commonName>flor de muerto, laelia de Metztitlán, lirio, monjitas, santorum</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Barkeria melanocaulon</taxonRankValue>
+                    <commonName>barkeria de Oaxaca</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Specklinia digitale</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Prosthechea mariae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Trichopilia galeottiana</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Oncidium unguiculatum</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Physogyne gonzalezii</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Rhynchostele majalis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Lepanthes ancylopetala</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Chysis bractescens</taxonRankValue>
+                    <commonName>chysis de cera, flor de cera, orquídea de Córdoba, súchil gardenia (Español-Náhuatl)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Cupressus forbesii</taxonRankValue>
+                    <commonName>ciprés, ciprés Guadalupe, ciprés brillante, ciprés de Tecate, ciprés negro</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Kefersteinia tinschertiana</taxonRankValue>
+                    <commonName>kefersteinia lactea</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pinus lagunae</taxonRankValue>
+                    <commonName>pino, piñón de la Laguna</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Epidendrum dorsocarinatum</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Rhynchostele cordata</taxonRankValue>
+                    <commonName>manuelitos, odontoglossum acorazonado, tigrillas</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pinus (Strobus) strobiformis</taxonRankValue>
+                    <commonName>acahuite, acalocote, acamita, acanita, ayacahuite, huiyoco (Tarahumara), mateyó (Tarahumara), ocote blanco, ocote chino, pinabete, pino, pino acahite, pino ayacahuite, pino blanco, pino chimonque, pino huiyoco, pino nayar, pino real, pino triste, piñón, wiyó (Tarahumara)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Galeottiella sarcoglossa</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Erycina crista-galli</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Epidendrum cerinum</taxonRankValue>
+                    <commonName>epidendrum ceroso</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Epidendrum incomptoides</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Cuitlauzina pendula</taxonRankValue>
+                    <commonName>chorrito, cola de borrego, cuitlauzina perfumada, pozolillo, uts pîj (Mixe)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pseudotsuga guinieri</taxonRankValue>
+                    <commonName>abeto, acahuite, cahuite, espinoso, guayane rojo, hayarín, hayarín colorado, oyamel, oyamel colorado, oyamel de Ballauca, oyamel de barranca, payarín tepehuano, pinabete, romerillo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Trichocentrum stramineum</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Encyclia adenocaula</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Malaxis greenwoodiana</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Cycnoches ventricosum</taxonRankValue>
+                    <commonName>bastón de San José</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Podocarpus matudae</taxonRankValue>
+                    <commonName>cedro blanco, jarilla, lengua de pájaro, olivo, palmilla, palmillo, palmito, peinecillo, sabino</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Rhynchostele madrensis</taxonRankValue>
+                    <commonName>odontoglossum de la Sierra Madre</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Encyclia lorata</taxonRankValue>
+                    <commonName>encyclia de Guerrero</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Malaxis hagsateri</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Rhynchostele ehrenbergii</taxonRankValue>
+                    <commonName>magdalenas, odontoglossum de Ehrenberg</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Restrepia trichoglossa</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Encyclia pollardiana</taxonRankValue>
+                    <commonName>encyclia de Pollard</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Lycaste skinneri</taxonRankValue>
+                    <commonName>lycaste monjita, monjita, orquídea real</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Sobralia crispissima</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Rhynchostele pygmaea</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pinus (Strobus) culminicola</taxonRankValue>
+                    <commonName>pino, pino enano, pino piñonero, piñonero, piñonero enano, piñón, piñón de octubre</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Prosthechea neurosa</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Oncidium stelligerum</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Corallorhiza macrantha</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Lepanthopsis floripecten</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Anathallis abbreviata</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Rhynchostele beloglossa</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Epidendrum cystosum</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Gongora tridentata</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Callitropsis guadalupensis</taxonRankValue>
+                    <commonName>ciprés</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pachyphyllum mexicanum</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Erycina pumilio</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Oncidium ensatum</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Barkeria strophinx</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Lepanthes parvula</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Cupressus guadalupensis</taxonRankValue>
+                    <commonName>cedro guadalupano, cedro guadalupe, ciprés, ciprés brillante, ciprés de Guadalupe</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Barkeria whartoniana</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pinus (Strobus) remota</taxonRankValue>
+                    <commonName>pino, piñón de Catarina</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Maxillaria nasuta</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Stellilabium standleyi</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Nemaconia dressleriana</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Trichocentrum hoegei</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Barkeria scandens</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pleurothallis nelsonii</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Oncidium wentworthianum</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pinus remorata</taxonRankValue>
+                    <commonName>pino, pino peninsular</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Lepanthes guatemalensis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Specklinia endotrachys</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pinus (Strobus) chiapensis</taxonRankValue>
+                    <commonName>K&apos;uk toj (Maya), acalocote, ocote, pinabete, pino blanco, tonotzin (Zoque)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Abies hickelii</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Stelis cobanensis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Galeandra batemanii</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Stelis deregularis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Ponera dressleriana</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Oestlundia distantiflora</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Rossioglossum grande</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Maxillaria tonsoniae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Anathallis oblanceolata</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Clowesia rosea</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Encyclia atrorubens</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Galeoglossum thysanochilum</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Bletia urbana</taxonRankValue>
+                    <commonName>chautle (Náhuatl)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Chysis limminghei</taxonRankValue>
+                    <commonName>chysis de Limminghe</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Sarcoglottis cerina</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pseudotsuga macrolepis</taxonRankValue>
+                    <commonName>abeto, acahuite, cahuite, espinoso, guayane rojo, hayarín, hayarín colorado, oyamel, oyamel colorado, oyamel de Ballauca, oyamel de barranca, payarín tepehuano, pinabete, romerillo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Juniperus monticola</taxonRankValue>
+                    <commonName>cedro, cedro blanco, cedro colorado, ciprés, enebro, enebro azul, sabino</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Govenia tequilana</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Ponthieva brittoniae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Epidendrum alticola</taxonRankValue>
+                    <commonName>epidendrum del Tacaná</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Eurystyles borealis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Acianthera violacea</taxonRankValue>
+                    <commonName>pleurothallis violacea</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Trichocentrum flavovirens</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Papperitzia leiboldii</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Lycaste lasioglossa</taxonRankValue>
+                    <commonName>lycaste pelosa</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pinus (Strobus) maximartinezii</taxonRankValue>
+                    <commonName>pino, pino azul, piñonero de Zacatecas, piñón, piñón real</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Epidendrum smaragdinum</taxonRankValue>
+                    <commonName>epidendrum esmeralda</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Acineta barkeri</taxonRankValue>
+                    <commonName>acineta de Barker, boca de león</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pinus murrayana</taxonRankValue>
+                    <commonName>pino, pino de San Pedro Mártir</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Scelochilus tuerckheimii</taxonRankValue>
+                    <commonName>scelochilus de Türckheim</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Oncidium exauriculatum</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Dryadella guatemalensis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Encyclia kienastii</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Pleurothallis deregularis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Teuscheria pickiana</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Macradenia brassavolae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Acianthera unguicallosa</taxonRankValue>
+                    <commonName>pleurothallis de las Revillagigedo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Dracula pusilla</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Habenaria umbratilis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Mormodes uncia</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Rhynchostele londesboroughiana</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Specklinia fimbriata</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Spiranthes torta</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Stelis nigriflora</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Infraspecific Name</taxonRankName>
+                    <taxonRankValue>Pseudotsuga menziesii var. glauca</taxonRankValue>
+                    <commonName>abeto, acahuite, cahuite, espinoso, guayane rojo, hayarín, hayarín colorado, oyamel, oyamel colorado, oyamel de Ballauca, oyamel de barranca, payarín tepehuano, pinabete, romerillo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Infraspecific Name</taxonRankName>
+                    <taxonRankValue>Pinus (Pinus) caribaea var. hondurensis</taxonRankValue>
+                    <commonName>jujuub (Maya), pino, pino amarillo, pino caribe, pino de Honduras</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Infraspecific Name</taxonRankName>
+                    <taxonRankValue>Mormodes maculata var. unicolor</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Infraspecific Name</taxonRankName>
+                    <taxonRankValue>Pinus (Pinus) contorta var. murrayana</taxonRankValue>
+                    <commonName>pino, pino de San Pedro Mártir</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Infraspecific Name</taxonRankName>
+                    <taxonRankValue>Pinus (Strobus) monophylla var. californiarum</taxonRankValue>
+                    <commonName>pino, piñón, piñón simple</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Infraspecific Name</taxonRankName>
+                    <taxonRankValue>Laelia anceps subsp. dawsonii</taxonRankValue>
+                    <commonName>huichila</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Infraspecific Name</taxonRankName>
+                    <taxonRankValue>Abies concolor var. lowiana</taxonRankValue>
+                    <commonName>abeto, oyamel, oyamel de California, pinabete</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Infraspecific Name</taxonRankName>
+                    <taxonRankValue>Pinus (Pinus) contorta subsp. murrayana</taxonRankValue>
+                    <commonName>pino, pino de San Pedro Mártir</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Infraspecific Name</taxonRankName>
+                    <taxonRankValue>Pinus (Pinus) muricata var. muricata</taxonRankValue>
+                    <commonName>pino, pino peninsular</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Infraspecific Name</taxonRankName>
+                    <taxonRankValue>Phragmipedium humboldtii subsp. exstaminodium</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Infraspecific Name</taxonRankName>
+                    <taxonRankValue>Callitropsis arizonica var. montana</taxonRankValue>
+                </taxonomicClassification>
+            </taxonomicCoverage>
+        </coverage>
+        <maintenance>
+            <description>
+                <para></para>
+            </description>
+            <maintenanceUpdateFrequency>notPlanned</maintenanceUpdateFrequency>
+        </maintenance>
+        <contact>
+            <individualName>
+                <givenName>Patricia</givenName>
+                <surName>Ramos Rivera</surName>
+            </individualName>
+            <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
+            <positionName>Directora General de Sistemas</positionName>
+            <address>
+                <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
+                <city>México</city>
+                <administrativeArea>Tlalpan</administrativeArea>
+                <postalCode>14010</postalCode>
+                <country>MEXICO</country>
+            </address>
+            <phone>50045000</phone>
+            <electronicMailAddress>patricia.ramos@conabio.gob.mx</electronicMailAddress>
+            <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
+        </contact>
+
+            <project id="SNIB-JM078-JM0781705F_SIB2018.06.11-ND">
+                <title>Mejoramiento de los modelos de distribución de especies de plantas amenazadas de México (Orchidaceae, Pinaceae, Cupressaceae, Taxaceae, Podocarpaceae) a través de información de sensores remotos y medidas espaciales de incertidumbre en los modelos-conUFZ*</title>
+                <personnel>
+                    <individualName>
+                    <givenName>David</givenName>
+                    <surName>Gernandt</surName>
+                    </individualName>
+                    <role>CONTENT_PROVIDER</role>
+                </personnel>
+                <abstract>
+                    <para>El proyecto tiene como objetivo desarrollar y refinar los modelos de distribución (SDM) de 227 especies de  plantas incluidas en la Norma Oficial Mexicana NOM-059-SEMARNAT-2010, pertenecientes a las familias Orchidaceae (188 especies), Pinaceae (30 especies), Cupressaceae (7 especies), Taxaceae (1 especie), and Podocarpaceae (1 especie), con la perspectiva de apoyar su manejo y conservación. El refinamiento de los SDM de estas especies amenazadas comprende dos grandes aspectos, (1) la inclusión de datos de percepción remota, además de los datos climáticos que se utilizan comúnmente, y (2)  la evaluación espacial de la incertidumbre de los modelos. Para cada especie se generarán diferentes productos de las áreas de distribución (continuos, categóricos) a 1 km² de resolución utilizando diferentes algoritmos (e.g. Maxent, GLM, RandomForest). Las variables predictoras derivadas de datos de percepción remota que se utilizarán son series de tiempo del sensor Terra-MODIS (Indice de vegetación mejorado, EVI por sus siglas en inglés -Enhanced Vegetation Index-, temperatura de la superficie terrestre, LST -Land Surface Temperature- y la reflectancia de la superficie, las cuales han probado ser útiles para la clasificación de la vegetación. El proyecto también contempla evaluar la importancia del clima y de las variables de percepción remota en la distribución de las especies, así como la extracción de perfiles fenológicos para cada especie. Se producirán mapas de distribución generados con variables obtenidas mediante percepción remota ya que, sin bien como resultado de la modelación climática un sitio resulta ser adecuado para una especie, puede darse el caso de que la especie no esté presente. Estos mapas, en conjunto, permitirán identificar posibles &apos;hotspots&apos; de deterioro de hábitat debido a causas antropogénicas a nivel país. El uso de datos de percepción remota actuales para la modelación de la distribución de especies allana el camino para la construcción de un sistema nacional de monitoreo de la biodiversidad. El proyecto está planteado como una colaboración entre el Helmholtz Centre for Environmental Research - UFZ y el Instituto de Biología de la Universidad Nacional Autónoma de México (UNAM).
+
+Percepción remota, incertidumbre de los modelos , Máxima Entropía, GLM, RandomForest, modelo jerárquico, NOM-059-SEMARNAT-2010, plantas amenazadas , monitoreo de la biodiversidad</para>
+                </abstract>
+                <funding>
+                    <para>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad (CONABIO)</para>
+                </funding>
+                <studyAreaDescription>
+                    <descriptor name="generic" citableClassificationSystem="false">
+                        <descriptorValue>Plantas
+con flores como agapantos, ajos, azafránes, cebollas, espárragos, gladiolas, magueyes, orquídeas, patas de elefante, sábilas, vainillas, yucas
+sin flores como abetos, araucarias, cedros, cícadas, cipreses, efedras, ginkgos, pinos, secuoyas</descriptorValue>
+                    </descriptor>
+                </studyAreaDescription>
+            </project>
+    </dataset>
+
+    <additionalMetadata>
+        <metadata>
+            <gbif>
+                <dateStamp>2025-05-15T14:55:28Z</dateStamp>
+                <citation>Gernandt D, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). Mejoramiento de los modelos de distribución de especies de plantas amenazadas de México (Orchidaceae, Pinaceae, Cupressaceae, Taxaceae, Podocarpaceae) a través de información de sensores remotos y medidas espaciales de incertidumbre en los modelos-conUFZ*. Version 1.12. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/r2wj29 accessed via GBIF.org on 2025-05-15.</citation>
+                <physical>
+                    <objectName>SNIB-JM078-CSV.zip</objectName>
+                    <characterEncoding>UTF-8</characterEncoding>
+                    <dataFormat>
+                        <externallyDefinedFormat>
+                            <formatName>CSV</formatName>
+                        </externallyDefinedFormat>
+                    </dataFormat>
+                    <distribution>
+                        <online>
+                            <url function="download">http://www.snib.mx/proyectos/JM078/SNIB-JM078-CSV.zip</url>
+                        </online>
+                    </distribution>
+                </physical>
+                <physical>
+                    <objectName>SNIB-JM078-BD.zip</objectName>
+                    <characterEncoding>UTF-8</characterEncoding>
+                    <dataFormat>
+                        <externallyDefinedFormat>
+                            <formatName>MDB</formatName>
+                            <formatVersion>MicrosoftAccess2007</formatVersion>
+                        </externallyDefinedFormat>
+                    </dataFormat>
+                    <distribution>
+                        <online>
+                            <url function="download">http://www.snib.mx/proyectos/JM078/SNIB-JM078-BD.zip</url>
+                        </online>
+                    </distribution>
+                </physical>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;UBC;Beaty Biodiversity Museum, University of British Columbia;BBM-UBC</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;UNM;University of New Mexico;UNM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Jepson Herbarium;JEPS;University of California, Berkeley;UCB</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;MO;Missouri Botanical Garden;MOBOT</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;B;Botanischer Garten und Botanisches Museum Berlin-Dahlem;BGBM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;ARIZ;University of Arizona;UAZ</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;CAS;California Academy of Sciences;CAS</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbario;AMO;Asociación Mexicana de Orquideología, Instituto Chinoin A.C.;AMO</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;WTU;Burke Museum of Natural History and Culture, University of Washington;BM-UW</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;UC;University of California, Berkeley;UCB</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>NO DISPONIBLE;NO DISPONIBLE;NO DISPONIBLE;NO DISPONIBLE</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;E;Royal Botanic Garden Edinburgh;RBGE</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;UCSB;Santa Barbara Museum of Systematics and Ecology, University of California, Santa Barbara;UCSB</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;SAV;Institute of Botany, Slovak Academy of Sciences;SAS</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbario;SALA;Universidad de Salamanca;USAL</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;RSA;California Botanic Garden;CalBG</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;HSC;Humboldt State University;HSU</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;NY;New York Botanical Garden;NYBG</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;UCR;University of California, Riverside;UCR</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbier;P;Muséum National d&apos;Histoire Naturelle;MNHN</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Botanical Conservatory;UCD;University of California, Davis;UCDAVIS</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Kew Herbarium;K;Royal Botanic Gardens, Kew;RBG</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;SD;San Diego Natural History Museum;SDNHM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Charles Maurer Herbarium;CS;Colorado State University;CSU</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;OSC;Oregon State University;OSU</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;ASU;Arizona State University;ASU</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium of the Arnold Arboretum;A;Harvard University;HU</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;SFV;California State University, Northridge;CSUN</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Robert F. Hoover Herbarium;OBI;California Polytechnic State University, San Luis Obispo;CALPOLY</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>UCI Herbarium;IRVC;University of California, Irvine;UCI</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;UVSC;Utah Valley University;UVU</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>R. L. McGregor Herbarium;KANU;Biodiversity Institute and Natural History Museum, University of Kansas;KU</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;SEL;Marie Selby Botanical Gardens;MSBG</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;LD;Botanical Museum, Lund University;LU</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbario;ANSM;Universidad Autónoma Agraria Antonio Narro, Sede Saltillo;UAAAN</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;S;Natur Historiska Riks Museet;NRM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>George Safford Torrey Herbarium;CONN;University of Connecticut;UCONN</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbario Nacional Forestal Biól. Luciano Vela Gálvez;INIF;Campo Experimental Coyoacán, Instituto Nacional de Investigaciones Forestales, Agrícolas y Pecuarias;CECOY-INIFAP</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Orchid Herbarium of Oakes Ames;AMES;Harvard University;HU</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbario;POM;Pomona College;POM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;COLO;University of Colorado, Boulder;UCM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;NMC;New Mexico State University;NMSU</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Allan Herbarium;CHR;Landcare Research;LCR</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>United States National Herbarium;US;National Museum of Natural History, Smithsonian Institution;NMNH-SI</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbier;AIX;Muséum d&apos;Histoire Naturelle d&apos;Aix-en-Provence;MHNA</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbario;CEDESU;Centro de Estudios de Desarrollo Sustentable y Aprovechamiento de la Vida Silvestre, Universidad Autónoma de Campeche;CEDESU-UAC</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;CSU;University of Central Oklahoma;UCO</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Gray Herbarium;GH;Harvard University;HU</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;BLMAR;Bureau of Land Management Arcata Field Office;BLM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;LEA;University of Lethbridge;U of L</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;KR;Staatliches Museum für Naturkunde Karlsruhe;SMNK</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;NCBS;Yale Peabody Museum of Natural History, Yale University;YPMNH-YU</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Range Science Herbarium;NMCR;New Mexico State University;NMSU</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>John G. Searle Herbarium;F;Field Museum of Natural History;FMNH</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>NO DISPONIBLE;UCSC;NO DISPONIBLE;UCSB</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbario;MA;Real Jardín Botánico, Consejo Superior de Investigaciones Científicas;RJB-CSIC</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Carl W. Sharsmith Herbarium;SJSU;San Jose State University;SJSU</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;SDSU;San Diego State University;SDSU</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;ANVL;Association des Naturalistes de la Vallée du Loing et du Massif de Fontainebleau;ANVL</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbario Luz María Villarreal de Puga;IBUG;Centro Universitario de Ciencias Biológicas y Agropecuarias, Universidad de Guadalajara;CUCBA-UDG</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbario;JACA;Instituto Pirenaico de Ecología, Consejo Superior de Investigaciones Científicas;IPE-CSIC</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;SNM;Western New Mexico University;WNMU</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbario;BCN;Universitat de Barcelona;UB</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;YM;Yosemite National Park, U.S. Department of the Interior, National Park Service;NPS</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbario;LIL;Fundación Miguel Lillo;FML</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;LA;University of California, Los Angeles;UCLA</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>NO DISPONIBLE;UoB-IB;NO DISPONIBLE;NO DISPONIBLE</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;PGM;Pacific Grove Museum of Natural History;PGM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbario Metropolitano;UAMIZ;Universidad Autónoma Metropolitana, Unidad Iztapalapa;UAMI</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbario María Agustina Batalla;FCME;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium Senckenbergianum Görlitz;GLM;Senckenberg Museum of Natural History, Görlitz;SMNG</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Wein Herbarium;W;Naturhistorisches Museum Wien;NHMW</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;FLAS;Florida Museum of Natural History, University of Florida;FLMNH-UF</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>NO APLICA;NO APLICA;NO DISPONIBLE;US</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;MIN;Bell Museum of Natural History, University of Minnesota;JFBM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>NO DISPONIBLE;BSBI;NO DISPONIBLE;NBDC</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbario;CHIP;Secretaría de Medio Ambiente e Historia Natural;SEMAHN</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbario;SANT;Universidad de Santiago de Compostela;USC</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;OSA;Osaka Museum of Natural History, Japan;OMNH</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;TFA;Tama Forest Science Garden, Forestry and Forest Products Research Institute;FFPRI</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;CDA;California Department of Food and Agriculture;CDFA</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium Pacificum;BISH;Bernice Pauahi Bishop Museum;BPBM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbario;LPS;Facultad de Ciencias Naturales y Museo, Universidad Nacional de La Plata;FCNYM-UNLP</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;ALTA;University of Alberta;UA</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbario;EMMA;Escuela Técnica Superior de Ingenieros de Montes, Universidad Politécnica de Madrid;ETSI-UPM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbario Nacional;CR;Museo Nacional de Costa Rica;MNCR</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>E. C. Smith Herbarium;ACAD;Acadia University;NO DISPONIBLE</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Green Plant Herbarium;TRT;Royal Ontario Museum;ROM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Nationaal Herbarium Nederland;L;Universiteit Leiden;UL</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;BR;Botanic Garden Meise;BR</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;TAIF;Taiwan Forestry Research Institute;TAIF</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>NO DISPONIBLE;RB;NO APLICA;NO APLICA</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbario;BC;Instituto Botánico de Barcelona, Consejo Superior de Investigaciones Científicas;IBB-CSIC</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbario Jerzy Rzedowski y Graciela Calderón;ENCB;Escuela Nacional de Ciencias Biológicas, Instituto Politécnico Nacional;ENCB-IPN</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;UNA;University of Alabama;UA</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbario;VAL;Universidad de Valencia;UV</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbario &apos;Graciela Calderón y Jerzy Rzedowski&apos;;IEB;Instituto de Ecología, A. C., Centro Regional del Bajío;INECOL</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;TNS;National Museum of Nature and Science;NMNS</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;G;Conservatoire et Jardin Botanique de la Vie de Genève;JCJB</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;STU;Staatliches Museum für Naturkunde Stuttgard;SMNS</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbario;ARAN;Aranzadi Zientzia Elkartea, Sociedad de Ciencias Aranzadi;NO DISPONIBLE</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbario;JBB;Jardín Botánico de Bogotá;JBB</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbier Marie-Victorin;MT;Institut de Recherche en Biologie Végétale, Centre sur la niodiversité de l&apos;Université de Montréal;IRBV</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JM078-JM0781705F_SIB2018.06.11-ND</collectionIdentifier>
+                    <collectionName>Herbarium;ULM;Universität Ulm;ULM</collectionName>
+                </collection>
+                <jgtiCuratorialUnit>
+                    <jgtiUnitType>Ejemplar</jgtiUnitType>
+                    <jgtiUnitRange>
+                        <beginRange>1</beginRange>
+                        <endRange>2,992</endRange>
+                    </jgtiUnitRange>
+                </jgtiCuratorialUnit>
+            </gbif>
+        </metadata>
+    </additionalMetadata>
+    </eml:eml>

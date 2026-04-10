@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://rs.gbif.org/schema/eml-gbif-profile/1.3/eml.xsd"
+packageId="775fa12b-953b-4359-9b64-bb596540bdcb"  system="http://gbif.org" scope="system"
+xml:lang="es">
+    <dataset>
+        <alternateIdentifier>10.15468/dmxx5a</alternateIdentifier>
+        <alternateIdentifier>775fa12b-953b-4359-9b64-bb596540bdcb</alternateIdentifier>
+        <alternateIdentifier>https://www.snib.mx/iptconabio/resource?r=SNIB-JE014</alternateIdentifier>
+        <title>El Género Phaseolus (Leguminosae, Papilionoideae, Phaseoleae) para México</title>
+        <creator>
+            <individualName>
+                <givenName>Alfonso</givenName>
+                <surName>Delgado Salinas</surName>
+            </individualName>
+            <organizationName>Universidad Nacional Autónoma de MéxicoInstituto de BiologíaDepartamento de BotánicaHerbario Nacional MEXU</organizationName>
+            <positionName>Responsable</positionName>
+            <address>
+                <country>MEXICO</country>
+            </address>
+        </creator>
+        <metadataProvider>
+            <individualName>
+                <givenName>CONABIO</givenName>
+                <surName>Comisión nacional para el conocimiento y uso de la biodiversidad</surName>
+            </individualName>
+            <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
+            <positionName>Dirección General de Sistemas</positionName>
+            <address>
+                <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
+                <city>MÉXICO</city>
+                <administrativeArea>Tlalpan</administrativeArea>
+                <postalCode>14010</postalCode>
+                <country>MEXICO</country>
+            </address>
+            <phone>50045000</phone>
+            <electronicMailAddress>patricia.ramos@conabio.gob.mx</electronicMailAddress>
+            <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
+        </metadataProvider>
+        <pubDate>
+                2025-04-02
+        </pubDate>
+        <language>SPANISH</language>
+        <abstract>
+            <para>El género Phaseolus es de origen americano con aproximadamente 70 especies, de los cuales cinco han sido domesticadas: Phaseolus acutifolius A. Gray (teparí o escumite), Phaseolus coccineus L. (ayocote, tecomarí, botil), Phaseolus dumosus Macfadyen (gordo, acalete), Phaseolus lunatus L. (ib, comba, patachete, navajita, lima) y Phaseolus vulgaris L. (cimatl, frejol, frijol, etc.) y todas pueden cohabitar con sus poblaciones silvestres (Delgado-Salinas et al., 2006). Crecen del sur de Canadá, a la Florida y este de Texas, así como en Nuevo México, Arizona y Sureste de California en EUA. En México, se distribuye en las zonas montañosas (principalmente en la vertiente del Pacífico) y algunas de ellas llegan a Centroamérica. En Sudamérica, se distribuye en los Andes hasta el norte de Argentina. La domesticación del género ha provocado alteraciones en la distribución natural de Phaseolus en el continente Americano, induciendo la adaptación a nuevos hábitats (Delgado, 1985) y por ende una variación morfológica inter e intraespecífica. De acuerdo a Perales &amp;  Aguirre (2008), estas especies forman parte de la biodiversidad humanizada, en donde conforman un gradiente continuo entre especies domesticadas y recolectadas de sus contrapartes silvestres. Las variaciones morfológicas que han experimentado las especies de Phaseolus, también han traído como consecuencia controversias en la delimitación taxonómica, provocando una falta de claridad sobre la delimitación de las especies, su fenología y áreas de distribución geográfica, como sucede en los estudios recientes sobre taxonomía y filogenía del género Phaseolus (Delgado-Salinas, 1985; Delgado-Salinas et al. 1999; Freytag &amp;  Debouck 2002; Degado-Salinas et al 2006), en donde hay inconsistencias y desacuerdos en el número total de especies para el género Phaseolus. Para dilucidar esta problemática es importante establecer, un catálogo de los nombres científicos y de las autoridades correctas de las especies taxonómicamente reconocidas para México; para ello se tomarán en cuenta las evidencias tanto morfológicas, ecológicas y filogenéticas en un marco nomenclatural establecido por el Código Internacional de Nomenclatura Botánica.
+Para establecer estudios de conservación y las medidas adecuadas de protección sobre la diversidad genética de las especies silvestres de Phaseolus, en particular de sus contrapartes cultivadas mecanizadas y de los cultivos locales o criollos es importante construir la estructura principal de información que permita extraer datos biológicos, como son las épocas de floración, así como conocer la distribución puntual y potencial de sus especies. Esta fuente de información debe ser capturada en una Base de Datos, que permita organizar el contenido de las etiquetas de colecta de los ejemplares depositados principalmente en la colección del Herbario Nacional (MEXU), así como del material incorporado en otras colecciones nacionales (CHAPA, IEB, ENCB, IBUG, USON y XAL) e internacionales (ARIZ, ASU, F, GH, MO, NY, TEX-LL y US), así como la información recabada en el Sistema Nacional de Información sobre Biodiversidad (SNIB) de la CONABIO. Todo ello con la finalidad de recabar la mayoría de los ejemplares colectados en México. Finalmente, la información generada tanto de la base de datos como en los mapas de distribución, permitirá conocer las poblaciones vulnerables, los patrones que han desarrollado las poblaciones de algunas especies del género Phaseolus para establecerse en nuevos ambientes, determinar las posibles especies o poblaciones endémicas, o desconocidas o no inventariadas en la flora mexicana, así como validar la distribución real de cada una de las especies mexicanas de Phaseolus y determinar el impacto del cambio climático en las diferentes poblaciones en dos escenarios de cambio climático para 2030 y 2050. Asimismo, esta información ayudará a entender la distribución que guardan las especies silvestres con las cultivadas mecanizadas y las cultivadas locales o criollas de frijol.
+Debido a la importancia del presente proyecto &amp;#34;El género Phaseolus (Leguminosae) en México&amp;#34;, se considera de suma importancia solicitar apoyo para desarrollar las actividades de este proyecto en cuatro principales fases: 
+&amp;#34;	Fase I; construir un catálogo de los nombres científicos y de las autoridades correctas de las especies taxonómicamente reconocidas para México.
+&amp;#34;	Fase II; establecer un inventario de las especies del género Phaseolus en México de los ejemplares contenidos en el Herbario Nacional (MEXU). La captura de este material se realizará en el Sistema Biótica creado por la CONABIO, esto permitirá integrar la información necesaria (taxonómica y geográfica), para establecer de forma preliminar los patrones de distribución de las especies del género Phaseolus. 
+&amp;#34;	Fase III, incrementar la base de datos establecida en la Fase I, por medio de los ejemplares incorporados en las principales colecciones nacionales (CHAPA, ENCB, IEB, IBUG, USON y XAL) e internacionales (ARIZ, ASU, F, GH, MO, NY, TEX-LL y US) y del material colectado en las salidas de campo. Revisar y validar la información contenida en el SNIB, obtenida en sus Proyectos de Repatriación. Visitar el Instituto Nacional de Investigaciones Forestales, Agrícolas y Pecuarias (INIFAP) Campo Experimental Bajío (Celaya), para cotejar las localidades de las simientes reconocidas en este Campo de Investigación. La información recabada permitirá establecer la distribución puntual y potencial de las especies del género Phaseolus y con ello determinar las posibles especies o poblaciones desconocidas y no inventariadas en la flora mexicana. Así también, conocer la distribución geográfica preliminar de las especies cultivadas mecanizadas y las cultivadas locales o criollas de frijol.
+Fase IV, revisar y validar la información contenida en el SNIB obtenida de la Colección del Germoplasma del INIFAP. Realizar trabajo de campo en las zonas poco exploradas, de acuerdo a la información proporcionada en las Fases II y III. Esto con el fin de enriquecer el conocimiento taxonómico, geográfico, los patrones de distribución de las especies silvestres, cultivadas mecanizadas y criollas del género Phaseolus. Asimismo delimitar la distribución de estas especies en dos escenarios de cambio climático para 2030 y 2050.
+</para><para>Reino: 1
+Filo: 1
+Clase: 1
+Orden: 1
+Familia: 1
+Género: 1
+Especie: 53
+Epitetoinfraespecifico: 4
+</para>
+        </abstract>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Plantas</keyword>
+            <keywordThesaurus>N/A</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml</keywordThesaurus>
+        </keywordSet>
+        <intellectualRights>
+            <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by/4.0/legalcode"><citetitle>Creative Commons Attribution (CC-BY) 4.0 License</citetitle></ulink>.</para>
+        </intellectualRights>
+        <licensed>
+            <licenseName>Creative Commons Attribution 4.0 International</licenseName>
+            <url>https://spdx.org/licenses/CC-BY-4.0.html</url>
+            <identifier>CC-BY-4.0</identifier>
+        </licensed>
+        <distribution scope="document">
+            <online>
+                <url function="information">http://www.snib.mx/proyectos/cgi-bin/datos2.cgi?Letras=JE&amp;Numero=14</url>
+            </online>
+        </distribution>
+        <distribution scope="document">
+            <online>
+                <url function="download">https://www.snib.mx/iptconabio/archive.do?r=SNIB-JE014</url>
+            </online>
+        </distribution>
+        <coverage>
+            <geographicCoverage>
+                <geographicDescription>País: ESTADOS UNIDOS DE AMERICA (ARIZONA, NEW MEXICO, TEXAS)
+País: MEXICO (AGUASCALIENTES, BAJA CALIFORNIA, BAJA CALIFORNIA SUR, CAMPECHE, CHIAPAS, CHIHUAHUA, COAHUILA DE ZARAGOZA, COLIMA, DISTRITO FEDERAL, DURANGO, GUANAJUATO, GUERRERO, HIDALGO, JALISCO, MEXICO, MICHOACAN DE OCAMPO, MORELOS, NAYARIT, NUEVO LEON, OAXACA, PUEBLA, QUERETARO DE ARTEAGA, QUINTANA ROO, SAN LUIS POTOSI, SINALOA, SONORA, TABASCO, TAMAULIPAS, TLAXCALA, VERACRUZ DE IGNACIO DE LA LLAVE, YUCATAN, ZACATECAS)</geographicDescription>
+                <boundingCoordinates>
+                    <westBoundingCoordinate>-116.216944</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-88.028964</eastBoundingCoordinate>
+                    <northBoundingCoordinate>32.954444</northBoundingCoordinate>
+                    <southBoundingCoordinate>14.729444</southBoundingCoordinate>
+                </boundingCoordinates>
+            </geographicCoverage>
+            <temporalCoverage>
+                <rangeOfDates>
+                    <beginDate>
+                        <calendarDate>                1842-09-01
+</calendarDate>
+                    </beginDate>
+                    <endDate>
+                        <calendarDate>                2015-10-09
+</calendarDate>
+                    </endDate>
+                </rangeOfDates>
+            </temporalCoverage>
+            <taxonomicCoverage>
+                <generalTaxonomicCoverage>Reino: Plantae
+Filo: Tracheophyta
+Clase: Magnoliopsida
+Orden: Fabales
+Familia: Fabaceae</generalTaxonomicCoverage>
+                <taxonomicClassification>
+                    <taxonRankName>Kingdom</taxonRankName>
+                    <taxonRankValue>Plantae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Phylum</taxonRankName>
+                    <taxonRankValue>Tracheophyta</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Fabales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Fabaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Phaseolus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus maculatus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus microcarpus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus vulgaris</taxonRankValue>
+                    <commonName>alubia, babi (Tepehuano del sur), bi-zaa (Zapoteco), bi-zaa-hui (Zapoteco), boju (Otomí), canastapu (Totonaco), chenec (Tseltal), cuaetl (Náhuatl), du-chi (Mixteco), duh-chi (Mixteco), ejote, et (Náhuatl), etl (Náhuatl), flor de frijol, frijol, frijol Chimalapa, frijol bayo, frijol cacahuate, frijol cacahuate bola, frijol de enredadera, frijol de mata, frijol higuerillo, frijol moro, frijol negro, frijol ojo de cabra, frijol ojo de liebre, frijol pinto, frijol pinto español, frijol pinto nacional, huay (Chinanteco), ju (Otomí), la-la-ne (Chontal de Oaxaca), la-ne (Chontal de Oaxaca), lucuútapu (Totonaco), ma-netí (Chinanteco), ma-né (Chinanteco), mume (Huichol), muni (Tarahumara), muníqui (Tarahumara), musorícori (Tarahumara), muúnim (Mayo), mújume (Cora), múme-te (Huichol), nu-ni (Cuicateco), pi-zaa (Zapoteco), sac (Zoque), shejc (Popoloca), shidijú (Otomí), shiixis-chéel (Seri), shuijc (Popoloca), stapu (Totonaco), tapsun (Tarasco), tatsani (Tarasco), tatsini (Tarasco), tatsuni-tulípti (Tarasco), tatzin (Tarasco), tun-nduti (Mixteco), tzanaco (Huasteco), tzanam (Huasteco), x-kolil-bul (Maya), xüjk (Mixe), yel (Náhuatl), yetl (Náhuatl), yetxintli (Náhuatl)</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus coccineus</taxonRankValue>
+                    <commonName>ayacote, ayocote, bonju (Otomí), bénju (Otomí), bénju ponju (Otomí), cimatl (Náhuatl), clankastapu (Totonaco), colorín, cuaetl (Náhuatl), ejote recomari, frijol ayocote, frijol bótil, frijol de monte, frijol gordo, frijol ovalado, frijolón, limé-gui-ba-né (Chontal de Oaxaca), quelite, recamoli (Tarahumara), recómari (Tarahumara), xoyamet (Náhuatl), yegua</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus scabrellus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus leptostachyus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus esperanzae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus filiformis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus maculatifolius</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus angustissimus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus micranthus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus zimapanensis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus oligospermus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus parvifolius</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus pedicellatus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus oaxacanus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus albiflorus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus perplexus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus jaliscanus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus neglectus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus xolocotzii</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus pluriflorus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus campanulatus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus rotundatus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus laxiflorus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus hintonii</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus pauciflorus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus reticulatus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus salicifolius</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus ritensis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus dasycarpus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus marechalii</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus glabellus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus dumosus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus viridis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus albescens</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus carterae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus novoleonensis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus nodosus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus chiapasanus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus leptophyllus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus macvaughii</taxonRankValue>
+                    <commonName>frijolillo</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus anisophyllus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus amblyosepalus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus nelsonii</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus tenellus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus parvulus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus juquilensis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus plagiocylix</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus tuerckheimii</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus purpusii</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus xanthotrichus</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Species</taxonRankName>
+                    <taxonRankValue>Phaseolus sonorensis</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Infraspecific Name</taxonRankName>
+                    <taxonRankValue>Phaseolus acutifolius var. acutifolius</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Infraspecific Name</taxonRankName>
+                    <taxonRankValue>Phaseolus lunatus var. silvester</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Infraspecific Name</taxonRankName>
+                    <taxonRankValue>Phaseolus acutifolius var. tenuifolius</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Infraspecific Name</taxonRankName>
+                    <taxonRankValue>Phaseolus lunatus var. lunatus</taxonRankValue>
+                </taxonomicClassification>
+            </taxonomicCoverage>
+        </coverage>
+        <maintenance>
+            <description>
+                <para></para>
+            </description>
+            <maintenanceUpdateFrequency>notPlanned</maintenanceUpdateFrequency>
+        </maintenance>
+        <contact>
+            <individualName>
+                <givenName>Patricia</givenName>
+                <surName>Ramos Rivera</surName>
+            </individualName>
+            <organizationName>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad</organizationName>
+            <positionName>Directora General de Sistemas</positionName>
+            <address>
+                <deliveryPoint>Liga Periférico-Insurgentes Sur No. 4903, Col. Parques del Pedregal</deliveryPoint>
+                <city>México</city>
+                <administrativeArea>Tlalpan</administrativeArea>
+                <postalCode>14010</postalCode>
+                <country>MEXICO</country>
+            </address>
+            <phone>50045000</phone>
+            <electronicMailAddress>patricia.ramos@conabio.gob.mx</electronicMailAddress>
+            <onlineUrl>https://www.gob.mx/conabio</onlineUrl>
+        </contact>
+
+            <project id="SNIB-JE014-JE0142211F-Nomenclator">
+                <title>El Género Phaseolus (Leguminosae, Papilionoideae, Phaseoleae) para México</title>
+                <personnel>
+                    <individualName>
+                    <givenName>Alfonso</givenName>
+                    <surName>Delgado Salinas</surName>
+                    </individualName>
+                    <role>CONTENT_PROVIDER</role>
+                </personnel>
+                <abstract>
+                    <para>El género Phaseolus es de origen americano con aproximadamente 70 especies, de los cuales cinco han sido domesticadas: Phaseolus acutifolius A. Gray (teparí o escumite), Phaseolus coccineus L. (ayocote, tecomarí, botil), Phaseolus dumosus Macfadyen (gordo, acalete), Phaseolus lunatus L. (ib, comba, patachete, navajita, lima) y Phaseolus vulgaris L. (cimatl, frejol, frijol, etc.) y todas pueden cohabitar con sus poblaciones silvestres (Delgado-Salinas et al., 2006). Crecen del sur de Canadá, a la Florida y este de Texas, así como en Nuevo México, Arizona y Sureste de California en EUA. En México, se distribuye en las zonas montañosas (principalmente en la vertiente del Pacífico) y algunas de ellas llegan a Centroamérica. En Sudamérica, se distribuye en los Andes hasta el norte de Argentina. La domesticación del género ha provocado alteraciones en la distribución natural de Phaseolus en el continente Americano, induciendo la adaptación a nuevos hábitats (Delgado, 1985) y por ende una variación morfológica inter e intraespecífica. De acuerdo a Perales &amp;  Aguirre (2008), estas especies forman parte de la biodiversidad humanizada, en donde conforman un gradiente continuo entre especies domesticadas y recolectadas de sus contrapartes silvestres. Las variaciones morfológicas que han experimentado las especies de Phaseolus, también han traído como consecuencia controversias en la delimitación taxonómica, provocando una falta de claridad sobre la delimitación de las especies, su fenología y áreas de distribución geográfica, como sucede en los estudios recientes sobre taxonomía y filogenía del género Phaseolus (Delgado-Salinas, 1985; Delgado-Salinas et al. 1999; Freytag &amp;  Debouck 2002; Degado-Salinas et al 2006), en donde hay inconsistencias y desacuerdos en el número total de especies para el género Phaseolus. Para dilucidar esta problemática es importante establecer, un catálogo de los nombres científicos y de las autoridades correctas de las especies taxonómicamente reconocidas para México; para ello se tomarán en cuenta las evidencias tanto morfológicas, ecológicas y filogenéticas en un marco nomenclatural establecido por el Código Internacional de Nomenclatura Botánica.
+Para establecer estudios de conservación y las medidas adecuadas de protección sobre la diversidad genética de las especies silvestres de Phaseolus, en particular de sus contrapartes cultivadas mecanizadas y de los cultivos locales o criollos es importante construir la estructura principal de información que permita extraer datos biológicos, como son las épocas de floración, así como conocer la distribución puntual y potencial de sus especies. Esta fuente de información debe ser capturada en una Base de Datos, que permita organizar el contenido de las etiquetas de colecta de los ejemplares depositados principalmente en la colección del Herbario Nacional (MEXU), así como del material incorporado en otras colecciones nacionales (CHAPA, IEB, ENCB, IBUG, USON y XAL) e internacionales (ARIZ, ASU, F, GH, MO, NY, TEX-LL y US), así como la información recabada en el Sistema Nacional de Información sobre Biodiversidad (SNIB) de la CONABIO. Todo ello con la finalidad de recabar la mayoría de los ejemplares colectados en México. Finalmente, la información generada tanto de la base de datos como en los mapas de distribución, permitirá conocer las poblaciones vulnerables, los patrones que han desarrollado las poblaciones de algunas especies del género Phaseolus para establecerse en nuevos ambientes, determinar las posibles especies o poblaciones endémicas, o desconocidas o no inventariadas en la flora mexicana, así como validar la distribución real de cada una de las especies mexicanas de Phaseolus y determinar el impacto del cambio climático en las diferentes poblaciones en dos escenarios de cambio climático para 2030 y 2050. Asimismo, esta información ayudará a entender la distribución que guardan las especies silvestres con las cultivadas mecanizadas y las cultivadas locales o criollas de frijol.
+Debido a la importancia del presente proyecto &quot;El género Phaseolus (Leguminosae) en México&quot;, se considera de suma importancia solicitar apoyo para desarrollar las actividades de este proyecto en cuatro principales fases: 
+&quot;	Fase I; construir un catálogo de los nombres científicos y de las autoridades correctas de las especies taxonómicamente reconocidas para México.
+&quot;	Fase II; establecer un inventario de las especies del género Phaseolus en México de los ejemplares contenidos en el Herbario Nacional (MEXU). La captura de este material se realizará en el Sistema Biótica creado por la CONABIO, esto permitirá integrar la información necesaria (taxonómica y geográfica), para establecer de forma preliminar los patrones de distribución de las especies del género Phaseolus. 
+&quot;	Fase III, incrementar la base de datos establecida en la Fase I, por medio de los ejemplares incorporados en las principales colecciones nacionales (CHAPA, ENCB, IEB, IBUG, USON y XAL) e internacionales (ARIZ, ASU, F, GH, MO, NY, TEX-LL y US) y del material colectado en las salidas de campo. Revisar y validar la información contenida en el SNIB, obtenida en sus Proyectos de Repatriación. Visitar el Instituto Nacional de Investigaciones Forestales, Agrícolas y Pecuarias (INIFAP) Campo Experimental Bajío (Celaya), para cotejar las localidades de las simientes reconocidas en este Campo de Investigación. La información recabada permitirá establecer la distribución puntual y potencial de las especies del género Phaseolus y con ello determinar las posibles especies o poblaciones desconocidas y no inventariadas en la flora mexicana. Así también, conocer la distribución geográfica preliminar de las especies cultivadas mecanizadas y las cultivadas locales o criollas de frijol.
+Fase IV, revisar y validar la información contenida en el SNIB obtenida de la Colección del Germoplasma del INIFAP. Realizar trabajo de campo en las zonas poco exploradas, de acuerdo a la información proporcionada en las Fases II y III. Esto con el fin de enriquecer el conocimiento taxonómico, geográfico, los patrones de distribución de las especies silvestres, cultivadas mecanizadas y criollas del género Phaseolus. Asimismo delimitar la distribución de estas especies en dos escenarios de cambio climático para 2030 y 2050.</para>
+                </abstract>
+                <funding>
+                    <para>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad (CONABIO)</para>
+                </funding>
+                <studyAreaDescription>
+                    <descriptor name="generic" citableClassificationSystem="false">
+                        <descriptorValue>Plantas
+con flores como alfalfas, aluvias, cacahuates, chícharos, ejotes, frijoles, garbanzos, guajes, habas, huizaches, jícamas, lentejas, mezquites, tamarindos</descriptorValue>
+                    </descriptor>
+                </studyAreaDescription>
+            </project>
+    </dataset>
+
+    <additionalMetadata>
+        <metadata>
+            <gbif>
+                <dateStamp>2025-05-15T14:55:21Z</dateStamp>
+                <citation>Delgado Salinas A, Comisión nacional para el conocimiento y uso de la biodiversidad C (2025). El Género Phaseolus (Leguminosae, Papilionoideae, Phaseoleae) para México. Version 1.2. Comisión nacional para el conocimiento y uso de la biodiversidad. Occurrence dataset https://doi.org/10.15468/dmxx5a accessed via GBIF.org on 2025-05-15.</citation>
+                <physical>
+                    <objectName>SNIB-JE014-CSV.zip</objectName>
+                    <characterEncoding>UTF-8</characterEncoding>
+                    <dataFormat>
+                        <externallyDefinedFormat>
+                            <formatName>CSV</formatName>
+                        </externallyDefinedFormat>
+                    </dataFormat>
+                    <distribution>
+                        <online>
+                            <url function="download">http://www.snib.mx/proyectos/JE014/SNIB-JE014-CSV.zip</url>
+                        </online>
+                    </distribution>
+                </physical>
+                <physical>
+                    <objectName>SNIB-JE014-BD.zip</objectName>
+                    <characterEncoding>UTF-8</characterEncoding>
+                    <dataFormat>
+                        <externallyDefinedFormat>
+                            <formatName>MDB</formatName>
+                            <formatVersion>MicrosoftAccess2007</formatVersion>
+                        </externallyDefinedFormat>
+                    </dataFormat>
+                    <distribution>
+                        <online>
+                            <url function="download">http://www.snib.mx/proyectos/JE014/SNIB-JE014-BD.zip</url>
+                        </online>
+                    </distribution>
+                </physical>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Herbario Nacional de México, Plantas Vasculares;MEXU;Instituto de Biología, Universidad Nacional Autónoma de México;IBUNAM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Herbario Luz María Villarreal de Puga;IBUG;Centro Universitario de Ciencias Biológicas y Agropecuarias, Universidad de Guadalajara;CUCBA-UDG</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Herbario-Hortorio;CHAPA;Colegio de Postgraduados, Campus Montecillo;CP</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Herbario María Agustina Batalla;FCME;Facultad de Ciencias, Universidad Nacional Autónoma de México;FC-UNAM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Herbarium;MO;Missouri Botanical Garden;MOBOT</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Herbario CICY &apos;U Najil Tikin Xiw&apos;;CICY;Centro de Investigación Científica de Yucatán, A. C.;CICY</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Herbario;XAL;Instituto de Ecología, A. C., Xalapa;INECOL</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Herbario Jerzy Rzedowski y Graciela Calderón;ENCB;Escuela Nacional de Ciencias Biológicas, Instituto Politécnico Nacional;ENCB-IPN</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Herbarium;ASU;Arizona State University;ASU</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Herbario-Hortorio;JES;Universidad Autónoma Chapingo;UACh</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Gray Herbarium;GH;Harvard University;HU</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Herbario;CFNL;Facultad de Ciencias Forestales, Universidad Autónoma de Nuevo León;FCF-UANL</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>United States National Herbarium;US;National Museum of Natural History, Smithsonian Institution;NMNH-SI</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Herbario &apos;Mtra. Graciela Calderón Díaz-Barriga y Dr. Jerzy Rzedowski Rotter&apos;;CIIDIR;Centro Interdisciplinario de Investigación para el Desarrollo Integral Regional, Unidad Durango, Instituto Politécnico Nacional;CIIDIR-IPN</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Herbarium;ARIZ;University of Arizona;UAZ</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Herbario &apos;Graciela Calderón y Jerzy Rzedowski&apos;;IEB;Instituto de Ecología, A. C., Centro Regional del Bajío;INECOL</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Herbario;CHAP;Universidad Autónoma Chapingo;UACh</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Herbarium;MICH;University of Michigan;UM</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Herbario;USON;División de Ciencias Biológicas y de la Salud, Departamento de Investigaciones Científicas y Tecnológicas, Universidad de Sonora;DCBS-DICTUS-USON</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Herbarium;TEX;Department of Integrative Biology, College of Natural Sciences, University of Texas, Austin;CNS-UT</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Herbarium;DUKE;Duke University;DU</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Herbario;MA;Real Jardín Botánico, Consejo Superior de Investigaciones Científicas;RJB-CSIC</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>John G. Searle Herbarium;F;Field Museum of Natural History;FMNH</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Herbarium;NY;New York Botanical Garden;NYBG</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Herbarium;CAS;California Academy of Sciences;CAS</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Jepson Herbarium;JEPS;University of California, Berkeley;UCB</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Herbarium;RSA;California Botanic Garden;CalBG</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Kew Herbarium;K;Royal Botanic Gardens, Kew;RBG</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Herbarium;WIS;University of Wisconsin;UW</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Herbarium;HAL;Institut für Geobotanik und Botanischer Garten, Martin-Luther-Universität Halle-Wittenberg;MLUH</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>NO APLICA</parentCollectionIdentifier>
+                    <collectionIdentifier>SNIB-JE014-JE0142211F-Nomenclator</collectionIdentifier>
+                    <collectionName>Herbarium;NCU;University of North Carolina;UNC</collectionName>
+                </collection>
+                <jgtiCuratorialUnit>
+                    <jgtiUnitType>Ejemplar</jgtiUnitType>
+                    <jgtiUnitRange>
+                        <beginRange>1</beginRange>
+                        <endRange>1,726</endRange>
+                    </jgtiUnitRange>
+                </jgtiCuratorialUnit>
+            </gbif>
+        </metadata>
+    </additionalMetadata>
+    </eml:eml>

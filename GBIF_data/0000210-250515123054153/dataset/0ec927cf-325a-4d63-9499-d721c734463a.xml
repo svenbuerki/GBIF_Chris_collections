@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://rs.gbif.org/schema/eml-gbif-profile/1.3/eml.xsd"
+packageId="0ec927cf-325a-4d63-9499-d721c734463a"  system="http://gbif.org" scope="system"
+xml:lang="en">
+    <dataset>
+        <alternateIdentifier>10.15468/kc9hyp</alternateIdentifier>
+        <alternateIdentifier>https://ipt.vertnet.org/resource?r=lacm_ento</alternateIdentifier>
+        <alternateIdentifier>http://ipt.vertnet.org:8080/ipt/resource?r=lacm_ento</alternateIdentifier>
+        <alternateIdentifier>http://ipt.vertnet.org:8080/ipt/resource.do?r=lacm_ento</alternateIdentifier>
+        <alternateIdentifier>0ec927cf-325a-4d63-9499-d721c734463a</alternateIdentifier>
+        <title>LACM Entomology Collection</title>
+        <creator>
+            <individualName>
+                <givenName>William</givenName>
+                <surName>Mertz</surName>
+            </individualName>
+            <organizationName>Natural History Museum of Los Angeles County</organizationName>
+            <positionName>Database &amp; Reports Manager</positionName>
+            <address>
+                <deliveryPoint>900 Exposition Blvd.</deliveryPoint>
+                <city>Los Angeles</city>
+                <administrativeArea>California</administrativeArea>
+                <postalCode>90007</postalCode>
+                <country>UNITED_STATES</country>
+            </address>
+            <electronicMailAddress>wmertz@nhm.org</electronicMailAddress>
+            <onlineUrl>https://nhm.org/</onlineUrl>
+        </creator>
+        <creator>
+            <individualName>
+                <givenName>Giar-Ann</givenName>
+                <surName>Kung</surName>
+            </individualName>
+            <organizationName>Natural History Museum of Los Angeles Co.</organizationName>
+            <positionName>Collections Manager</positionName>
+            <address>
+                <deliveryPoint>900 Exposition Blvd.</deliveryPoint>
+                <city>Los Angeles</city>
+                <administrativeArea>California</administrativeArea>
+                <postalCode>90007</postalCode>
+                <country>UNITED_STATES</country>
+            </address>
+            <electronicMailAddress>gkung@nhm.org</electronicMailAddress>
+            <onlineUrl>http://www.nhm.org/</onlineUrl>
+            <userId directory="https://orcid.org/">0000-0002-8099-6949</userId>
+        </creator>
+        <creator>
+            <individualName>
+                <givenName>Weiping</givenName>
+                <surName>Xie</surName>
+            </individualName>
+            <organizationName>Natural History Museum of Los Angeles County</organizationName>
+            <positionName>Collections Manager</positionName>
+            <address>
+                <deliveryPoint>900 Exposition Blvd.</deliveryPoint>
+                <city>Los Angeles</city>
+                <administrativeArea>California</administrativeArea>
+                <postalCode>90007</postalCode>
+                <country>UNITED_STATES</country>
+            </address>
+            <electronicMailAddress>wxie@nhm.org</electronicMailAddress>
+            <onlineUrl>https://nhm.org/</onlineUrl>
+        </creator>
+        <metadataProvider>
+            <individualName>
+                <givenName>William</givenName>
+                <surName>Mertz</surName>
+            </individualName>
+            <organizationName>Natural History Museum of Los Angeles County</organizationName>
+            <positionName>Database &amp; Reports Manager</positionName>
+            <address>
+                <deliveryPoint>900 Exposition Blvd.</deliveryPoint>
+                <city>Los Angeles</city>
+                <administrativeArea>California</administrativeArea>
+                <postalCode>90007</postalCode>
+                <country>UNITED_STATES</country>
+            </address>
+            <electronicMailAddress>wmertz@nhm.org</electronicMailAddress>
+            <onlineUrl>http://www.nhm.org/</onlineUrl>
+        </metadataProvider>
+        <metadataProvider>
+            <individualName>
+                <givenName>Weiping</givenName>
+                <surName>Xie</surName>
+            </individualName>
+            <organizationName>Natural History Museum of Los Angeles County</organizationName>
+            <positionName>Collections Manager</positionName>
+            <address>
+                <deliveryPoint>900 Exposition Blvd.</deliveryPoint>
+                <city>Los Angeles</city>
+                <administrativeArea>California</administrativeArea>
+                <postalCode>90007</postalCode>
+                <country>UNITED_STATES</country>
+            </address>
+            <electronicMailAddress>wxie@nhm.org</electronicMailAddress>
+            <onlineUrl>https://nhm.org/</onlineUrl>
+        </metadataProvider>
+        <metadataProvider>
+            <individualName>
+                <givenName>Giar-Ann</givenName>
+                <surName>Kung</surName>
+            </individualName>
+            <organizationName>Natural History Museum of Los Angeles Co.</organizationName>
+            <positionName>Collections Manager</positionName>
+            <address>
+                <deliveryPoint>900 Exposition Blvd.</deliveryPoint>
+                <city>Los Angeles</city>
+                <administrativeArea>California</administrativeArea>
+                <postalCode>90007</postalCode>
+                <country>UNITED_STATES</country>
+            </address>
+            <electronicMailAddress>gkung@nhm.org</electronicMailAddress>
+            <onlineUrl>http://www.nhm.org/</onlineUrl>
+            <userId directory="https://orcid.org/">0000-0002-8099-6949</userId>
+        </metadataProvider>
+        <associatedParty>
+            <individualName>
+                <givenName>David</givenName>
+                <surName>Bloom</surName>
+            </individualName>
+            <organizationName>VertNet</organizationName>
+            <address>
+                <country>UNITED_STATES</country>
+            </address>
+            <electronicMailAddress>dbloom@vertnet.org</electronicMailAddress>
+            <role>PROGRAMMER</role>
+        </associatedParty>
+        <pubDate>
+                2025-03-05
+        </pubDate>
+        <language>ENGLISH</language>
+        <abstract>
+            <para>With over 800,000 described species — more than half of all known living organisms — insects are the most diverse group of animals on Earth. The Natural History Museum&amp;#39;s entomology collection has more than 5.8 million specimens of insects and spiders. The collection&amp;#39;s strength lies in its holdings of specimens of ants, phorid flies, scarab beetles, and moths from North and Central America. Museum scientists conduct world-class research on systematics, studying species and their relationships, the evolution of major groups, and fossil insects in amber. They conduct field work on insect biodiversity at home and in tropical countries. Entomology at the Natural History Museum of Los Angeles County goes back as far as 1913, when the Museum first opened.</para>
+        </abstract>
+        <keywordSet>
+            <keyword>Specimen</keyword>
+            <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml</keywordThesaurus>
+        </keywordSet>
+        <intellectualRights>
+            <para>To the extent possible under law, the publisher has waived all rights to these data and has dedicated them to the <ulink url="http://creativecommons.org/publicdomain/zero/1.0/legalcode"><citetitle>Public Domain (CC0 1.0)</citetitle></ulink>. Users may copy, modify, distribute and use the work, including for commercial purposes, without restriction.</para>
+        </intellectualRights>
+        <licensed>
+            <licenseName>Creative Commons Zero v1.0 Universal</licenseName>
+            <url>https://spdx.org/licenses/CC0-1.0.html</url>
+            <identifier>CC0-1.0</identifier>
+        </licensed>
+        <distribution scope="document">
+            <online>
+                <url function="information">http://www.nhm.org/site/research-collections/entomology</url>
+            </online>
+        </distribution>
+        <distribution scope="document">
+            <online>
+                <url function="download">https://ipt.vertnet.org/archive.do?r=lacm_ento</url>
+            </online>
+        </distribution>
+        <coverage>
+            <geographicCoverage>
+                <geographicDescription>The entomology collection is the largest in Southern California. Although the phorid flies represented in this data are from all over the world, they are primarily from North and South America with an emphasis on Costa Rica, Colombia, USA, Equador, and Panama.</geographicDescription>
+                <boundingCoordinates>
+                    <westBoundingCoordinate>-180</westBoundingCoordinate>
+                    <eastBoundingCoordinate>180</eastBoundingCoordinate>
+                    <northBoundingCoordinate>90</northBoundingCoordinate>
+                    <southBoundingCoordinate>-90</southBoundingCoordinate>
+                </boundingCoordinates>
+            </geographicCoverage>
+            <taxonomicCoverage>
+                <generalTaxonomicCoverage>Terrestrial Arthropods</generalTaxonomicCoverage>
+                <taxonomicClassification>
+                    <taxonRankName>Phylum</taxonRankName>
+                    <taxonRankValue>Arthropoda</taxonRankValue>
+                </taxonomicClassification>
+            </taxonomicCoverage>
+        </coverage>
+        <maintenance>
+            <description>
+                <para></para>
+            </description>
+            <maintenanceUpdateFrequency>irregular</maintenanceUpdateFrequency>
+        </maintenance>
+        <contact>
+            <individualName>
+                <givenName>William</givenName>
+                <surName>Mertz</surName>
+            </individualName>
+            <organizationName>Natural History Museum of Los Angeles Co.</organizationName>
+            <positionName>Database &amp; Reports Manager</positionName>
+            <address>
+                <deliveryPoint>900 Exposition Blvd.</deliveryPoint>
+                <city>Los Angeles</city>
+                <administrativeArea>California</administrativeArea>
+                <postalCode>90007</postalCode>
+                <country>UNITED_STATES</country>
+            </address>
+            <electronicMailAddress>wmertz@nhm.org</electronicMailAddress>
+            <onlineUrl>http://www.nhm.org/</onlineUrl>
+        </contact>
+        <contact>
+            <individualName>
+                <givenName>Weiping</givenName>
+                <surName>Xie</surName>
+            </individualName>
+            <organizationName>Natural History Museum of Los Angeles County</organizationName>
+            <positionName>Collections Manager</positionName>
+            <address>
+                <deliveryPoint>900 Exposition Blvd.</deliveryPoint>
+                <city>Los Angeles</city>
+                <administrativeArea>California</administrativeArea>
+                <postalCode>90007</postalCode>
+                <country>UNITED_STATES</country>
+            </address>
+            <electronicMailAddress>wxie@nhm.org</electronicMailAddress>
+            <onlineUrl>https://nhm.org/</onlineUrl>
+        </contact>
+        <contact>
+            <individualName>
+                <givenName>Giar-Ann</givenName>
+                <surName>Kung</surName>
+            </individualName>
+            <organizationName>Natural History Museum of Los Angeles Co.</organizationName>
+            <positionName>Collections Manager</positionName>
+            <address>
+                <deliveryPoint>900 Exposition Blvd.</deliveryPoint>
+                <city>Los Angeles</city>
+                <administrativeArea>California</administrativeArea>
+                <postalCode>90007</postalCode>
+                <country>UNITED_STATES</country>
+            </address>
+            <electronicMailAddress>gkung@nhm.org</electronicMailAddress>
+            <onlineUrl>http://www.nhm.org/</onlineUrl>
+            <userId directory="https://orcid.org/">0000-0002-8099-6949</userId>
+        </contact>
+
+    </dataset>
+
+    <additionalMetadata>
+        <metadata>
+            <gbif>
+                <dateStamp>2025-05-15T14:55:21Z</dateStamp>
+                <citation>Mertz W, Kung G, Xie W (2025). LACM Entomology Collection. Version 5.32. Natural History Museum of Los Angeles County. Occurrence dataset https://doi.org/10.15468/kc9hyp accessed via GBIF.org on 2025-05-15.</citation>
+                <resourceLogoUrl>https://ipt.vertnet.org/logo.do?r=lacm_ento</resourceLogoUrl>
+            </gbif>
+        </metadata>
+    </additionalMetadata>
+    </eml:eml>

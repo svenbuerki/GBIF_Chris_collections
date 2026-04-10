@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://rs.gbif.org/schema/eml-gbif-profile/1.3/eml.xsd"
+packageId="26d72d3b-4544-4645-aa56-27aa8a669c6f"  system="http://gbif.org" scope="system"
+xml:lang="en">
+    <dataset>
+        <alternateIdentifier>10.15470/ibqzdo</alternateIdentifier>
+        <alternateIdentifier>https://ipt.gbif.es/resource?r=geranium_in_america</alternateIdentifier>
+        <alternateIdentifier>doi:10.15470/krr29o</alternateIdentifier>
+        <alternateIdentifier>10.15470/krr29o</alternateIdentifier>
+        <alternateIdentifier>26d72d3b-4544-4645-aa56-27aa8a669c6f</alternateIdentifier>
+        <alternateIdentifier>10.15470/krr29o</alternateIdentifier>
+        <alternateIdentifier>http://www.gbif.es/ipt/resource?r=geranium_in_america</alternateIdentifier>
+        <title>A Distribution and Taxonomic Reference Dataset of Geranium (Geraniaceae) in the New World</title>
+        <creator>
+            <individualName>
+                <givenName>Carlos</givenName>
+                <surName>Aedo</surName>
+            </individualName>
+            <organizationName>Real Jardin Botanico -CSIC</organizationName>
+            <positionName>Researcher</positionName>
+            <address>
+                <deliveryPoint>Claudio Moyano 1</deliveryPoint>
+                <city>Madrid</city>
+                <administrativeArea>Madrid</administrativeArea>
+                <postalCode>28014</postalCode>
+                <country>SPAIN</country>
+            </address>
+            <electronicMailAddress>aedo@rjb.csic.es</electronicMailAddress>
+        </creator>
+        <creator>
+            <individualName>
+                <givenName>Francisco</givenName>
+                <surName>Pando</surName>
+            </individualName>
+            <organizationName>Real Jardin Botanico -CSIC</organizationName>
+            <positionName>Researcher</positionName>
+            <address>
+                <deliveryPoint>Claudio Moyano 1</deliveryPoint>
+                <city>Madrid</city>
+                <administrativeArea>Madrid</administrativeArea>
+                <postalCode>28014</postalCode>
+                <country>SPAIN</country>
+            </address>
+            <electronicMailAddress>pando@rjb.csic.es</electronicMailAddress>
+        </creator>
+        <metadataProvider>
+            <individualName>
+                <givenName>Carlos</givenName>
+                <surName>Aedo</surName>
+            </individualName>
+            <organizationName>Real Jardin Botanico -CSIC</organizationName>
+            <positionName>Researcher</positionName>
+            <address>
+                <deliveryPoint>Claudio Moyano 1</deliveryPoint>
+                <city>Madrid</city>
+                <administrativeArea>Madrid</administrativeArea>
+                <postalCode>28014</postalCode>
+                <country>SPAIN</country>
+            </address>
+            <electronicMailAddress>aedo@rjb.csic.es</electronicMailAddress>
+        </metadataProvider>
+        <metadataProvider>
+            <individualName>
+                <givenName>Francisco</givenName>
+                <surName>Pando</surName>
+            </individualName>
+            <organizationName>Real Jardin Botanico -CSIC</organizationName>
+            <positionName>Researcher</positionName>
+            <address>
+                <deliveryPoint>Claudio Moyano 1</deliveryPoint>
+                <city>Madrid</city>
+                <administrativeArea>Madrid</administrativeArea>
+                <postalCode>28014</postalCode>
+                <country>SPAIN</country>
+            </address>
+            <electronicMailAddress>pando@rjb.csic.es</electronicMailAddress>
+        </metadataProvider>
+        <associatedParty>
+            <individualName>
+                <givenName>Carlos</givenName>
+                <surName>Aedo</surName>
+            </individualName>
+            <organizationName>Real Jardin Botanico -CSIC</organizationName>
+            <positionName>Researcher</positionName>
+            <address>
+                <deliveryPoint>Claudio Moyano 1</deliveryPoint>
+                <city>Madrid</city>
+                <administrativeArea>Madrid</administrativeArea>
+                <postalCode>28014</postalCode>
+                <country>SPAIN</country>
+            </address>
+            <electronicMailAddress>aedo@rjb.csic.es</electronicMailAddress>
+            <role>AUTHOR</role>
+        </associatedParty>
+        <associatedParty>
+            <individualName>
+                <givenName>Carlos</givenName>
+                <surName>Aedo</surName>
+            </individualName>
+            <organizationName>Real Jardin Botanico -CSIC</organizationName>
+            <positionName>Researcher</positionName>
+            <address>
+                <deliveryPoint>Claudio Moyano 1</deliveryPoint>
+                <city>Madrid</city>
+                <administrativeArea>Madrid</administrativeArea>
+                <postalCode>28014</postalCode>
+                <country>SPAIN</country>
+            </address>
+            <electronicMailAddress>aedo@rjb.csic.es</electronicMailAddress>
+            <role>CONTENT_PROVIDER</role>
+        </associatedParty>
+        <pubDate>
+                2021-12-22
+        </pubDate>
+        <language>ENGLISH</language>
+        <abstract>
+            <para>The dataset includes 8937 records that  covers  genus Geranium  the New World, providing an updated, taxonomically consistent and a sound geographical  distribution of the 137 species of Geranium in America. These are the studied specimens on which following monograph was based:
+
+Aedo, Carlos (2012). Revision of Geranium (Geraniaceae) in the New World. Systematic Botany Monographs 95: 550p.</para>
+<para>Besides the exhaustive taxonomic work done, and reflected in the dataset, a detailed revision of the locality of the specimens was performed, and geographic coordinates could be assigned with a 1 minute accuracy in c. 6500 records. Duplicate specimens kept in different collections have been aggregated into single records. Specimens from 128 herbaria were reviewed. These were supplemented by others collected during nine field trips, which allowed to know better the variability of characters within populations, and refine species distribution ranges. These expeditions took place in Argentina, Bolivia, Chile, Costa Rica, Ecuador, Peru, United States and Venezuela, and yielded 235 herbarium specimens of Geranium belonging to 46 species.</para>
+<para>The potential for this dataset to be widely reused is very high, given the level of taxonomic and geographic scrutiny this dataset encompasses, its completeness, and the fact that Geranium is a well-known genus, widely used in horticulture and for pharmaceutical products.</para>
+        </abstract>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Specimen</keyword>
+            <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Taxonomy</keyword>
+            <keyword>Botany</keyword>
+            <keyword>America</keyword>
+            <keyword>Species distribution</keyword>
+            <keyword>Plant Sciences</keyword>
+            <keywordThesaurus>n/a</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>inventoryRegional</keyword>
+            <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>taxonomicAuthority</keyword>
+            <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml</keywordThesaurus>
+        </keywordSet>
+        <intellectualRights>
+            <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by/4.0/legalcode"><citetitle>Creative Commons Attribution (CC-BY) 4.0 License</citetitle></ulink>.</para>
+        </intellectualRights>
+        <licensed>
+            <licenseName>Creative Commons Attribution 4.0 International</licenseName>
+            <url>https://spdx.org/licenses/CC-BY-4.0.html</url>
+            <identifier>CC-BY-4.0</identifier>
+        </licensed>
+        <distribution scope="document">
+            <online>
+                <url function="information">http://www.geranium.es/</url>
+            </online>
+        </distribution>
+        <distribution scope="document">
+            <online>
+                <url function="download">https://ipt.gbif.es/archive.do?r=geranium_in_america</url>
+            </online>
+        </distribution>
+        <coverage>
+            <geographicCoverage>
+                <geographicDescription>The New World: South America,Central America and North America</geographicDescription>
+                <boundingCoordinates>
+                    <westBoundingCoordinate>-173.83</westBoundingCoordinate>
+                    <eastBoundingCoordinate>-25.86</eastBoundingCoordinate>
+                    <northBoundingCoordinate>71.59</northBoundingCoordinate>
+                    <southBoundingCoordinate>-57.81</southBoundingCoordinate>
+                </boundingCoordinates>
+            </geographicCoverage>
+            <temporalCoverage>
+                <rangeOfDates>
+                    <beginDate>
+                        <calendarDate>                1787
+</calendarDate>
+                    </beginDate>
+                    <endDate>
+                        <calendarDate>                2012
+</calendarDate>
+                    </endDate>
+                </rangeOfDates>
+            </temporalCoverage>
+            <taxonomicCoverage>
+                <generalTaxonomicCoverage>The dataset includes all native and well-established introduced species of Geranium found in the New World but not occasional introductions. Adventive species, such as garden-escapes, are included. These are: G. ibericum, G. incanum, G. palmatum, G. solanderi, and G. yedoi.
+
+14 specimesn with intermediated feaures between G. campii and G. sibbaldioides from Ecuador (cf. Aedo 2012) have been removed from the databased.</generalTaxonomicCoverage>
+                <taxonomicClassification>
+                    <taxonRankName>Genus</taxonRankName>
+                    <taxonRankValue>Geranium</taxonRankValue>
+                    <commonName>Geranio</commonName>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Family</taxonRankName>
+                    <taxonRankValue>Geraniaceae</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Order</taxonRankName>
+                    <taxonRankValue>Geraniales</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Phylum</taxonRankName>
+                    <taxonRankValue>Magnoliophyta</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Class</taxonRankName>
+                    <taxonRankValue>Magnoliopsida</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Subgenus</taxonRankName>
+                    <taxonRankValue>Geranium</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Subgenus</taxonRankName>
+                    <taxonRankValue>Robertianum</taxonRankValue>
+                </taxonomicClassification>
+                <taxonomicClassification>
+                    <taxonRankName>Subgenus</taxonRankName>
+                    <taxonRankValue>Erodioidea</taxonRankValue>
+                </taxonomicClassification>
+            </taxonomicCoverage>
+        </coverage>
+        <purpose><para>This dataset gathers the primary data organized to support a modern and comprehensive monograph of Geranium in America</para></purpose>
+        <maintenance>
+            <description>
+                <para></para>
+            </description>
+            <maintenanceUpdateFrequency>notPlanned</maintenanceUpdateFrequency>
+        </maintenance>
+        <contact>
+            <individualName>
+                <givenName>Francisco</givenName>
+                <surName>Pando</surName>
+            </individualName>
+            <organizationName>Real Jardin Botanico -CSIC</organizationName>
+            <positionName>Researcher</positionName>
+            <address>
+                <deliveryPoint>Claudio Moyano 1</deliveryPoint>
+                <city>Madrid</city>
+                <administrativeArea>Madrid</administrativeArea>
+                <postalCode>28014</postalCode>
+            </address>
+            <electronicMailAddress>pando@rjb.csic.es</electronicMailAddress>
+        </contact>
+        <contact>
+            <individualName>
+                <givenName>Carlos</givenName>
+                <surName>Aedo</surName>
+            </individualName>
+            <organizationName>Real Jardin Botanico -CSIC</organizationName>
+            <positionName>Researcher</positionName>
+            <address>
+                <deliveryPoint>Claudio Moyano 1</deliveryPoint>
+                <city>Madrid</city>
+                <administrativeArea>Madrid</administrativeArea>
+                <postalCode>28014</postalCode>
+                <country>SPAIN</country>
+            </address>
+            <electronicMailAddress>aedo@rjb.csic.es</electronicMailAddress>
+        </contact>
+        <contact>
+            <individualName>
+                <givenName>Francisco</givenName>
+                <surName>Pando</surName>
+            </individualName>
+            <organizationName>Real Jardin Botanico -CSIC</organizationName>
+            <positionName>Researcher</positionName>
+            <address>
+                <deliveryPoint>Claudio Moyano 1</deliveryPoint>
+                <city>Madrid</city>
+                <administrativeArea>Madrid</administrativeArea>
+                <postalCode>28014</postalCode>
+                <country>SPAIN</country>
+            </address>
+            <electronicMailAddress>pando@rjb.csic.es</electronicMailAddress>
+        </contact>
+        <methods>
+            <methodStep>
+                <description>
+                    <para>Eighty-nine characters were scored for the species description: 58 qualitative and 27 quantitative traits as well as four ratios. Ideally at least 15 specimens were scored for each species. Quantitative characters were assessed with a Digital caliper Mitutoyo CD-15CD. The most frequent values are percentiles, and the extreme values are enclosed in parentheses. In the line drawings of leaf laminas and petals the adaxial side is shown, unless stated otherwise.
+For scanning electron microscopy (SEM) of pollen, mericarps, and seeds, samples were glued to aluminum stubs, coated with 40—50 nm gold, and examined with a JEOL TSM T330A scanning electron microscope at 15 kV.
+A database containing nomenclature, taxonomic and specimen-level data was built following the guidelines described in:
+
+Pando, F.. 1999: Manual de las bases de datos de Flora Mycologica Iberica. – Cuad. Fl. Micol. Ibérica 2: 3-67
+Pando, F., Muñoz Garmendia, J. F. &amp; Aedo, C. 1999: Manual de las bases de datos nomenclaturales de Flora Mycologica Iberica y Flora Iberica. – Cuad. Fl. Micol. Ibérica 14: 3-58.</para>
+                </description>
+            </methodStep>
+            <sampling>
+                <studyExtent>
+                    <description>
+                        <para>Specimens of 128 herbaria were studied. The herbarium acronyms (and number of studied specimens) containing the higher number of relevant specimens were:
+
+MO (1493); NY (1181); MA (774); GH (666); F (630); MEXU (504); COL (469); DAO (440); CONC (413); BM (258)
+
+Herbarium material was supplemented by specimens collected during nine field trips, which allowed knowing better the variability of characters within populations, and refining species distribution ranges.  These expeditions took place in Argentina, Bolivia, Chile, Costa Rica, Ecuador, Peru, United States and Venezuela, and yielded 235 herbarium specimens of Geranium belonging to 46 species.</para>
+                    </description>
+                </studyExtent>
+                <samplingDescription>
+                    <para>Field expeditions targeting geographic and taxonomic gaps identified during herbarium revision work</para>
+                </samplingDescription>
+            </sampling>
+            <qualityControl>
+                <description>
+                    <para>Studied specimens are listed in sufficient detail to allow revision and act checking. These data are made publicly available. Previous taxonomic sources studied and listed in the monograph. Database details (scientific names, dates, geographic coordinates and places checked for consistency using controlled vocabularies. 
+
+Further validation procedures (geographic coordinate format, coordinates within country/provincial boundaries, absence of ASCII anomalous characters in the dataset) were performed with  DARWIN_TEST (v3.3) software (Ortega-Maqueda and Pando 2008), and additional checks were performed using the Vesper platform (Graham and Kenedy 2014).</para>
+                </description>
+            </qualityControl>
+        </methods>
+
+    </dataset>
+
+    <additionalMetadata>
+        <metadata>
+            <gbif>
+                <dateStamp>2025-05-15T14:55:21Z</dateStamp>
+                <citation identifier="http://doi.org/10.15470/ibqzdo">Aedo C, Pando F (2021). A Distribution and Taxonomic Reference Dataset of Geranium (Geraniaceae) in the New World. Version 2.12. Real Jardín Botánico (CSIC). Occurrence dataset https://doi.org/10.15470/ibqzdo accessed via GBIF.org on 2025-05-15.</citation>
+                <bibliography>
+                <citation>Aedo, Carlos (2012). Revision of Geranium (Geraniaceae) in the New World. Systematic Botany Monographs 95: 550p.</citation>
+                <citation identifier="http://www.fzb.rs.gov.br/upload/20140805154148ih69_1_p221_223.pdf">Aedo, C. (2014) Novas ocorrências de Geranium L. para a flora do Brasil. Iheringia 69(1): 221-223</citation>
+                <citation>Aedo, C., Muñoz Garmendia, F. &amp; Pando, F. (1998). World checklist of Geranium L. (Geraniaceae). Anales Jard. Bot. Madrid 56(2) : 211-252.</citation>
+                <citation>LITERATURE CITED
+
+Abrams, M. D. and D. I. Dickmann. 1984. Apparent heat stimulation of buried seeds of Geranium bicknellii on jack pine sites in northern lower Michigan. Mich. Bot. 23: 81-88.
+
+Aedo, C. 2000a. The genus Geranium L. (Geraniaceae) in North America. I. Annual species. Anales Jard. Bot. Madrid 58: 39-82.
+――. 2000b. Nuevos Geranium L. (Geraniaceae) de los Andes. Anales Jard. Bot. Madrid 58: 183-184.
+――. 2001a. The genus Geranium L. (Geraniaceae) in North America. II. Perennial species. Anales Jard. Bot. Madrid 59: 3-65.
+――. 2001b. Taxonomic revision of Geranium sect. Brasiliensia (Geraniaceae). Syst. Bot. 26: 205-215.
+――. 2003. Taxonomic revision of Geranium sect. Trygonium (Geraniaceae). Bot. Zhur. (Moscow &amp; Leningrad) 88(4): 124-131.
+――. 2004a. A new species of Geranium sect. Neoandina (Geraniaceae) from Peru. Harvard Papers Bot. 9: 1-4.
+――. 2004b. Proposal to conserve the name Geranium core-core against G. rapulum (Geraniaceae). Taxon 53: 1074.
+――. 2007. A new species of Geranium sect. Neoandina (Geraniaceae) from Colombia. Torrey Soc. Bot. 134: 534-539.
+
+――. 2008. Geranium L. In: Wu Zhengyi and P. H. Raven (eds.), Flora of China 11: 7-30. Science Press, Beijing and Missouri Botanical Garden Press, St Louis.
+
+――. 2009a. Geranium jaramilloi (Geraniaceae), a new species from Colombia. Feddes Repert. 120: 317-321.
+
+――. 2009b. A new species of Geranium (Geraniaceae), from Colombia. Torrey Soc. Bot. 136: 289-292.
+
+――. 2010. Geranium pseudodiffusum (Geraniaceae), a new species from Ecuador and Peru. Syst. Bot. 35: 168-171.
+
+――. 2011a. Geranium mooreanum (Geraniaceae), una especie nueva de Jalisco, México. Acta Bot. Mex. 95: 29-36.
+
+Aedo, C., J. J. Aldasoro, and C. Navarro. 1998. Taxonomic revision of Geranium sections Batrachioidea and Divaricata (Geraniaceae). Ann. Missouri Bot. Gard. 85: 594-630.
+
+Aedo, C., J. J. Aldasoro, and C. Navarro. 2002. Revision of Geranium sections Azorelloida, Neoandina and Paramensia (Geraniaceae). Blumea 47: 205-297.
+Aedo, C., J. J. Aldasoro, L. Sáez, and C. Navarro. 2003. Taxonomic revision of Geranium sect. Gracilia (Geraniaceae). Brittonia 55: 93-126.
+Aedo, C., J. L. Fernández Alonso, and C. Navarro. 2009. Geranium holosericeum (Geraniaceae), revisited. Brittonia 61: 225-236.
+Aedo, C., O. Fiz, M. L. Alarcón, C. Navarro, and J. J. Aldasoro. 2005b. Taxonomic revision of Geranium sect. Dissecta (Geraniaceae). Syst. Bot. 30: 533-558.
+
+Aedo, C., M. Á. García, M. L. Alarcón, J. J. Aldasoro, and C. Navarro. 2007. Taxonomic revision of Geranium subsect. Mediterranea (Geraniaceae). Syst. Bot. 32: 93-128.
+
+Aedo, C., C. Navarro, and M. L. Alarcón. 2005a. Taxonomic revision of Geranium sections Andina and Chilensia (geraniaceae). Bot. J. Linn. Soc. 149: 1-68.
+Aiton, W. 1789. Hortus Kewensis. London.
+Albers, F. and J. J. A. Van der Walt. 2007. Geraniaceae. In The Families and genera of Vascular Plants IX. ed. K. Kubitzki, 157-167. Berlin Heidelberg: Springer-Verlag.
+
+Arias, J. C. 1968. La expediciones científicas españolas durante el siglo XVIII. Madrid: Ediciones Cultura Hispánica.
+
+Arreguín, M. L. 1979. Geraniaceae. In Flora fanerogámica del valle de México, eds. Rzedowski and G. Rzedowski, vol. 1: 354-359. México: Compañia Editorial Contiental, S.A.
+
+Barboza, G. 1996. Flora Fanerogámica Argentina. Fascículo 26. 129. Geraniaceae. Córdoba: Proflora, Conicet.
+――. 1999. Geraniaceae. In: F.O. Zuloaga and O. Morrone (eds.). Catálogo de las Plantas Vasculares de la República Argentina II. Monogr. Syst. Bot. 74: 755-758.
+Barboza, G. and M. N. Correa. 1988. Geraniaceae. In Flora Patagonica, parte V, ed. M. N. Correa, 30-42. Buenos Aires: Instituto Nacional de Tecnología Agropecuaria.
+Bertero, C. J. 1829. Lista de plantas que han sido observadas en Chile en 1928, por el Dr. Carlos José Bertero. Mercurio Chileno 14: 643.
+Bono, G. 1996. Flora y vegetación del estado de Táchira Venezuela. Torino.
+Bortenschlager, S. 1967. Vorläufige Mitteilunge zur Pollenmorphologie in der Familie der Geraniaceen und ihre systematische Bedeutung. Grana Palynol. 7: 400-468.
+Britten, J. and B. B. Woodward. 1905. L&apos;Héritier&apos;s Botanical Works. J. Bot. 43: 266-278.
+Burdet, H. M. 2008. Collecteurs de Candolle. DVD.
+
+Burger, W. 1991. Family 99 Geraniaceae. Fieldiana Bot. ser. 2, 28: 16-19.
+
+Burman, N. L. 1759. Specimen botanicum de Geraniis. Leiden, Theodoor Haak.
+Candolle, A. P. 1824. Prodromus systematis naturalis regni vegetabilis. Paris, Strasbourg and London.
+Candolle, A. L. P. P. 1874. Calques des dessins de la flore du Mexique. Genève.
+
+Carolin, R. C. 1965. The genus Geranium L. in the south western Pacific area. Proc. Linn. Soc. New South Wales ser. 2, 89: 326-361, plates VI-VII.
+Cavanilles, A. J. 1787. Monadelphiae classis dissertationes decem. Quarta dissertatio botanica. Paris.
+
+Colla, L. A. 1832. Plantae rariores in regionibus Chilensibus a Cl. M. D. Bertero nuper detectae, et ab A. Colla in lucem editae. Nuovo Giorn. Lett., Sci. 24: 143-148.
+Douglas, G. W., G. B. Straley, and D. Meidinger. 1989. The Vascular Plants of British Columbia. BC Ministry of Forest.
+Dumortier, B. C. J. 1827. Florula belgica. Tournay.
+El-Oqlah, A. A. 1983. Pollen morphology of the genus Erodium in the Middle East. Pollen &amp; Spores 25: 383–394.
+Endress, P. K. 2010. Synorganisation without organ fusion in the flowers of Geranium robertianum (Geraniaceae) and its not so trivial obdiplostemony. Ann. Bot. 106: 687-695.
+Fawcett, W. and A.B. Rendle. 1920. Flora of Jamaica. London.
+
+Fernald, M. L. 1935. Geranium carolinianum and allies of northeastern North America. Rhodora 37: 295-301, pls. 371-374.
+
+Feuillée, L. É. 1714-25. Journal des Observationes Physiques, Mathematiques et Botaniques 3. Paris: Jean Mariette.
+Fiz, O., P. Vargas, M. L. Alarcón, Aedo, J. L. García, and J. J. Aldasoro. 2008. Phylogeny and historical biogeography of Geraniaceae in relation to climate changes and pollination ecology. Syst. Bot. 33: 326-342.
+
+Forsskål, P. 1775. Flora aegyptiaco-arabica. Hauniae:, C. Niebuhr.
+
+Fryxell, P. A. 1991. The identity of Sida radicifolia C. Presl. Taxon 40: 613-614.
+Garilleti, R. 1993. Herbarium cavanillesianum. Fontqueria 38: 1-248.
+Gay, C. 1845. Historia fisica y politica de Chile. Paris.
+Ghafoor, A. 1978. Geraniaceae. In Flora of Libya 63, eds. S. M. H. Jafri and A. El-Gadi, 41-57. Tripoli.
+Gónzalez Elizondo, M., S. Gónzalez Elizondo, and Y. Herrera. 1991. Listados florísticos de México IX. Flora de Durango. México.
+
+Gronovius, J. F. 1739. Flora virginica. Leiden: Cornelius Haak.
+Guittonneau, G. G. 1967. Note sur le texte de la Geraniologia de L&apos;Héritier. Bull. Soc. Bot. France 114: 42-45.
+James, E. 1823a. Account of an expedition from Pittsburgh to the Rocky mountains... American ed. Philadelphia.
+――. 1823b. Account of an expedition from Pittsburgh to the Rocky mountains... English ed. London.
+Jarvis, C. E., F. R. Barrie, D. M. Allan, and J. L. Reveal. 1993. A List of Linnaean Generic Names and their Types. Regnum Veg. 127: 1-100.
+Halfdan-Nielsen, B. 1996. Five new species of Geranium (Geraniaceae) from Ecuador. Nordic J. Bot. 16: 267-275.
+Halloy, S. R. P. 1998. A new and rare, plate-shaped Geranium from the Cumbres Calchaquíes, Tucumán, Argentina. Brittonia 50: 467-472.
+Hanks, L. T. and J. K. Small. 1907. Geranium L. In North American Flora 25, eds. L. T. Britton and J. K. Small, 3-21. New York.
+L&apos;Héritier, C. L. 1792. Geraniologia. Paris, London, Viena and Strasbourg.
+Hernández, F. 1549. Rerum medicarum Novae Hispaniae thesaurus seu Plantarum animalium mineralium Mexicanorum historiam. Rome: N. A. Recchi.
+
+Hieronymus, G. 1895a. Plantae Lehmannianae in Guatemala, Costarica, Columbia et Ecuador collectae, additis quibusdam ab aliis collectoribus ex iisdem regionibus necnon e Venezuela et Peruvia allatis, quas determinavit et descripsit adjuvantibus. Bot. Jahrb. Syst. 20 Beiblatt 49: 29-72.
+――. 1895b. Plantae Stuebelianae novae. Bot. Jahrb. Syst. 21: 306-378.
+Holmgren, N. H. 1997. Geranium L. In Intermountain Flora 3A, eds. Cronquist, N. H. Holmgren, and P. K. Holmgren, 330-336. New York.
+
+Humboldt, F. W. H. A., Bonpland, and C. S. Kunth. 1822. Nova genera et species plantarum. Paris.
+Jones, G. N. and F. F. Jones. 1943. A revision of the perennial species of Geranium of the United States and Canada. Rhodora 45: 5-26; 32-53.
+Jørgensen, P. M. and León (eds.). 1999. Catalogue of the vascular plants of Ecuador. Monogr. Syst. Bot. 75: 1-1181.
+Kartesz, J. T. (ed.). 1998. A Synonymized Checklist of the Vascular Flora of the United States, Puerto Rico, and the Virgin Islands. [http://www.csdl.tamu.edu/FLORA/b98/check98.htm].
+
+Kosteletzky, V. F. 1831-36. Allgemeine medizinisch-pharmazeutische flora. Prag: Borrosch and André.
+Knuth, R. 1903. Über die geographische Verbreitung und die Anpassungserscheinungen der Gattung Geranium im Verhältnis zu ihrer systematischen Gliederung. Bot. Jahrb. Syst. 32: 190–230.
+――. 1906. Geraniaceae andinae. Bot. Jahrb. Syst. 37: 555-568.
+――. 1912. Geranium L. In Das Planzenreich. IV.129 (Heft 53), ed. A. Engler, 43-221, 575-583. Leizpig.
+
+――. 1915. Herzog&apos;s bolivianische Pflanzen, II. Meded. Rijks-Herb. 27: 68-69.
+
+――. 1922. Geraniaceae novae. Dekas I. Repert. Spec. Nov. Regni Veg. 18: 289-294.
+――. 1930a. Geraniaceae novae. Decas 3 et 4. Repert. Spec. Nov. Regni Veg. 28: 1-10.
+
+――. 1930b. Dioscoreaceae novae. Decas 3-5. Repert. Spec. Nov. Regni Veg. 28: 87-93.
+――. 1931. Geraniaceae. In Die natürlichen Pflanzenfamilien, ed. 2, ed. 19a, eds. A. Engler and H. Harms, 43–66. Leipzig: Wilhelm Engelmann.
+――. 1933. Geraniaceae novae. Decas 6. Repert. Spec. Nov. Regni Veg. 34: 143-147.
+――. 1936. Geraniaceae novae. Decas 7. Repert. Spec. Nov. Regni Veg. 40: 216-220.
+
+――. 1937a. Contributions to the flora of tropical America XXXIII. Plantae Hintonianae: V. Bull. Misc. Inform. Kew 10: 502-505.
+
+――. 1937b. Geraniaceae. Biblioth. Bot. 29(116): 98-99.
+――. 1938. Geraniaceae novae. Decas 8. Repert. Spec. Nov. Regni Veg. 45: 60-64.
+Macbride, J. F. 1949. Flora of Peru. Field Mus. Nat. Hist., Bot. Ser. 13(3): 511-538.
+
+MacBryde, B. 1968. Flora of Panama. Part VI Family 85. Geraniaceae. Ann. Missouri Bot. Gard. 54: 201-205.
+
+Marticorena, C., and Quezada. 1985. Catálogo de la flora vascular de Chile. Gayana, Bot. 42(1-2).
+McGregor, R. L. 1986. Geraniaceae. In Flora of the great plains, eds. R.L. Mcgregor, T.M. Barley, R.E. Brooks and E.K. Schofield, 580-582. Lawrence, Kansas: Univ. Press Kansas.
+
+McVaugh, R. 2000. Botanical results of the Sessé and Mociño expedition (1787-1803) VII. A guide to relevant scientific names of plants. Pittsburgh: Hunt Institute for Botanical Documentation.
+Milberg, P. 1994. Germination of up to 129-year old, dry-stored seeds of Geranium bohemicum (Geraniaceae). Nordic J. Bot. 14: 27-29.
+
+Moore, D.M. 1983. Flora of Tierra del Fuego. England and Missouri Botanical Garden, USA, A. Nelson.
+Moore, H. E. 1943. A revision of the genus Geranium in Mexico and Central America. Contr. Gray Herb. 146: 1-108, 5 &quot;Plate&quot;.
+
+――. 1951. Notes on new World gerania. Gentes Herb. 8: 250-257.
+
+――. 1961. A remarkable new Geranium from Ecuador. Brittonia 13: 141-143.
+
+――. 1963. Geranium campii and G. durangense-Two new species. Brittonia 15: 92-95.
+Moscoso, R. M. 1943. Catalogus Florae Domingensis. New York.
+
+Novoselova, M. S. 1996. Obzor semeistva Geraniaceae tsentral&apos;noi Asii [Synopsis of the family Geraniaceae in central Asia]. Bot. Zhurn. (Moscow &amp; Leningrad) 81(10): 83-91 [in Russian].
+
+
+Paray, L. 1954. Nuevas fanerógamas de México. Bol. Soc. Bot. México 16: 20-25.
+
+Pax, D. L., R. A. Price, and H. J. Michaels. 1997. Phylogenetic position of the Hawaiian geraniums based on rbcL sequences. Amer. J. Bot. 84: 72-78.
+Payne, W. W. 1978. A glossary of plant hair terminology. Brittonia 30: 239-255.
+Picard, C. 1837. Étude sur les Géraniées. Mém. Soc. Agric. Boulogne-sur-Mer 1: 95–138.
+Pittier, H. 1929. Botanical notes on, and descriptions of, new and old species of Venezuela plants. J. Wash. Acad. Sci. 19: 175-186.
+Presl, J. S. 1831-1835. Reliquiae Haenkeanae 2. Pragae: J. G. Calve.
+Pursh, F. 1814. Flora Americae Septentrionalis. London.
+
+Rafinesque, C. S. 1817. Florula ludoviciana. New York.
+
+Reiche, K. 1890. Geraniaceae. In Die Natürlichen Pflanzenfamilien 3(4), ed. A. Engler and K. Prantl, 1–14. Leipzig: Wilhelm Engelmann.
+Reveal, J. L. and J. S. Pringle. 1993. Taxonomic Botany and Floristics. In Flora of North America North of Mexico vol. 1, ed. Morin, N.R., 157-192. New York, Oxford: Oxford Uniersity Press.
+Rhoads, A. F. and W. Mc. Klein. 1993. The vascular flora of Pennsylvania and Atlas. Philadelphia: American Philosophical Society.
+Robin, C.-C. 1807. Voyages dans l&apos;intérieur de la Louisiane, de la Floride occidentale, et dans les îles de La Martinique et de Saint-Domingue, pendant les années 1802, 1803, 1804, 1805 et 1806. Tome 3. Paris: F. Buisson.
+Rose, N. J. 1906. Studies of Mexican and Central America plants. Contr. U.S. Natl. Herb. 10(3): 79-132.
+Rousseau, C. 1968. Histoire, habitat et distribution de 220 plantes introduites au Québec. Naturaliste Canad. 95: 49-169.
+Rzedowski, J. and G. Rzedowski. 1995. Flora del Bajío y de regiones adyacentes 40: 1-37. Pátzcuaro: Instituto de Ecología, A.C.
+Sandwith, N. Y. 1942. Contributions to the flora of tropical America: XLV. Bull. Misc. Inform. Kew 1941: 218-228.
+Scoggan, H. J. 1978. The Flora of Canada. Ottawa.
+Sessé, M. and J. M. Mociño. 1893. Plantae Novae Hispaniae... editio secunda. México.
+Sprengel, P. 1826. Systema Vegetabilium ed. 16. Gottingae, Librariae Dieterichianae.
+
+Stafford, P. J., and S. Blackmore. 1991. Geraniaceae. In The Northwest European Pollen Flora 6, ed. W. Punt and S. Blackmore, 49–78. Amsterdam, London, New York, and Tokyo: Elsevier.
+Stafleu, F. A. and R. S. Cowan. 1986. Taxonomic literature. Volume VI: Sti-Vuy, ed. 2. Regnum Veg. 115.
+Standley, P. C. 1915. A remarkable new Geranium from Venezuela. J. Wash. Acad. Sci. 5: 600-602.
+Standley, P. C. and J. A. Steyermark. 1946. Flora of Guatemala. Family Geraniaceae. Fieldiana Bot. 24 (5): 368-373.
+Stearn, W. T. (ed.). 1968. Humboldt, Bonpland Kunth and tropical American botany. Stuttgart: J. Cramer.
+Steudel, E. G. 1840. Nomenclator botanicus... ed. 2. Stuttgard and Tubingae.
+――. 1856. Einige Beiträge zu der Chilesischen und Peruanischen Flora, hauptsächlich nach den Sammlungen von Bertero und Lechler (Schluss.). Flora 39: 436-444.
+Stuessy, T. F. and C. Marticorena. 1990. Orthography of some epithets honoring Bertero in the vascular flora of the Juan Fernández islands and continental Chile. Gayana, Bot. 47: 77-81.
+Taylor, M. S. 1993a. Geranium. In The Jepson Manual, ed. J.C. Hickman. Berkeley, Los Angeles and London: Univ. California Press.
+――. 1993b. Geranium L. In Cátalogo de las Angiospermas y Gimnospermas del Perú, eds. Brako, L. and Zarucchi, J.L., Monogr. Syst. Bot. Missouri Bot. Gard. 45: 545-548.
+Theobald, W. L., J. L. Krahulik, and R. C. Rollins. 1979. Trichome description and classification. In Anatomy of the Dicotyledons, ed. 2, ed. C. R. Metcalfe and L. Chalk, 40–53. Oxford: Clarendon Press.
+Tokarski, M. 1972. Morphological and taxonomical analysis of fruits and seeds of the European and Caucasian species of the genus Geranium L. Monograph. Bot. 36: 5–115.
+Trelease, W. 1888. A study of North American Geraniaceae. Mem. Boston Soc. Nat. Hist. 4: 71-103, pl. 9-12.
+Turczaninow, N. 1858. Animadversiones in secundam partem herbarii Turczaninowiani, nunc universitatis caesareae charkowiensis. Bull. Soc. Imp. Naturalistes Moscou 31: 379-476.
+Utrera-Barillas, E. 2000. Geraniaceae. In Flora de Veracruz 117, ed. V. Sosa: 1-31. D.R. México.
+Warburg, E. F. 1938. Taxonomy and relationship in the Geraniales in the light of their cytology. New Phytol. 37: 130–159.
+Watson, S. 1882. List of plants from Southwestern Texas and Northern Mexico, collected chiefly by Dr. E. Palmer in 1879-80.-I. Polypetalae. Proc. Amer. Acad. Arts 17: 316-361. 
+
+Weber, M. 1996. The existence of a special exine coating in Geranium robertianum pollen. Int. J. Plant Sci. 157(2): 195-202.
+
+Weddell, H. A. 1861. Chloris Andina. Paris: P. Bertrand.
+Welsh, S. L., N. D. Atwood, S. Goodrich, and L. C. Higgins. 1987. A Utah Flora. Great Basin Naturalist Mem. 9: 1-894 [312-313].
+
+Yeo, P. F. 1973. The biology and systematics of Geranium, sections Anemonifolia Knuth and Ruberta Dum. Bot. J. Linn. Soc. 67: 285-346.
+――. 1984. Fruit-discharge-type in Geranium (Geraniaceae): its use in classification and its evolutionary implications. Bot. J. Linn. Soc. 89: 1-36.
+――. 1992. A revision of Geranium L. in South-West China. Edinburgh J. Bot. 49: 123-211.
+――. 2002. Hardy Geraniums second edition. Portland, Oregon: Timber Press.</citation>
+                <citation identifier="http://doi.org/10.15470/ibqzdo">Carlos Aedo, Francisco Pando. 2017. A distribution and taxonomic reference dataset of Geranium in the New World. Scientific Data 4, 170049</citation>
+                </bibliography>
+                <resourceLogoUrl>http://www.gbif.es/ipt/logo.do?r=geranium_in_america</resourceLogoUrl>
+                <collection>
+                    <parentCollectionIdentifier>Not applicable</parentCollectionIdentifier>
+                    <collectionIdentifier>http://www.missouribotanicalgarden.org/plant-science/plant-science/resources/herbarium.aspx</collectionIdentifier>
+                    <collectionName>MO Herbarium</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>Not applicable</parentCollectionIdentifier>
+                    <collectionIdentifier>http://sciweb.nybg.org/science2/SteereHerbarium.asp</collectionIdentifier>
+                    <collectionName>NY Herbarium</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>Not applicable</parentCollectionIdentifier>
+                    <collectionIdentifier>http://www.rjb.csic.es/jardinbotanico/jardin/index.php?Cab=109&amp;len=en</collectionIdentifier>
+                    <collectionName>MA Herbarium</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>Not applicable</parentCollectionIdentifier>
+                    <collectionIdentifier>http://huh.harvard.edu/pages/gray-herbarium-gh</collectionIdentifier>
+                    <collectionName>GH Herbarium</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>Not applicable</parentCollectionIdentifier>
+                    <collectionIdentifier>http://www.fieldmuseum.org/science/research/area/plants-fungi</collectionIdentifier>
+                    <collectionName>F Herbarium</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>Not applicable</parentCollectionIdentifier>
+                    <collectionIdentifier>http://www.ib.unam.mx/botanica/herbario/</collectionIdentifier>
+                    <collectionName>MEXU Herbarium</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>Not applicable</parentCollectionIdentifier>
+                    <collectionIdentifier>http://www.museos.unal.edu.co/sccs/plantilla_museo_3.php?id_subseccion_museo=456&amp;id_museo=31</collectionIdentifier>
+                    <collectionName>COL Herbarium</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>Not applicable</parentCollectionIdentifier>
+                    <collectionIdentifier>http://www.agr.gc.ca/eng/science-and-innovation/research-centres/ontario/eastern-cereal-and-oilseed-research-centre/the-agriculture-and-agri-food-canada-collection-of-vascular-plants/?id=1251393521021</collectionIdentifier>
+                    <collectionName>DAO Herbarium</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>Not applicable</parentCollectionIdentifier>
+                    <collectionIdentifier>http://www2.udec.cl/~herbconc/</collectionIdentifier>
+                    <collectionName>CONC Herbarium</collectionName>
+                </collection>
+                <collection>
+                    <parentCollectionIdentifier>Not applicable</parentCollectionIdentifier>
+                    <collectionIdentifier>http://www.nhm.ac.uk/research-curation/scientific-resources/collections/index.html</collectionIdentifier>
+                    <collectionName>BM Herbarium</collectionName>
+                </collection>
+                <specimenPreservationMethod>DRIED_AND_PRESSED</specimenPreservationMethod>
+                <jgtiCuratorialUnit>
+                    <jgtiUnitType>herbarium specimens</jgtiUnitType>
+                    <jgtiUnitRange>
+                        <beginRange>8,917</beginRange>
+                        <endRange>11,250</endRange>
+                    </jgtiUnitRange>
+                </jgtiCuratorialUnit>
+            </gbif>
+        </metadata>
+    </additionalMetadata>
+    </eml:eml>
