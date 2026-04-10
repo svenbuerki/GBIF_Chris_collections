@@ -1,9 +1,13 @@
 """
 prepare_FotW_display.py
 =======================
-Produces FotW_website_collections.csv — a filtered, display-ready table of
-Christopher Davidson's GBIF occurrences that are also in the Flora of the World
-(FotW) database.
+Produces FotW_website_collections.csv — a merged, display-ready table of
+Christopher Davidson's collections that are in the Flora of the World (FotW)
+database, drawing from two sources:
+
+  1. GBIF occurrences matched to FotW   (GBIF_FotW_matched_collections.csv)
+  2. SRP specimens matched to FotW      (SRP_FotW_matched_collections.csv)
+     — includes ~1,600 SRP specimens that are in FotW but not yet on GBIF
 
 Input files
 -----------
@@ -15,7 +19,12 @@ Output file
 -----------
 FotW_website_collections.csv        -- Selected Darwin Core fields + derived
                                        columns (primarySpecimenURL, specimenImageURL,
-                                       hasImage)
+                                       hasImage, source)
+
+Source column
+-------------
+  GBIF   — record came from the GBIF download (may also have SRP image URL)
+  SRP    — record came from SRP_FotW_matched_collections only (not on GBIF)
 
 IMPORTANT — Link stability
 --------------------------
@@ -28,17 +37,22 @@ Use `primarySpecimenURL` instead — a derived column that selects the most stab
 available link in this priority order:
   1. bibliographicCitation  — URL to the specimen record at the source institution
                               (Tropicos, iDigBio, JSTOR, etc.). Stable because it
-                              is assigned by the holding herbarium.  Coverage: 80.8%
+                              is assigned by the holding herbarium.
   2. occurrenceID           — Globally unique specimen URI assigned by the source
                               institution (e.g. urn:catalog:MO:Tropicos:102569036).
                               Not a clickable URL but a persistent identifier.
-  3. gbifURL                — Fallback only. May break if GBIF re-indexes.
+  3. specimenImageURL       — For SRP-only records: PNW Herbaria image URL used
+                              as the best available clickable link.
+  4. gbifURL                — Fallback only. May break if GBIF re-indexes.
 
-The `gbifURL` column is retained for reference and for users who want to check
-the current GBIF record, but should not be the primary link shown on the website.
-
-To keep links fresh, re-download the GBIF data and re-run the full pipeline
-(FotW_on_GBIF_summary.Rmd → prepare_FotW_display.py) approximately once a year.
+Coordinate note (SRP source rows)
+----------------------------------
+In SRP_FotW_matched_collections.csv the coordinate columns are swapped relative
+to their names:
+  decimalLatitude  column  → actually contains longitude in DMS
+                             (e.g. "114° 23' 47.5\" W")
+  decimalLongitude column  → actually contains latitude in decimal degrees
+The script corrects this on import.
 
 Darwin Core fields selected
 ---------------------------
@@ -79,19 +93,21 @@ Group 5 – Taxonomy & conservation
 
 Derived columns
 ---------------
-  primarySpecimenURL  Most stable link: bibliographicCitation > occurrenceID > gbifURL
+  primarySpecimenURL  Most stable link (see priority order above)
   specimenImageURL    PNW Herbaria image URL for SRP specimens; empty otherwise
   hasImage            Y if mediaType == StillImage or specimenImageURL is set
+  source              GBIF or SRP (origin of the record)
   FotW_occurrenceID   Link back to the FotW database record
   gbifID              GBIF numeric identifier (snapshot — may change on re-index)
 """
 
 import csv
 import os
-from collections import defaultdict
+import re
+from collections import Counter
 
 # ── Paths ──────────────────────────────────────────────────────────────
-BASE = os.path.dirname(os.path.abspath(__file__))
+BASE       = os.path.dirname(os.path.abspath(__file__))
 GBIF_FOTW  = os.path.join(BASE, "GBIF_FotW_matched_collections.csv")
 SRP_FOTW   = os.path.join(BASE, "SRP_FotW_matched_collections.csv")
 OUTPUT     = os.path.join(BASE, "FotW_website_collections.csv")
@@ -133,7 +149,31 @@ DISPLAY_FIELDS = [
 ]
 
 # Final column order (display fields + derived)
-OUTPUT_FIELDS = DISPLAY_FIELDS + ["primarySpecimenURL", "specimenImageURL", "hasImage"]
+OUTPUT_FIELDS = DISPLAY_FIELDS + ["primarySpecimenURL", "specimenImageURL", "hasImage", "source"]
+
+# ── Country name → ISO 3166-1 alpha-2 mapping (SRP file uses full names) ──
+COUNTRY_CODES = {
+    "U.S.A.":                  "US",
+    "Australia":               "AU",
+    "Malaysia":                "MY",
+    "E. Malaysia":             "MY",
+    "Switzerland":             "CH",
+    "South Africa":            "ZA",
+    "Gabon":                   "GA",
+    "Slovenia":                "SI",
+    "Cameroon":                "CM",
+    "Republic of Georgia":     "GE",
+    "The Republic of Georgia": "GE",
+    "China":                   "CN",
+    "Costa Rica":              "CR",
+    "Namibia":                 "NA",
+    "Belize":                  "BZ",
+    "Kenya":                   "KE",
+    "Uganda":                  "UG",
+    "Peru":                    "PE",
+    "Spain":                   "ES",
+    "Thailand":                "TH",
+}
 
 
 def clean(value):
@@ -153,79 +193,192 @@ def srp_image_url(catalog_number):
         return ""
 
 
-# ── 1. Build SRP image-URL lookup from SRP_FotW_matched_collections ───
-# Index by FotW_occurrenceID (take first image URL per FotW record)
-print("Loading SRP image URLs …")
-srp_image_map = {}
+def parse_dms(dms_str):
+    """
+    Parse a DMS coordinate string such as '114° 23' 47.5" W' into a signed
+    decimal degree float.  Returns empty string on failure.
+    W and S directions produce negative values.
+    """
+    m = re.search(
+        r"(\d+)[°\s]+(\d+)['\s]+([0-9.]+)[\"'\s]*([NSEWnsew])",
+        dms_str.replace("\\'", "'"),
+    )
+    if not m:
+        return ""
+    deg, minutes, sec, direction = m.groups()
+    decimal = float(deg) + float(minutes) / 60 + float(sec) / 3600
+    if direction.upper() in ("W", "S"):
+        decimal = -decimal
+    return f"{decimal:.6f}"
+
+
+def srp_coords(lat_col, lon_col):
+    """
+    Return (latitude, longitude) as decimal-degree strings from the SRP file.
+
+    The SRP file has two coordinate formats depending on the row:
+      - DMS format: decimalLatitude column holds longitude in DMS
+                    (e.g. '114° 23' 47.5" W'), decimalLongitude holds
+                    latitude in decimal degrees.  Columns are swapped.
+      - Decimal format: both columns are correctly named decimal degrees.
+
+    Detection: if '°' appears in the latitude column → DMS / swapped.
+    """
+    if "°" in lat_col:
+        # Swapped: lon_col is actual latitude, lat_col is DMS longitude
+        return lon_col.strip(), parse_dms(lat_col)
+    else:
+        # Both decimal and correctly named
+        return lat_col.strip(), lon_col.strip()
+
+
+# ── 1. Load SRP matched records ───────────────────────────────────────
+print("Loading SRP matched records …")
+srp_rows = []
 with open(SRP_FOTW, newline="", encoding="utf-8") as f:
     for row in csv.DictReader(f):
-        fid = row.get("FotW_occurrenceID", "").strip()
-        url = row.get("SRP_imageURL", "").strip()
-        if fid and url and fid not in srp_image_map:
-            srp_image_map[fid] = url
+        srp_rows.append(row)
 
-print(f"  SRP image URLs indexed: {len(srp_image_map)}")
+print(f"  SRP rows loaded: {len(srp_rows)}")
 
 # ── 2. Process GBIF-FotW matched records ─────────────────────────────
 print("Processing GBIF-FotW matched records …")
-output_rows = []
+output_rows      = []
+gbif_fotw_ids    = set()   # track FotW IDs already covered by GBIF rows
 
 with open(GBIF_FOTW, newline="", encoding="utf-8") as f:
     reader = csv.DictReader(f)
     for row in reader:
         out = {field: clean(row.get(field, "")) for field in DISPLAY_FIELDS}
 
-        inst     = out["institutionCode"]
-        cat_num  = out["catalogNumber"]
-        fotw_id  = out["FotW_occurrenceID"]
+        inst    = out["institutionCode"]
+        cat_num = out["catalogNumber"]
+        fotw_id = out["FotW_occurrenceID"]
 
-        # ── Derive specimenImageURL ──────────────────────────────────
+        # Track FotW IDs covered by GBIF
+        if fotw_id:
+            gbif_fotw_ids.add(fotw_id)
+
+        # ── specimenImageURL ─────────────────────────────────────────
         if inst == "SRP" and cat_num:
-            # Build directly from GBIF catalog number
             out["specimenImageURL"] = srp_image_url(cat_num)
-        elif fotw_id in srp_image_map:
-            # Fallback: use SRP file match on FotW_occurrenceID
-            out["specimenImageURL"] = srp_image_map[fotw_id]
         else:
+            # Check SRP matched file for an image via FotW ID
             out["specimenImageURL"] = ""
+            for srp in srp_rows:
+                if srp.get("FotW_occurrenceID", "").strip() == fotw_id and srp.get("SRP_imageURL", "").strip():
+                    out["specimenImageURL"] = srp["SRP_imageURL"].strip()
+                    break
 
-        # ── Derive primarySpecimenURL ────────────────────────────────
-        # Priority: bibliographicCitation > occurrenceID > gbifURL (fallback)
+        # ── primarySpecimenURL ───────────────────────────────────────
         out["primarySpecimenURL"] = (
             out["bibliographicCitation"]
             or out["occurrenceID"]
             or out["gbifURL"]
         )
 
-        # ── hasImage flag ────────────────────────────────────────────
+        # ── hasImage ─────────────────────────────────────────────────
         out["hasImage"] = (
             "Y" if out["mediaType"] == "StillImage" or out["specimenImageURL"]
             else "N"
         )
 
+        out["source"] = "GBIF"
         output_rows.append(out)
 
-# ── 3. Write output ───────────────────────────────────────────────────
+print(f"  GBIF rows processed: {len(output_rows)}")
+print(f"  Unique FotW IDs covered by GBIF: {len(gbif_fotw_ids)}")
+
+# ── 3. Add SRP-only rows (FotW IDs not in GBIF set) ──────────────────
+print("Adding SRP-only records …")
+n_srp_added = 0
+
+for row in srp_rows:
+    fotw_id = row.get("FotW_occurrenceID", "").strip()
+    if fotw_id in gbif_fotw_ids:
+        continue  # already represented by a GBIF row
+
+    # Map SRP columns to Darwin Core output fields
+    lat_decimal, lon_decimal = srp_coords(
+        row.get("decimalLatitude",  ""),
+        row.get("decimalLongitude", ""),
+    )
+
+    # Combine collector + otherCollectors
+    collector       = row.get("collector", "").strip()
+    other           = row.get("otherCollectors", "").strip()
+    if other and other.upper() not in ("NA", "NULL", ""):
+        recorded_by = collector + " | " + other
+    else:
+        recorded_by = collector
+
+    country_name = row.get("country", "").strip()
+    country_code = COUNTRY_CODES.get(country_name, "")
+
+    image_url = row.get("SRP_imageURL", "").strip()
+    accession = row.get("SRP_accession", "").strip()
+
+    out = {f: "" for f in DISPLAY_FIELDS}
+    out["gbifID"]                = ""
+    out["gbifURL"]               = ""
+    out["FotW_occurrenceID"]     = fotw_id
+    out["occurrenceID"]          = row.get("SRP_occurrenceID", "").strip()
+    out["institutionCode"]       = "SRP"
+    out["ownerInstitutionCode"]  = "Boise State University"
+    out["catalogNumber"]         = accession
+    out["basisOfRecord"]         = "PRESERVED_SPECIMEN"
+    out["bibliographicCitation"] = ""
+    out["acceptedScientificName"]= row.get("scientificName_SRP", "").strip()
+    out["family"]                = row.get("family", "").strip()
+    out["taxonRank"]             = ""
+    out["taxonomicStatus"]       = ""
+    out["iucnRedListCategory"]   = ""
+    out["recordedBy"]            = recorded_by
+    out["recordNumber"]          = row.get("collectorNumber", "").strip()
+    out["eventDate"]             = row.get("eventDate_SRP", "").strip()
+    out["countryCode"]           = country_code
+    out["stateProvince"]         = row.get("stateProvince", "").strip()
+    out["locality"]              = row.get("locality", "").strip()
+    out["decimalLatitude"]       = lat_decimal
+    out["decimalLongitude"]      = lon_decimal
+    out["elevation"]             = ""
+    out["mediaType"]             = "StillImage"
+    out["license"]               = ""
+    out["rightsHolder"]          = "SRP / Boise State University"
+    out["specimenImageURL"]      = image_url
+    out["primarySpecimenURL"]    = image_url or out["occurrenceID"]
+    out["hasImage"]              = "Y"
+    out["source"]                = "SRP"
+
+    output_rows.append(out)
+    gbif_fotw_ids.add(fotw_id)   # prevent duplicate FotW IDs from multiple SRP rows
+    n_srp_added += 1
+
+print(f"  SRP-only rows added: {n_srp_added}")
+
+# ── 4. Write output ───────────────────────────────────────────────────
 print("Writing output …")
 with open(OUTPUT, "w", newline="", encoding="utf-8") as f:
     writer = csv.DictWriter(f, fieldnames=OUTPUT_FIELDS)
     writer.writeheader()
     writer.writerows(output_rows)
 
-# ── 4. Summary ────────────────────────────────────────────────────────
-n = len(output_rows)
-n_image      = sum(1 for r in output_rows if r["hasImage"] == "Y")
-n_srp_img    = sum(1 for r in output_rows if r["specimenImageURL"])
-n_gbif_img   = sum(1 for r in output_rows if r["mediaType"] == "StillImage")
-
-from collections import Counter
-inst_ct = Counter(r["institutionCode"] for r in output_rows)
+# ── 5. Summary ────────────────────────────────────────────────────────
+n          = len(output_rows)
+n_image    = sum(1 for r in output_rows if r["hasImage"] == "Y")
+n_srp_img  = sum(1 for r in output_rows if r["specimenImageURL"])
+n_gbif_img = sum(1 for r in output_rows if r["mediaType"] == "StillImage" and r["source"] == "GBIF")
+n_gbif_src = sum(1 for r in output_rows if r["source"] == "GBIF")
+n_srp_src  = sum(1 for r in output_rows if r["source"] == "SRP")
+inst_ct    = Counter(r["institutionCode"] for r in output_rows)
 
 print()
 print("=" * 50)
 print("OUTPUT SUMMARY")
 print("=" * 50)
 print(f"Total records:              {n}")
+print(f"  – from GBIF:              {n_gbif_src}")
+print(f"  – SRP-only (not on GBIF): {n_srp_src}")
 print(f"Records with any image:     {n_image}")
 print(f"  – GBIF image (StillImage):  {n_gbif_img}")
 print(f"  – SRP / PNW Herbaria URL:   {n_srp_img}")

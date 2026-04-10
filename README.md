@@ -122,9 +122,12 @@ unmatched records.
 
 ### 4. `prepare_FotW_display.py` — Website display table (Python)
 
-Produces a filtered, display-ready CSV for the FotW website. Selects the
-highest-coverage Darwin Core fields, replaces GBIF null strings, adds a
-`specimenImageURL` (PNW Herbaria URL for SRP specimens) and a `hasImage` flag.
+Produces a merged, display-ready CSV for the FotW website by combining two
+sources: GBIF occurrences matched to FotW, and SRP specimens matched to FotW
+that are **not yet on GBIF** (~1,600 additional records). A `source` column
+distinguishes the two origins. Replaces GBIF null strings, corrects swapped
+and mixed-format (DMS / decimal) coordinates in the SRP file, adds
+`primarySpecimenURL`, `specimenImageURL`, and `hasImage`.
 
 | | |
 |---|---|
@@ -142,7 +145,7 @@ highest-coverage Darwin Core fields, replaces GBIF null strings, adds a
 
 | File | Description |
 |---|---|
-| `FotW_website_collections.csv` | 874 records, 29 display-ready columns (see below) |
+| `FotW_website_collections.csv` | 2,494 records, 30 display-ready columns (see below) |
 
 **Columns in `FotW_website_collections.csv`:**
 
@@ -177,6 +180,7 @@ highest-coverage Darwin Core fields, replaces GBIF null strings, adds a
 | `primarySpecimenURL` | — | **100%** | **Most stable available link** (see note below) |
 | `specimenImageURL` | — | derived | PNW Herbaria image URL (SRP specimens only) |
 | `hasImage` | — | derived | `Y` if `mediaType = StillImage` or `specimenImageURL` set |
+| `source` | — | derived | `GBIF` or `SRP` (origin of the record) |
 
 > **`primarySpecimenURL` — link stability note**
 >
@@ -202,13 +206,12 @@ highest-coverage Darwin Core fields, replaces GBIF null strings, adds a
 
 | Metric | Value |
 |---|---|
-| Total records | **874** |
-| Records with any image | **442** |
+| Total records | **2,494** |
+| — from GBIF | 874 |
+| — SRP-only (not yet on GBIF) | 1,620 |
+| Records with any image | **2,062** |
 | — GBIF image (StillImage) | 268 |
-| — SRP / PNW Herbaria URL | 203 |
-| `primarySpecimenURL` filled | **874 (100%)** |
-| — via `bibliographicCitation` | 706 (80.8%) |
-| — via `occurrenceID` | 168 (19.2%) |
+| — SRP / PNW Herbaria URL | 1,823 |
 
 ---
 
@@ -251,8 +254,9 @@ Records matched on a composite key: **numeric record number + collection date**
 | Metric | Value |
 |---|---|
 | GBIF occurrences also in FotW | **874** |
-| Unique FotW records represented | **474** |
-| Matched records with any image | **442** |
+| SRP-only FotW matches (not on GBIF) | **1,620** |
+| Total records in website table | **2,494** |
+| Records with any image | **2,062** |
 
 **Top institutions:** MO (253), SRP (175), P — Paris (56), QCNE (49),
 QCA (37), G — Geneva (33), SUVA — Fiji (30).
@@ -308,7 +312,7 @@ GBIF_Chris_collections/
 │
 ├── Output data
 │   ├── GBIF_FotW_matched_collections.csv       # 874 GBIF occurrences in FotW (all fields)
-│   ├── FotW_website_collections.csv            # 874 records, 28 display-ready columns
+│   ├── FotW_website_collections.csv            # 2,494 records, 30 display-ready columns
 │   ├── SRP_FotW_matched_collections.csv        # 1,783 SRP specimens matched to FotW
 │   └── SRP_FotW_unmatched.csv                  # 491 SRP FotW-flagged, no FotW DB entry
 │
