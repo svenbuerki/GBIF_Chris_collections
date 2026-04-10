@@ -94,7 +94,8 @@ Group 5 – Taxonomy & conservation
 Derived columns
 ---------------
   primarySpecimenURL  Most stable link (see priority order above)
-  specimenImageURL    PNW Herbaria image URL for SRP specimens; empty otherwise
+  specimenImageURL    Image URL: multimedia.txt identifier for GBIF records (when
+                      hasImage=Y), PNW Herbaria URL for SRP specimens
   hasImage            Y if mediaType == StillImage or specimenImageURL is set
   source              GBIF or SRP (origin of the record)
   FotW_occurrenceID   Link back to the FotW database record
@@ -102,6 +103,7 @@ Derived columns
 """
 
 import csv
+import glob
 import os
 import re
 from collections import Counter
@@ -111,6 +113,10 @@ BASE       = os.path.dirname(os.path.abspath(__file__))
 GBIF_FOTW  = os.path.join(BASE, "GBIF_FotW_matched_collections.csv")
 SRP_FOTW   = os.path.join(BASE, "SRP_FotW_matched_collections.csv")
 OUTPUT     = os.path.join(BASE, "FotW_website_collections.csv")
+
+# multimedia.txt lives inside the versioned GBIF download subdirectory
+_multimedia_matches = glob.glob(os.path.join(BASE, "GBIF_data", "*", "multimedia.txt"))
+MULTIMEDIA = _multimedia_matches[0] if _multimedia_matches else None
 
 # ── Darwin Core fields to keep ─────────────────────────────────────────
 DISPLAY_FIELDS = [
@@ -232,6 +238,20 @@ def srp_coords(lat_col, lon_col):
         return lat_col.strip(), lon_col.strip()
 
 
+# ── 0. Load GBIF multimedia identifiers (gbifID → image URL) ──────────
+print("Loading GBIF multimedia identifiers …")
+gbif_image_url = {}  # gbifID (str) → identifier URL
+if MULTIMEDIA:
+    with open(MULTIMEDIA, newline="", encoding="utf-8") as f:
+        for row in csv.DictReader(f, delimiter="\t"):
+            gid = row.get("gbifID", "").strip()
+            url = row.get("identifier", "").strip()
+            if gid and url and gid not in gbif_image_url:
+                gbif_image_url[gid] = url
+    print(f"  Multimedia entries loaded: {len(gbif_image_url)}")
+else:
+    print("  WARNING: multimedia.txt not found — GBIF image URLs will be empty")
+
 # ── 1. Load SRP matched records ───────────────────────────────────────
 print("Loading SRP matched records …")
 srp_rows = []
@@ -263,12 +283,15 @@ with open(GBIF_FOTW, newline="", encoding="utf-8") as f:
         if inst == "SRP" and cat_num:
             out["specimenImageURL"] = srp_image_url(cat_num)
         else:
-            # Check SRP matched file for an image via FotW ID
-            out["specimenImageURL"] = ""
-            for srp in srp_rows:
-                if srp.get("FotW_occurrenceID", "").strip() == fotw_id and srp.get("SRP_imageURL", "").strip():
-                    out["specimenImageURL"] = srp["SRP_imageURL"].strip()
-                    break
+            # 1. Check multimedia.txt for a GBIF image URL
+            gbif_id = out.get("gbifID", "").strip()
+            out["specimenImageURL"] = gbif_image_url.get(gbif_id, "")
+            # 2. Fall back to SRP matched file via FotW ID
+            if not out["specimenImageURL"]:
+                for srp in srp_rows:
+                    if srp.get("FotW_occurrenceID", "").strip() == fotw_id and srp.get("SRP_imageURL", "").strip():
+                        out["specimenImageURL"] = srp["SRP_imageURL"].strip()
+                        break
 
         # ── primarySpecimenURL ───────────────────────────────────────
         out["primarySpecimenURL"] = (

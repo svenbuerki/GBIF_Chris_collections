@@ -155,11 +155,11 @@ and mixed-format (DMS / decimal) coordinates in the SRP file, adds
 | `gbifURL` | — | 100% | GBIF occurrence page (snapshot — may break on re-index) |
 | `FotW_occurrenceID` | — | 100% | FotW database record ID |
 | `occurrenceID` | `occurrenceID` | 100% | Globally unique specimen URI assigned by source institution |
-| `institutionCode` | `institutionCode` | 100% | Herbarium acronym (MO, SRP, P …) |
+| `institutionCode` | `institutionCode` | 100% | Index Herbariorum — standard acronym of the herbarium holding the specimen |
 | `ownerInstitutionCode` | `ownerInstitutionCode` | 97.5% | Parent institution |
-| `catalogNumber` | `catalogNumber` | 99.7% | Specimen barcode / accession number |
+| `catalogNumber` | `catalogNumber` | 99.7% | Unique identifier of the specimen in the collection where it is physically deposited |
 | `basisOfRecord` | `basisOfRecord` | 100% | Always `PRESERVED_SPECIMEN` |
-| `bibliographicCitation` | `bibliographicCitation` | 80.8% | Direct URL to specimen record at source institution (Tropicos, iDigBio, JSTOR …) |
+| `bibliographicCitation` | `bibliographicCitation` | 80.8% | URL to the digital record associated with the specimen |
 | `acceptedScientificName` | `acceptedScientificName` | 100% | Accepted name with authorship |
 | `family` | `family` | 99.7% | Family |
 | `taxonRank` | `taxonRank` | 100% | Rank of the name |
@@ -178,9 +178,18 @@ and mixed-format (DMS / decimal) coordinates in the SRP file, adds
 | `license` | `license` | 100% | Reuse conditions (mostly CC BY-NC) |
 | `rightsHolder` | `rightsHolder` | 99.5% | Institution to credit for image |
 | `primarySpecimenURL` | — | **100%** | **Most stable available link** (see note below) |
-| `specimenImageURL` | — | derived | PNW Herbaria image URL (SRP specimens only) |
+| `specimenImageURL` | — | derived | URL to the digital image of the specimen |
 | `hasImage` | — | derived | `Y` if `mediaType = StillImage` or `specimenImageURL` set |
 | `source` | — | derived | `GBIF` or `SRP` (origin of the record) |
+
+> **Key fields for FotW website display**
+>
+> | Field | Description |
+> |---|---|
+> | `institutionCode` | Index Herbariorum — standard acronym of the herbarium holding the specimen |
+> | `catalogNumber` | Unique identifier of the specimen in the collection where it is physically deposited |
+> | `bibliographicCitation` | URL to the digital record associated with the specimen |
+> | `specimenImageURL` | URL to the digital image of the specimen |
 
 > **`primarySpecimenURL` — link stability note**
 >
