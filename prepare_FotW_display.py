@@ -14,7 +14,31 @@ SRP_FotW_matched_collections.csv    -- SRP specimens matched to FotW, with
 Output file
 -----------
 FotW_website_collections.csv        -- Selected Darwin Core fields + derived
-                                       specimenImageURL and hasImage columns
+                                       columns (primarySpecimenURL, specimenImageURL,
+                                       hasImage)
+
+IMPORTANT — Link stability
+--------------------------
+GBIF re-indexes its records periodically. The `gbifID` and `gbifURL` values are
+taken from a snapshot download (May 2025) and may no longer resolve after GBIF
+re-ingests the underlying datasets. Do NOT use gbifURL as a permanent link on
+the website.
+
+Use `primarySpecimenURL` instead — a derived column that selects the most stable
+available link in this priority order:
+  1. bibliographicCitation  — URL to the specimen record at the source institution
+                              (Tropicos, iDigBio, JSTOR, etc.). Stable because it
+                              is assigned by the holding herbarium.  Coverage: 80.8%
+  2. occurrenceID           — Globally unique specimen URI assigned by the source
+                              institution (e.g. urn:catalog:MO:Tropicos:102569036).
+                              Not a clickable URL but a persistent identifier.
+  3. gbifURL                — Fallback only. May break if GBIF re-indexes.
+
+The `gbifURL` column is retained for reference and for users who want to check
+the current GBIF record, but should not be the primary link shown on the website.
+
+To keep links fresh, re-download the GBIF data and re-run the full pipeline
+(FotW_on_GBIF_summary.Rmd → prepare_FotW_display.py) approximately once a year.
 
 Darwin Core fields selected
 ---------------------------
@@ -22,12 +46,13 @@ Group 1 – Specimen identity & physical location
   institutionCode       Herbarium acronym (MO, SRP, P …)
   ownerInstitutionCode  Parent institution (MOBOT, …)
   catalogNumber         Specimen barcode / accession number  ← key for images
-  occurrenceID          Globally unique specimen URI
+  occurrenceID          Globally unique specimen URI (stable identifier)
   basisOfRecord         Always PRESERVED_SPECIMEN here
   bibliographicCitation Direct URL to specimen record at source institution
 
-Group 2 – GBIF link
-  gbifURL               Direct link to the GBIF occurrence page
+Group 2 – Links
+  primarySpecimenURL    DERIVED: most stable available link (see above)
+  gbifURL               GBIF occurrence page (snapshot — may break on re-index)
   mediaType             StillImage when a digitised image exists on GBIF
   license               Reuse conditions (mostly CC BY-NC)
   rightsHolder          Institution to credit for image
@@ -54,10 +79,11 @@ Group 5 – Taxonomy & conservation
 
 Derived columns
 ---------------
-  specimenImageURL  PNW Herbaria image URL for SRP specimens; empty otherwise
-  hasImage          Y if mediaType == StillImage or specimenImageURL is set
-  FotW_occurrenceID Link back to the FotW database record
-  gbifID            GBIF numeric identifier
+  primarySpecimenURL  Most stable link: bibliographicCitation > occurrenceID > gbifURL
+  specimenImageURL    PNW Herbaria image URL for SRP specimens; empty otherwise
+  hasImage            Y if mediaType == StillImage or specimenImageURL is set
+  FotW_occurrenceID   Link back to the FotW database record
+  gbifID              GBIF numeric identifier (snapshot — may change on re-index)
 """
 
 import csv
@@ -107,7 +133,7 @@ DISPLAY_FIELDS = [
 ]
 
 # Final column order (display fields + derived)
-OUTPUT_FIELDS = DISPLAY_FIELDS + ["specimenImageURL", "hasImage"]
+OUTPUT_FIELDS = DISPLAY_FIELDS + ["primarySpecimenURL", "specimenImageURL", "hasImage"]
 
 
 def clean(value):
@@ -162,6 +188,14 @@ with open(GBIF_FOTW, newline="", encoding="utf-8") as f:
             out["specimenImageURL"] = srp_image_map[fotw_id]
         else:
             out["specimenImageURL"] = ""
+
+        # ── Derive primarySpecimenURL ────────────────────────────────
+        # Priority: bibliographicCitation > occurrenceID > gbifURL (fallback)
+        out["primarySpecimenURL"] = (
+            out["bibliographicCitation"]
+            or out["occurrenceID"]
+            or out["gbifURL"]
+        )
 
         # ── hasImage flag ────────────────────────────────────────────
         out["hasImage"] = (

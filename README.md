@@ -142,21 +142,21 @@ highest-coverage Darwin Core fields, replaces GBIF null strings, adds a
 
 | File | Description |
 |---|---|
-| `FotW_website_collections.csv` | 874 records, 28 display-ready columns (see below) |
+| `FotW_website_collections.csv` | 874 records, 29 display-ready columns (see below) |
 
 **Columns in `FotW_website_collections.csv`:**
 
 | Column | Darwin Core field | Coverage | Description |
 |---|---|---|---|
-| `gbifID` | `gbifID` | 100% | GBIF numeric identifier |
-| `gbifURL` | — | 100% | Direct link to GBIF occurrence page |
+| `gbifID` | `gbifID` | 100% | GBIF numeric identifier (snapshot — may change on re-index) |
+| `gbifURL` | — | 100% | GBIF occurrence page (snapshot — may break on re-index) |
 | `FotW_occurrenceID` | — | 100% | FotW database record ID |
-| `occurrenceID` | `occurrenceID` | 100% | Globally unique specimen URI |
+| `occurrenceID` | `occurrenceID` | 100% | Globally unique specimen URI assigned by source institution |
 | `institutionCode` | `institutionCode` | 100% | Herbarium acronym (MO, SRP, P …) |
 | `ownerInstitutionCode` | `ownerInstitutionCode` | 97.5% | Parent institution |
 | `catalogNumber` | `catalogNumber` | 99.7% | Specimen barcode / accession number |
 | `basisOfRecord` | `basisOfRecord` | 100% | Always `PRESERVED_SPECIMEN` |
-| `bibliographicCitation` | `bibliographicCitation` | 80.8% | URL to specimen record at source institution |
+| `bibliographicCitation` | `bibliographicCitation` | 80.8% | Direct URL to specimen record at source institution (Tropicos, iDigBio, JSTOR …) |
 | `acceptedScientificName` | `acceptedScientificName` | 100% | Accepted name with authorship |
 | `family` | `family` | 99.7% | Family |
 | `taxonRank` | `taxonRank` | 100% | Rank of the name |
@@ -174,8 +174,29 @@ highest-coverage Darwin Core fields, replaces GBIF null strings, adds a
 | `mediaType` | `mediaType` | 30.7% | `StillImage` when a GBIF image exists |
 | `license` | `license` | 100% | Reuse conditions (mostly CC BY-NC) |
 | `rightsHolder` | `rightsHolder` | 99.5% | Institution to credit for image |
-| `specimenImageURL` | — | derived | PNW Herbaria image URL (SRP only) |
+| `primarySpecimenURL` | — | **100%** | **Most stable available link** (see note below) |
+| `specimenImageURL` | — | derived | PNW Herbaria image URL (SRP specimens only) |
 | `hasImage` | — | derived | `Y` if `mediaType = StillImage` or `specimenImageURL` set |
+
+> **`primarySpecimenURL` — link stability note**
+>
+> GBIF re-indexes its records periodically. The `gbifID` values are taken from a
+> snapshot download (May 2025) and GBIF occurrence URLs **may stop resolving** after
+> GBIF re-ingests the underlying datasets. Use `primarySpecimenURL` as the link
+> to display on the website — it selects the most stable available identifier in
+> this priority order:
+>
+> 1. `bibliographicCitation` — URL assigned by the holding herbarium (Tropicos, iDigBio,
+>    JSTOR, …). Stable because the source institution controls it. **Coverage: 80.8%**
+> 2. `occurrenceID` — globally unique URI assigned by the source institution
+>    (e.g. `urn:catalog:MO:Tropicos:102569036`). Not a clickable URL but a persistent
+>    identifier. Used for the remaining 19.2% of records.
+> 3. `gbifURL` — fallback only. Not needed here (all 874 records resolved via steps 1–2),
+>    but retained as a safety net for future downloads.
+>
+> The `gbifURL` column is kept for reference but **should not be the primary link on
+> the website**. Re-download the GBIF data and re-run the full pipeline approximately
+> once a year to keep all links fresh.
 
 **Summary of `FotW_website_collections.csv`:**
 
@@ -185,6 +206,9 @@ highest-coverage Darwin Core fields, replaces GBIF null strings, adds a
 | Records with any image | **442** |
 | — GBIF image (StillImage) | 268 |
 | — SRP / PNW Herbaria URL | 203 |
+| `primarySpecimenURL` filled | **874 (100%)** |
+| — via `bibliographicCitation` | 706 (80.8%) |
+| — via `occurrenceID` | 168 (19.2%) |
 
 ---
 
@@ -369,8 +393,11 @@ to 2,278 SRP records tagged `Dataset = "Flora of the World"`:
 4. Closest date — record number matches; nearest FotW date used as fallback
 
 **Website display table** (`prepare_FotW_display.py`): selects 26 Darwin Core
-fields with ≥90% coverage, cleans GBIF null strings, and adds `specimenImageURL`
-(PNW Herbaria URL for SRP specimens) and `hasImage` flag.
+fields, cleans GBIF null strings, and derives three additional columns:
+`primarySpecimenURL` (most stable link: `bibliographicCitation` → `occurrenceID`
+→ `gbifURL`), `specimenImageURL` (PNW Herbaria URL for SRP specimens), and
+`hasImage` flag. Use `primarySpecimenURL` — not `gbifURL` — as the link on
+the website; GBIF numeric IDs may change when GBIF re-indexes its datasets.
 
 ---
 
