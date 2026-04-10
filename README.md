@@ -21,15 +21,15 @@ the [PNW Herbaria portal](https://www.pnwherbaria.org/).
 
 ## Scripts
 
-### 1. `FotW_on_GBIF.Rmd` — Full analysis
+### 1. `FotW_on_GBIF.Rmd` — Full analysis (R)
 
 The primary analysis document answering nine questions about Christopher Davidson's
 GBIF occurrences and their overlap with FotW.
 
 | | |
 |---|---|
+| **Run** | `rmarkdown::render("FotW_on_GBIF.Rmd")` |
 | **Output** | `FotW_on_GBIF.html` |
-| **Render** | `rmarkdown::render("FotW_on_GBIF.Rmd")` |
 
 **Inputs:**
 
@@ -62,15 +62,15 @@ GBIF occurrences and their overlap with FotW.
 
 ---
 
-### 2. `FotW_on_GBIF_summary.Rmd` — Concise summary report
+### 2. `FotW_on_GBIF_summary.Rmd` — Concise summary report (R)
 
-A streamlined version of the full analysis that goes straight to answers, formatted
-as GitHub-Flavored Markdown for use on the website.
+A streamlined version of the full analysis that goes straight to answers,
+formatted as GitHub-Flavored Markdown for use on the website.
 
 | | |
 |---|---|
+| **Run** | `rmarkdown::render("FotW_on_GBIF_summary.Rmd")` |
 | **Outputs** | `FotW_on_GBIF_summary.md`, `FotW_on_GBIF_summary.html` |
-| **Render** | `rmarkdown::render("FotW_on_GBIF_summary.Rmd")` |
 
 **Inputs:**
 
@@ -87,19 +87,20 @@ as GitHub-Flavored Markdown for use on the website.
 |---|---|
 | `FotW_on_GBIF_summary.md` | Markdown report (Q1–Q9 answers with tables) |
 | `FotW_on_GBIF_summary.html` | HTML preview |
-| `GBIF_FotW_matched_collections.csv` | GBIF occurrences matched to FotW |
+| `GBIF_FotW_matched_collections.csv` | All GBIF fields for occurrences matched to FotW |
 
 ---
 
-### 3. `SRP_FotW_matching.Rmd` — SRP specimen matching
+### 3. `SRP_FotW_matching.Rmd` — SRP specimen matching (R)
 
 Matches SRP (Boise State) specimens from the PNW Herbaria portal against the FotW
-database, builds image URLs, and exports matched and unmatched records.
+database using a four-step strategy, builds image URLs, and exports matched and
+unmatched records.
 
 | | |
 |---|---|
+| **Run** | `rmarkdown::render("SRP_FotW_matching.Rmd")` |
 | **Outputs** | `SRP_FotW_matching.md`, `SRP_FotW_matching.html` |
-| **Render** | `rmarkdown::render("SRP_FotW_matching.Rmd")` |
 
 **Inputs:**
 
@@ -116,6 +117,74 @@ database, builds image URLs, and exports matched and unmatched records.
 | `SRP_FotW_unmatched.csv` | 491 SRP FotW-flagged specimens with no FotW DB entry |
 | `SRP_FotW_matching.md` | Markdown report with full code and results |
 | `SRP_FotW_matching.html` | HTML preview |
+
+---
+
+### 4. `prepare_FotW_display.py` — Website display table (Python)
+
+Produces a filtered, display-ready CSV for the FotW website. Selects the
+highest-coverage Darwin Core fields, replaces GBIF null strings, adds a
+`specimenImageURL` (PNW Herbaria URL for SRP specimens) and a `hasImage` flag.
+
+| | |
+|---|---|
+| **Run** | `python3 prepare_FotW_display.py` |
+| **Requires** | Python 3 (standard library only) |
+
+**Inputs:**
+
+| File | Description |
+|---|---|
+| `GBIF_FotW_matched_collections.csv` | Full GBIF fields for FotW-matched occurrences |
+| `SRP_FotW_matched_collections.csv` | SRP specimens with PNW Herbaria image URLs |
+
+**Output:**
+
+| File | Description |
+|---|---|
+| `FotW_website_collections.csv` | 874 records, 28 display-ready columns (see below) |
+
+**Columns in `FotW_website_collections.csv`:**
+
+| Column | Darwin Core field | Coverage | Description |
+|---|---|---|---|
+| `gbifID` | `gbifID` | 100% | GBIF numeric identifier |
+| `gbifURL` | — | 100% | Direct link to GBIF occurrence page |
+| `FotW_occurrenceID` | — | 100% | FotW database record ID |
+| `occurrenceID` | `occurrenceID` | 100% | Globally unique specimen URI |
+| `institutionCode` | `institutionCode` | 100% | Herbarium acronym (MO, SRP, P …) |
+| `ownerInstitutionCode` | `ownerInstitutionCode` | 97.5% | Parent institution |
+| `catalogNumber` | `catalogNumber` | 99.7% | Specimen barcode / accession number |
+| `basisOfRecord` | `basisOfRecord` | 100% | Always `PRESERVED_SPECIMEN` |
+| `bibliographicCitation` | `bibliographicCitation` | 80.8% | URL to specimen record at source institution |
+| `acceptedScientificName` | `acceptedScientificName` | 100% | Accepted name with authorship |
+| `family` | `family` | 99.7% | Family |
+| `taxonRank` | `taxonRank` | 100% | Rank of the name |
+| `taxonomicStatus` | `taxonomicStatus` | 100% | `ACCEPTED` or `SYNONYM` |
+| `iucnRedListCategory` | `iucnRedListCategory` | 93.2% | Conservation status (LC, VU, EN …) |
+| `recordedBy` | `recordedBy` | 100% | Collector name(s) |
+| `recordNumber` | `recordNumber` | 100% | Collector field number |
+| `eventDate` | `eventDate` | 100% | Collection date (YYYY-MM-DD) |
+| `countryCode` | `countryCode` | 100% | ISO 3166-1 alpha-2 country code |
+| `stateProvince` | `stateProvince` | 91.3% | State or province |
+| `locality` | `locality` | 99.2% | Verbatim locality description |
+| `decimalLatitude` | `decimalLatitude` | 99.3% | WGS84 latitude |
+| `decimalLongitude` | `decimalLongitude` | 99.3% | WGS84 longitude |
+| `elevation` | `elevation` | 93.5% | Elevation in metres |
+| `mediaType` | `mediaType` | 30.7% | `StillImage` when a GBIF image exists |
+| `license` | `license` | 100% | Reuse conditions (mostly CC BY-NC) |
+| `rightsHolder` | `rightsHolder` | 99.5% | Institution to credit for image |
+| `specimenImageURL` | — | derived | PNW Herbaria image URL (SRP only) |
+| `hasImage` | — | derived | `Y` if `mediaType = StillImage` or `specimenImageURL` set |
+
+**Summary of `FotW_website_collections.csv`:**
+
+| Metric | Value |
+|---|---|
+| Total records | **874** |
+| Records with any image | **442** |
+| — GBIF image (StillImage) | 268 |
+| — SRP / PNW Herbaria URL | 203 |
 
 ---
 
@@ -142,8 +211,8 @@ NY (1,345), SRP (1,345), QCNE (831).
 **Geographic scope:** 6 continents, 20+ countries. Top countries: United States
 (5,911), Ecuador (5,891), Peru (4,638), Bolivia (2,766).
 
-**Phenology:** ~3,400 occurrences have a recorded reproductive condition; flowering
-specimens are most common (~2,100 records).
+**Phenology:** ~3,400 occurrences have a recorded reproductive condition;
+flowering specimens are most common (~2,100 records).
 
 **Digital images:** 57.4% of occurrences have images on GBIF, mostly under
 Creative Commons licenses (primarily CC BY-NC-SA 3.0). C. Davidson is listed as
@@ -159,10 +228,10 @@ Records matched on a composite key: **numeric record number + collection date**
 |---|---|
 | GBIF occurrences also in FotW | **874** |
 | Unique FotW records represented | **474** |
-| Matched records with digital images | **270** |
+| Matched records with any image | **442** |
 
-**Top institutions:** MO (256), SRP (178), P — Paris (57), QCNE (49), QCA (37),
-G — Geneva (33), SUVA — Fiji (31).
+**Top institutions:** MO (253), SRP (175), P — Paris (56), QCNE (49),
+QCA (37), G — Geneva (33), SUVA — Fiji (30).
 
 **Top countries:** Ecuador (233), United States (164), New Caledonia (136),
 Fiji (121), Peru (65), Switzerland (50), Madagascar (47).
@@ -184,7 +253,7 @@ portal (all imaged), matched using a four-step strategy:
 The 491 unmatched specimens are all imaged and FotW-flagged; they are candidates
 for a future FotW database update.
 
-Specimen images are retrieved at:
+Specimen images follow the URL pattern:
 ```
 https://www.pnwherbaria.org/images/jpeg.php?Image=SRP<ACCESSION>.jpg
 ```
@@ -198,10 +267,13 @@ GBIF_Chris_collections/
 │
 ├── README.md                                   # This file
 │
-├── Scripts
+├── Scripts (R)
 │   ├── FotW_on_GBIF.Rmd                        # Full analysis (Q1–Q9)
 │   ├── FotW_on_GBIF_summary.Rmd                # Concise summary (Q1–Q9)
 │   └── SRP_FotW_matching.Rmd                   # SRP–FotW specimen matching
+│
+├── Scripts (Python)
+│   └── prepare_FotW_display.py                 # Website display table
 │
 ├── Rendered reports
 │   ├── FotW_on_GBIF.html                       # Full analysis (HTML)
@@ -211,40 +283,33 @@ GBIF_Chris_collections/
 │   └── SRP_FotW_matching.html                  # SRP matching (HTML preview)
 │
 ├── Output data
-│   ├── GBIF_FotW_matched_collections.csv       # 874 GBIF occurrences in FotW
+│   ├── GBIF_FotW_matched_collections.csv       # 874 GBIF occurrences in FotW (all fields)
+│   ├── FotW_website_collections.csv            # 874 records, 28 display-ready columns
 │   ├── SRP_FotW_matched_collections.csv        # 1,783 SRP specimens matched to FotW
 │   └── SRP_FotW_unmatched.csv                  # 491 SRP FotW-flagged, no FotW DB entry
 │
-├── Input data
+├── Input data (large files excluded — see Data setup below)
 │   ├── GBIF_data/
 │   │   └── 0000210-250515123054153/
-│   │       ├── occurrence.txt                  # GBIF occurrence records (36 MB)
-│   │       ├── multimedia.txt                  # Specimen image links (4.4 MB)
-│   │       ├── verbatim.txt                    # Raw verbatim data (23 MB)
-│   │       ├── metadata.xml                    # Query metadata
-│   │       ├── meta.xml                        # Field descriptions
-│   │       └── dataset/                        # 80 individual dataset XMLs
-│   │   └── datasets_download_usage_*.tsv       # Dataset metadata
+│   │       ├── occurrence.txt                  # excluded (36 MB)
+│   │       ├── verbatim.txt                    # excluded (23 MB)
+│   │       ├── multimedia.txt                  # included (4.4 MB)
+│   │       ├── citations.txt / rights.txt
+│   │       ├── metadata.xml / meta.xml
+│   │       └── dataset/                        # 80 dataset XMLs
+│   │   └── datasets_download_usage_*.tsv
 │   ├── FotW_DB/
-│   │   ├── occurrences.csv                     # FotW occurrence records (8.5 MB)
-│   │   └── postgres_schema.csv                 # FotW database schema
+│   │   ├── occurrences.csv                     # excluded (internal)
+│   │   └── postgres_schema.csv
 │   ├── Consortium_PacificNorthWest_herbaria/
-│   │   └── CPNWH_20250520-112502.csv           # PNW Herbaria Davidson collections
+│   │   └── CPNWH_20250520-112502.csv           # excluded (re-downloadable)
 │   └── Data_report/                            # Darwin Core reference tables
-│       ├── darwin_core_classes.csv
-│       ├── darwin_core_terms.csv
-│       ├── biodiveristy_terms_definitions.csv
-│       ├── multimedia_extension_terms.csv
-│       └── occurrence_vs_voucher.csv
 │
-├── Reference
-│   ├── Darwin_Core_FotW_May2025.xlsx           # Darwin Core fields used in FotW
-│   ├── Bibliography_FotW.bib                   # GBIF download citation
-│   ├── AmJBot.csl                              # Citation style
-│   └── Figures/
-│       └── Screenshot 2025-05-15_GBIF.png      # GBIF query snapshot
-│
-└── GBIF_Chris_collections.Rproj               # RStudio project file
+└── Reference
+    ├── Darwin_Core_FotW_May2025.xlsx
+    ├── Bibliography_FotW.bib
+    ├── AmJBot.csl
+    └── Figures/
 ```
 
 ---
@@ -252,71 +317,43 @@ GBIF_Chris_collections/
 ## Data setup
 
 Three data sources are excluded from this repository (`.gitignore`) and must be
-obtained separately before running the scripts.
+obtained separately before running the R scripts.
 
 ### 1. GBIF occurrence download
 
-Download the Darwin Core archive from GBIF and extract it into `GBIF_data/`:
-
 ```
-DOI:  https://doi.org/10.15468/DL.Q7X2GP
-URL:  https://www.gbif.org/occurrence/download/0000210-250515123054153
+DOI: https://doi.org/10.15468/DL.Q7X2GP
+URL: https://www.gbif.org/occurrence/download/0000210-250515123054153
 ```
 
-After downloading and unzipping, the directory should contain:
-
-```
-GBIF_data/
-├── 0000210-250515123054153.zip          ← excluded (.gitignore)
-└── 0000210-250515123054153/
-    ├── occurrence.txt                   ← excluded (36 MB)
-    ├── verbatim.txt                     ← excluded (23 MB)
-    ├── multimedia.txt                   ← included (4.4 MB)
-    ├── citations.txt
-    ├── rights.txt
-    ├── metadata.xml
-    ├── meta.xml
-    └── dataset/
-└── datasets_download_usage_0000210-250515123054153.tsv
-```
-
-> `occurrence.txt` and `verbatim.txt` are excluded because they exceed GitHub's
-> recommended file size. All other files in the archive are included.
+Download and unzip into `GBIF_data/`. The files `occurrence.txt` (36 MB) and
+`verbatim.txt` (23 MB) are excluded from git; all other files in the archive
+are included.
 
 ### 2. Flora of the World database
 
-Request `FotW_DB/occurrences.csv` from the FotW team. Place it at:
-
-```
-FotW_DB/occurrences.csv
-```
-
-Expected columns: `occurrenceID`, `recordNumber`, `family`, `genus`,
-`specificEpithet`, `infraspecificEpithet`, `scientificNameAuthorship`,
-`eventDate`, `country`, `stateProvince`, `county`, `municipality`, `locality`,
+Request `FotW_DB/occurrences.csv` from the FotW team. Expected columns:
+`occurrenceID`, `recordNumber`, `family`, `genus`, `specificEpithet`,
+`eventDate`, `country`, `stateProvince`, `locality`,
 `decimalLatitude`, `decimalLongitude`, `recordedBy`.
 
 ### 3. PNW Herbaria export
 
 Download Christopher Davidson's collections from the
 [Consortium of Pacific Northwest Herbaria](https://www.pnwherbaria.org/) and
-place the CSV at:
+place the CSV at `Consortium_PacificNorthWest_herbaria/CPNWH_20250520-112502.csv`.
+If you download a newer version, update the file path in `SRP_FotW_matching.Rmd`.
 
-```
-Consortium_PacificNorthWest_herbaria/CPNWH_20250520-112502.csv
-```
-
-The filename encodes the download date (`YYYYMMDD`). If you download a newer
-version, update the file path in `SRP_FotW_matching.Rmd`.
+> **Note:** the CPNWH CSV contains embedded commas in quoted fields;
+> `readr::read_csv` is used instead of base `read.csv` for reliable parsing.
 
 ---
 
 ## Methods
 
 All analyses use the [Darwin Core](https://dwc.tdwg.org/) standard. GBIF data
-were downloaded on May 15, 2025
-([DOI: 10.15468/DL.Q7X2GP](https://doi.org/10.15468/DL.Q7X2GP)) using the
-following collector name variants in the `Recorded by` field:
+were downloaded on May 15, 2025 using the following collector name variants in
+the `Recorded by` field:
 *DAVIDSON, CHRISTOPHER; C. DAVIDSON; Davidson C.; CHRISTOPHER DAVIDSON*.
 Records were filtered to kingdom Plantae after download.
 
@@ -331,15 +368,19 @@ to 2,278 SRP records tagged `Dataset = "Flora of the World"`:
 3. Fuzzy date — record number matches and dates differ by ≤3 days
 4. Closest date — record number matches; nearest FotW date used as fallback
 
-Note: the CPNWH CSV contains embedded commas in quoted fields; `readr::read_csv`
-is used in place of base `read.csv` for reliable parsing.
+**Website display table** (`prepare_FotW_display.py`): selects 26 Darwin Core
+fields with ≥90% coverage, cleans GBIF null strings, and adds `specimenImageURL`
+(PNW Herbaria URL for SRP specimens) and `hasImage` flag.
 
 ---
 
-## R packages required
+## Dependencies
 
+**R packages:**
 ```r
 install.packages(c("rmarkdown", "bookdown", "knitr", "kableExtra",
                    "dplyr", "readr", "DT", "formattable",
                    "DiagrammeR", "data.tree"))
 ```
+
+**Python:** standard library only (csv, os, collections) — no packages to install.
